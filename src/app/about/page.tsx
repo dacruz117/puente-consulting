@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About | PUENTE Consulting Co.",
+  title: "About",
   description:
     "Learn about PUENTE Consulting Co. — our mission, story, and commitment to bridging you to your next chapter.",
 };

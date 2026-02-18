@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | PUENTE Consulting Co.",
+  title: "Contact",
   description:
     "Get in touch with PUENTE Consulting Co. Book a consultation or send us a message.",
 };

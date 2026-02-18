@@ -11,9 +11,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PUENTE Consulting Co.",
+  title: {
+    default: "PUENTE Consulting Co.",
+    template: "%s | PUENTE Consulting Co.",
+  },
   description:
     "College advising and business start-up consulting services. Bridging you to your next chapter.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "PUENTE Consulting Co.",
+    title: "PUENTE Consulting Co.",
+    description:
+      "College advising and business start-up consulting services. Bridging you to your next chapter.",
+  },
 };
 
 export default function RootLayout({

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Business Start-Up | PUENTE Consulting Co.",
+  title: "Business Start-Up",
   description:
     "Strategic guidance to launch and grow your business — from idea to execution.",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "College Advising | PUENTE Consulting Co.",
+  title: "College Advising",
   description:
     "Expert college admissions guidance — from school selection to application strategy.",
 };
