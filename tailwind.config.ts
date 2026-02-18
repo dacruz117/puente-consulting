@@ -16,7 +16,7 @@ const config: Config = {
         cream: "#F9F7F4",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
     },
   },
