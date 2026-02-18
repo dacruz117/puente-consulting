@@ -45,6 +45,7 @@ export default function Navbar() {
           className="md:hidden text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
         >
           <svg
             className="w-6 h-6"
