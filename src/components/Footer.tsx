@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-primary text-white py-12">
       <div className="max-w-6xl mx-auto px-4">
@@ -8,35 +13,33 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold mb-2">PUENTE Consulting Co.</h3>
-            <p className="text-sm text-gray-400">
-              Bridging you to your next chapter.
-            </p>
+            <p className="text-sm text-gray-400">{t.footer.tagline}</p>
           </div>
 
           {/* Quick links */}
           <div>
             <h4 className="text-sm font-semibold mb-3 uppercase tracking-wider">
-              Quick Links
+              {t.footer.quickLinks}
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <Link href="/college-advising" className="hover:text-white transition-colors">
-                  College Advising
+                  {t.footer.collegeAdvising}
                 </Link>
               </li>
               <li>
                 <Link href="/business-startup" className="hover:text-white transition-colors">
-                  Business Start-Up
+                  {t.footer.businessStartup}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About
+                  {t.footer.about}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
-                  Contact
+                  {t.footer.contact}
                 </Link>
               </li>
             </ul>
@@ -45,13 +48,13 @@ export default function Footer() {
           {/* Contact info */}
           <div>
             <h4 className="text-sm font-semibold mb-3 uppercase tracking-wider">
-              Get in Touch
+              {t.footer.getInTouch}
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>email@puenteconsulting.com</li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
-                  Book a Consultation
+                  {t.footer.bookConsultation}
                 </Link>
               </li>
             </ul>
@@ -59,8 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} PUENTE Consulting Co. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} PUENTE Consulting Co. {t.footer.allRightsReserved}
         </div>
       </div>
     </footer>

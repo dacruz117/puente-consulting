@@ -1,23 +1,18 @@
-import type { Metadata } from "next";
-import ContactForm from "@/components/ContactForm";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Get in touch with PUENTE Consulting Co. Book a consultation or send us a message.",
-};
+import ContactForm from "@/components/ContactForm";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* Hero */}
       <section className="bg-primary text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-lg text-gray-300">
-            Ready to take the next step? Send us a message or book a
-            consultation.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.contact.heroTitle}</h1>
+          <p className="text-lg text-gray-300">{t.contact.heroSubtitle}</p>
         </div>
       </section>
 
@@ -28,7 +23,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="text-2xl font-bold text-primary mb-6">
-                Send a Message
+                {t.contact.sendMessage}
               </h2>
               <ContactForm />
             </div>
@@ -36,13 +31,10 @@ export default function ContactPage() {
             {/* Calendly Embed */}
             <div>
               <h2 className="text-2xl font-bold text-primary mb-6">
-                Book a Consultation
+                {t.contact.bookConsultation}
               </h2>
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                {/* TODO: Replace YOUR_CALENDLY_URL with your actual Calendly link */}
-                <p className="text-body mb-4">
-                  Schedule a free consultation at a time that works for you.
-                </p>
+                <p className="text-body mb-4">{t.contact.scheduleText}</p>
                 <div className="aspect-[3/4] w-full">
                   <iframe
                     src="https://calendly.com/YOUR_CALENDLY_URL"

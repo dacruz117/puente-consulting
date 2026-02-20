@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,17 +20,15 @@ export default function ContactForm() {
       });
       setSubmitted(true);
     } catch {
-      alert("Something went wrong. Please try again.");
+      alert(t.contactForm.errorMessage);
     }
   };
 
   if (submitted) {
     return (
       <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
-        <h3 className="text-xl font-bold text-primary mb-2">Thank you!</h3>
-        <p className="text-body">
-          We&apos;ve received your message and will get back to you soon.
-        </p>
+        <h3 className="text-xl font-bold text-primary mb-2">{t.contactForm.thankYou}</h3>
+        <p className="text-body">{t.contactForm.receivedMessage}</p>
       </div>
     );
   }
@@ -45,7 +45,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-primary mb-1">
-          Name
+          {t.contactForm.name}
         </label>
         <input
           type="text"
@@ -58,7 +58,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-primary mb-1">
-          Email
+          {t.contactForm.email}
         </label>
         <input
           type="email"
@@ -71,7 +71,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="service" className="block text-sm font-medium text-primary mb-1">
-          Service Interest
+          {t.contactForm.serviceInterest}
         </label>
         <select
           id="service"
@@ -79,16 +79,16 @@ export default function ContactForm() {
           required
           className="w-full border border-gray-300 rounded-lg px-4 py-2 text-body focus:outline-none focus:ring-2 focus:ring-accent"
         >
-          <option value="">Select a service...</option>
-          <option value="college-advising">College Advising</option>
-          <option value="business-startup">Business Start-Up</option>
-          <option value="both">Both</option>
+          <option value="">{t.contactForm.selectService}</option>
+          <option value="college-advising">{t.contactForm.collegeAdvising}</option>
+          <option value="business-startup">{t.contactForm.businessStartup}</option>
+          <option value="both">{t.contactForm.both}</option>
         </select>
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-primary mb-1">
-          Message
+          {t.contactForm.message}
         </label>
         <textarea
           id="message"
@@ -103,7 +103,7 @@ export default function ContactForm() {
         type="submit"
         className="w-full bg-accent text-white font-semibold py-3 rounded-lg hover:bg-accent-light transition-colors"
       >
-        Send Message
+        {t.contactForm.sendMessage}
       </button>
     </form>
   );

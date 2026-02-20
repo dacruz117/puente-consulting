@@ -1,4 +1,7 @@
+"use client";
+
 import CTABanner from "@/components/CTABanner";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Service {
   title: string;
@@ -14,8 +17,8 @@ interface ProcessStep {
 interface ServicePageProps {
   heroTitle: string;
   heroDescription: string;
-  services: Service[];
-  processSteps: ProcessStep[];
+  services: readonly Service[];
+  processSteps: readonly ProcessStep[];
 }
 
 export default function ServicePage({
@@ -24,6 +27,8 @@ export default function ServicePage({
   services,
   processSteps,
 }: ServicePageProps) {
+  const { t } = useLanguage();
+
   return (
     <>
       {/* Page Hero */}
@@ -38,7 +43,7 @@ export default function ServicePage({
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary text-center mb-12">
-            What We Offer
+            {t.servicePage.whatWeOffer}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service) => (
@@ -60,7 +65,7 @@ export default function ServicePage({
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary text-center mb-12">
-            Our Process
+            {t.servicePage.ourProcess}
           </h2>
           <div className="space-y-8">
             {processSteps.map((step) => (
