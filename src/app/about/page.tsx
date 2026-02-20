@@ -23,10 +23,17 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-6">{t.about.ourStory}</h2>
           <div className="space-y-4 text-body leading-relaxed">
-            <p>{t.about.story1}</p>
-            <p>{t.about.story2}</p>
-            <p>{t.about.story3}</p>
+            {t.about.paragraphs.slice(0, 3).map((para, idx) => (
+              <p key={idx}>{para}</p>
+            ))}
           </div>
+
+          {/* Callout for the "role" sentence */}
+          <blockquote className="mt-8 border-l-4 border-accent pl-6 py-2">
+            <p className="text-primary font-semibold text-lg leading-relaxed">
+              {t.about.paragraphs[3]}
+            </p>
+          </blockquote>
 
           <h2 className="text-3xl font-bold text-primary mt-16 mb-6">
             {t.about.ourMission}

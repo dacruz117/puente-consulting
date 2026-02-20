@@ -38,7 +38,7 @@ export default function Navbar() {
             href="/contact"
             className="bg-accent text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-accent-light transition-colors"
           >
-            {t.nav.bookConsultation}
+            {t.nav.bookSession}
           </Link>
           <button
             onClick={toggle}
@@ -108,7 +108,7 @@ export default function Navbar() {
             className="block bg-accent text-white text-sm font-medium px-4 py-2 rounded-lg text-center hover:bg-accent-light transition-colors"
             onClick={() => setMobileOpen(false)}
           >
-            {t.nav.bookConsultation}
+            {t.nav.bookSession}
           </Link>
         </div>
       )}

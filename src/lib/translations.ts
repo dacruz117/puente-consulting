@@ -8,65 +8,110 @@ export const translations = {
       businessStartup: "Business Start-Up",
       about: "About",
       contact: "Contact",
-      bookConsultation: "Book a Consultation",
+      bookSession: "Book a Session",
     },
     footer: {
-      tagline: "Bridging you to your next chapter.",
+      tagline: "Bilingual guidance for everyday life.",
       quickLinks: "Quick Links",
       getInTouch: "Get in Touch",
-      bookConsultation: "Book a Consultation",
+      bookSession: "Book a Session",
       allRightsReserved: "All rights reserved.",
-      collegeAdvising: "College Advising",
-      businessStartup: "Business Start-Up",
       about: "About",
       contact: "Contact",
+      disclaimer:
+        "Puente Bilingual Services provides assistance and informational guidance only. We do not provide legal, financial, immigration, or medical advice. Clients are responsible for final decisions and submissions.",
     },
     home: {
-      heroTitle: "Bridging You to Your Next Chapter",
+      heroTitle: "Bilingual Guidance for Everyday Life",
       heroSubtitle:
-        "Expert college advising and business start-up consulting to help you take the next step with confidence.",
-      ourServices: "Our Services",
-      collegeAdvisingTitle: "College Advising",
-      collegeAdvisingDesc:
-        "Navigate the college admissions process with expert guidance. From school selection to application strategy, we help students find their best-fit institutions.",
-      businessStartupTitle: "Business Start-Up",
-      businessStartupDesc:
-        "Turn your business idea into reality. We provide the strategic guidance and practical support you need to launch and grow your venture.",
-      learnMore: "Learn More \u2192",
-      whyPuente: "Why PUENTE?",
-      differentiators: [
+        "Helping Spanish-speaking families navigate digital systems, paperwork, and everyday processes with confidence.",
+      primaryCta: "Book a Session",
+      secondaryCta: "Schedule a Call",
+      aboutTitle: "About Puente",
+      aboutParagraphs: [
+        "Puente Bilingual Services was created to bridge the gap between complex systems and the people who need help navigating them.",
+        "Many families struggle with online forms, registrations, appointments, and digital processes — not because they lack intelligence, but because these systems were not designed with them in mind.",
+        "With a bachelor's degree and professional experience in higher education and administration, I provide patient, bilingual guidance through screen-share or phone support.",
+        "My role is simple: To be the trusted advisor, the organized guide, and the steady support when things feel overwhelming.",
+      ],
+      servicesTitle: "General Assistance",
+      serviceTitle: "General Assistance",
+      servicePriceSuffix: "$25/hour",
+      serviceBullets: [
+        "Toll tag payments and account setup",
+        "Vehicle registration guidance",
+        "Scheduling appointments",
+        "Completing online applications",
+        "Resume development",
+        "Email setup and digital account creation",
+        "School forms and document organization",
+        "Researching answers to general questions (non-legal, non-medical)",
+        "Understanding official letters and notices",
+        "Basic business registration guidance",
+      ],
+      serviceDisclaimer:
+        "All services are informational and assistance-based. I do not provide legal or medical advice.",
+      howItWorksTitle: "How It Works",
+      howItWorksSteps: [
         {
-          title: "Personalized Guidance",
-          description:
-            "Every client receives a custom strategy tailored to their unique goals and circumstances.",
+          step: 1,
+          title: "Schedule a Call",
+          description: "Book a time that works for you.",
         },
         {
-          title: "Proven Process",
+          step: 2,
+          title: "Identify the Task",
           description:
-            "Our structured approach has helped countless students and entrepreneurs reach their goals.",
+            "We clarify what needs to be done and gather necessary documents.",
         },
         {
-          title: "End-to-End Support",
+          step: 3,
+          title: "Complete Together",
           description:
-            "From initial consultation to final results, we walk alongside you every step of the way.",
+            "We work through the process via phone or screen-share until it is finished.",
         },
       ],
+      howItWorksTagline: "Simple. Clear. Supportive.",
+      trustTitle: "Why Trust Me",
+      trustBullets: [
+        "Bachelor's Degree",
+        "Experience in Higher Education Administration",
+        "Bilingual (English/Spanish)",
+        "Patient, Confidential, and Professional",
+        "Transparent hourly pricing",
+      ],
+      trustGoal:
+        "My goal is not just to complete a task — but to empower you to feel confident doing it next time.",
+      upsellTitle: "Advanced Services",
+      upsellSubtitle:
+        "Once immediate needs are handled, I also offer:",
+      upsellItems: [
+        "College application guidance",
+        "FAFSA navigation assistance",
+        "Resume and career planning",
+        "Small business startup consultation",
+        "Business structure guidance",
+        "Branding and development strategy",
+      ],
+      upsellNote:
+        "These services are structured separately and priced based on scope.",
     },
     about: {
-      heroTitle: "About PUENTE",
-      heroSubtitle: "Bridging the gap between where you are and where you want to be.",
+      heroTitle: "About Puente",
+      heroSubtitle:
+        "Bilingual guidance for everyday life.",
       ourStory: "Our Story",
-      story1:
-        'PUENTE \u2014 meaning \u201cbridge\u201d in Spanish \u2014 was founded on the belief that everyone deserves access to expert guidance when making life\u2019s biggest decisions.',
-      story2:
-        "Whether you\u2019re a student navigating the college admissions process or an aspiring entrepreneur ready to launch your first business, we provide the personalized support and proven strategies you need to succeed.",
-      story3:
-        "Our team brings years of experience in education consulting and business development, and we\u2019re passionate about helping our clients reach their full potential.",
+      paragraphs: [
+        "Puente Bilingual Services was created to bridge the gap between complex systems and the people who need help navigating them.",
+        "Many families struggle with online forms, registrations, appointments, and digital processes — not because they lack intelligence, but because these systems were not designed with them in mind.",
+        "With a bachelor's degree and professional experience in higher education and administration, I provide patient, bilingual guidance through screen-share or phone support.",
+        "My role is simple: To be the trusted advisor, the organized guide, and the steady support when things feel overwhelming.",
+      ],
       ourMission: "Our Mission",
       missionText:
-        "To provide accessible, personalized consulting that empowers students and entrepreneurs to take their next step with confidence. We bridge the gap between ambition and achievement.",
-      ctaHeading: "Let\u2019s Work Together",
-      ctaButton: "Book a Consultation",
+        "To provide accessible, bilingual assistance that empowers Spanish-speaking families to navigate everyday systems with confidence and independence.",
+      ctaHeading: "Ready to get started?",
+      ctaButton: "Book a Session",
     },
     collegeAdvising: {
       heroTitle: "College Advising",
@@ -165,10 +210,10 @@ export const translations = {
     contact: {
       heroTitle: "Get in Touch",
       heroSubtitle:
-        "Ready to take the next step? Send us a message or book a consultation.",
+        "Ready to take the next step? Send us a message or book a session.",
       sendMessage: "Send a Message",
-      bookConsultation: "Book a Consultation",
-      scheduleText: "Schedule a free consultation at a time that works for you.",
+      bookSession: "Book a Session",
+      scheduleText: "Schedule a session at a time that works for you.",
     },
     contactForm: {
       name: "Name",
@@ -190,7 +235,7 @@ export const translations = {
     },
     cta: {
       defaultHeading: "Ready to get started?",
-      defaultButton: "Book a Consultation",
+      defaultButton: "Book a Session",
     },
   },
   es: {
@@ -200,65 +245,110 @@ export const translations = {
       businessStartup: "Inicio de Negocios",
       about: "Nosotros",
       contact: "Contacto",
-      bookConsultation: "Reservar una Consulta",
+      bookSession: "Agenda una Sesi\u00f3n",
     },
     footer: {
-      tagline: "Conect\u00e1ndote con tu pr\u00f3ximo cap\u00edtulo.",
+      tagline: "Orientaci\u00f3n biling\u00fce para la vida diaria.",
       quickLinks: "Enlaces R\u00e1pidos",
       getInTouch: "Cont\u00e1ctanos",
-      bookConsultation: "Reservar una Consulta",
+      bookSession: "Agenda una Sesi\u00f3n",
       allRightsReserved: "Todos los derechos reservados.",
-      collegeAdvising: "Asesor\u00eda Universitaria",
-      businessStartup: "Inicio de Negocios",
       about: "Nosotros",
       contact: "Contacto",
+      disclaimer:
+        "Puente Bilingual Services ofrece asistencia y orientaci\u00f3n informativa \u00fanicamente. No brindamos asesor\u00eda legal, financiera, migratoria ni m\u00e9dica. Los clientes son responsables de decisiones y env\u00edos finales.",
     },
     home: {
-      heroTitle: "Conect\u00e1ndote con Tu Pr\u00f3ximo Cap\u00edtulo",
+      heroTitle: "Orientaci\u00f3n Biling\u00fce para la Vida Diaria",
       heroSubtitle:
-        "Asesor\u00eda experta en admisiones universitarias y consultor\u00eda para emprendedores para que des el siguiente paso con confianza.",
-      ourServices: "Nuestros Servicios",
-      collegeAdvisingTitle: "Asesor\u00eda Universitaria",
-      collegeAdvisingDesc:
-        "Navega el proceso de admisi\u00f3n universitaria con orientaci\u00f3n experta. Desde la selecci\u00f3n de universidades hasta la estrategia de solicitud, ayudamos a los estudiantes a encontrar las instituciones que mejor se adaptan a ellos.",
-      businessStartupTitle: "Inicio de Negocios",
-      businessStartupDesc:
-        "Convierte tu idea de negocio en realidad. Te brindamos la orientaci\u00f3n estrat\u00e9gica y el apoyo pr\u00e1ctico que necesitas para lanzar y hacer crecer tu empresa.",
-      learnMore: "Saber M\u00e1s \u2192",
-      whyPuente: "\u00bfPor Qu\u00e9 PUENTE?",
-      differentiators: [
+        "Ayudando a familias hispanohablantes a navegar sistemas digitales, tr\u00e1mites y procesos cotidianos con confianza.",
+      primaryCta: "Agenda una Sesi\u00f3n",
+      secondaryCta: "Programa una Llamada",
+      aboutTitle: "Sobre Puente",
+      aboutParagraphs: [
+        "Puente Bilingual Services fue creado para cerrar la brecha entre sistemas complejos y las personas que necesitan ayuda para navegarlos.",
+        "Muchas familias enfrentan dificultades con formularios en l\u00ednea, registros, citas y procesos digitales \u2014 no por falta de capacidad, sino porque estos sistemas no fueron dise\u00f1ados pensando en ellas.",
+        "Con una licenciatura y experiencia profesional en educaci\u00f3n superior y administraci\u00f3n, ofrezco orientaci\u00f3n biling\u00fce paciente a trav\u00e9s de llamadas telef\u00f3nicas o sesiones compartiendo pantalla.",
+        "Mi papel es simple: Ser el asesor confiable, la gu\u00eda organizada y el apoyo constante cuando las cosas se sienten abrumadoras.",
+      ],
+      servicesTitle: "Asistencia General",
+      serviceTitle: "Asistencia General",
+      servicePriceSuffix: "$25 por hora",
+      serviceBullets: [
+        "Pagos y configuraci\u00f3n de cuentas de peaje",
+        "Orientaci\u00f3n para registro vehicular",
+        "Programaci\u00f3n de citas",
+        "Completar solicitudes en l\u00ednea",
+        "Elaboraci\u00f3n y mejora de curr\u00edculum",
+        "Creaci\u00f3n de correos electr\u00f3nicos y cuentas digitales",
+        "Formularios escolares y organizaci\u00f3n de documentos",
+        "B\u00fasqueda de respuestas a preguntas generales (no legales ni m\u00e9dicas)",
+        "Explicaci\u00f3n de cartas y avisos oficiales",
+        "Orientaci\u00f3n b\u00e1sica para registro de negocios",
+      ],
+      serviceDisclaimer:
+        "Todos los servicios son informativos y de asistencia. No ofrezco asesor\u00eda legal ni m\u00e9dica.",
+      howItWorksTitle: "C\u00f3mo Funciona",
+      howItWorksSteps: [
         {
-          title: "Orientaci\u00f3n Personalizada",
-          description:
-            "Cada cliente recibe una estrategia personalizada adaptada a sus metas y circunstancias \u00fanicas.",
+          step: 1,
+          title: "Agenda una Llamada",
+          description: "Reserva un horario que te funcione.",
         },
         {
-          title: "Proceso Comprobado",
+          step: 2,
+          title: "Identificamos la Tarea",
           description:
-            "Nuestro enfoque estructurado ha ayudado a innumerables estudiantes y emprendedores a alcanzar sus metas.",
+            "Clarificamos lo que se necesita y reunimos los documentos necesarios.",
         },
         {
-          title: "Apoyo Integral",
+          step: 3,
+          title: "Lo Completamos Juntos",
           description:
-            "Desde la consulta inicial hasta los resultados finales, te acompa\u00f1amos en cada paso del camino.",
+            "Trabajamos el proceso por tel\u00e9fono o compartiendo pantalla hasta finalizarlo.",
         },
       ],
+      howItWorksTagline: "Simple. Claro. Con apoyo.",
+      trustTitle: "\u00bfPor Qu\u00e9 Confiar en M\u00ed?",
+      trustBullets: [
+        "Licenciatura Universitaria",
+        "Experiencia en Administraci\u00f3n de Educaci\u00f3n Superior",
+        "Biling\u00fce (Ingl\u00e9s/Espa\u00f1ol)",
+        "Paciente, Confidencial y Profesional",
+        "Precio claro por hora",
+      ],
+      trustGoal:
+        "Mi meta no es solo completar una tarea \u2014 sino ayudarte a sentir confianza para la pr\u00f3xima vez.",
+      upsellTitle: "Servicios Avanzados",
+      upsellSubtitle:
+        "Despu\u00e9s de atender necesidades inmediatas, tambi\u00e9n ofrezco:",
+      upsellItems: [
+        "Orientaci\u00f3n para solicitudes universitarias",
+        "Asistencia con FAFSA",
+        "Planificaci\u00f3n profesional y curr\u00edculum",
+        "Consultor\u00eda para iniciar peque\u00f1os negocios",
+        "Orientaci\u00f3n sobre estructura empresarial",
+        "Estrategia de marca y desarrollo",
+      ],
+      upsellNote:
+        "Estos servicios se estructuran por separado y se cotizan seg\u00fan el alcance.",
     },
     about: {
-      heroTitle: "Sobre PUENTE",
-      heroSubtitle: "Conectando el camino entre donde est\u00e1s y donde quieres llegar.",
+      heroTitle: "Sobre Puente",
+      heroSubtitle:
+        "Orientaci\u00f3n biling\u00fce para la vida diaria.",
       ourStory: "Nuestra Historia",
-      story1:
-        "PUENTE \u2014que significa \u00abpuente\u00bb en espa\u00f1ol\u2014 fue fundada con la convicci\u00f3n de que todos merecen acceso a orientaci\u00f3n experta al tomar las decisiones m\u00e1s importantes de su vida.",
-      story2:
-        "Ya sea que seas un estudiante navegando el proceso de admisi\u00f3n universitaria o un emprendedor listo para lanzar tu primer negocio, te brindamos el apoyo personalizado y las estrategias comprobadas que necesitas para tener \u00e9xito.",
-      story3:
-        "Nuestro equipo cuenta con a\u00f1os de experiencia en consultor\u00eda educativa y desarrollo de negocios, y nos apasiona ayudar a nuestros clientes a alcanzar su m\u00e1ximo potencial.",
+      paragraphs: [
+        "Puente Bilingual Services fue creado para cerrar la brecha entre sistemas complejos y las personas que necesitan ayuda para navegarlos.",
+        "Muchas familias enfrentan dificultades con formularios en l\u00ednea, registros, citas y procesos digitales \u2014 no por falta de capacidad, sino porque estos sistemas no fueron dise\u00f1ados pensando en ellas.",
+        "Con una licenciatura y experiencia profesional en educaci\u00f3n superior y administraci\u00f3n, ofrezco orientaci\u00f3n biling\u00fce paciente a trav\u00e9s de llamadas telef\u00f3nicas o sesiones compartiendo pantalla.",
+        "Mi papel es simple: Ser el asesor confiable, la gu\u00eda organizada y el apoyo constante cuando las cosas se sienten abrumadoras.",
+      ],
       ourMission: "Nuestra Misi\u00f3n",
       missionText:
-        "Ofrecer consultor\u00eda accesible y personalizada que empodere a estudiantes y emprendedores a dar su siguiente paso con confianza. Conectamos el camino entre la ambici\u00f3n y el logro.",
-      ctaHeading: "Trabajemos Juntos",
-      ctaButton: "Reservar una Consulta",
+        "Brindar asistencia biling\u00fce accesible que empodere a las familias hispanohablantes a navegar los sistemas cotidianos con confianza e independencia.",
+      ctaHeading: "\u00bfListo para comenzar?",
+      ctaButton: "Agenda una Sesi\u00f3n",
     },
     collegeAdvising: {
       heroTitle: "Asesor\u00eda Universitaria",
@@ -357,10 +447,10 @@ export const translations = {
     contact: {
       heroTitle: "Cont\u00e1ctanos",
       heroSubtitle:
-        "\u00bfListo para dar el siguiente paso? Env\u00edanos un mensaje o reserva una consulta.",
+        "\u00bfListo para dar el siguiente paso? Env\u00edanos un mensaje o agenda una sesi\u00f3n.",
       sendMessage: "Enviar un Mensaje",
-      bookConsultation: "Reservar una Consulta",
-      scheduleText: "Agenda una consulta gratuita en el horario que mejor te convenga.",
+      bookSession: "Agenda una Sesi\u00f3n",
+      scheduleText: "Agenda una sesi\u00f3n en el horario que mejor te convenga.",
     },
     contactForm: {
       name: "Nombre",
@@ -382,8 +472,7 @@ export const translations = {
     },
     cta: {
       defaultHeading: "\u00bfListo para comenzar?",
-      defaultButton: "Reservar una Consulta",
+      defaultButton: "Agenda una Sesi\u00f3n",
     },
   },
 } as const;
-

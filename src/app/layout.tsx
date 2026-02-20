@@ -13,18 +13,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "PUENTE Consulting Co.",
-    template: "%s | PUENTE Consulting Co.",
+    default: "Puente Bilingual Services",
+    template: "%s | Puente Bilingual Services",
   },
   description:
-    "College advising and business start-up consulting services. Bridging you to your next chapter.",
+    "Bilingual guidance for everyday life. Helping Spanish-speaking families navigate digital systems, paperwork, and everyday processes with confidence.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "PUENTE Consulting Co.",
-    title: "PUENTE Consulting Co.",
+    siteName: "Puente Bilingual Services",
+    title: "Puente Bilingual Services",
     description:
-      "College advising and business start-up consulting services. Bridging you to your next chapter.",
+      "Bilingual guidance for everyday life. Helping Spanish-speaking families navigate digital systems, paperwork, and everyday processes with confidence.",
   },
 };
 

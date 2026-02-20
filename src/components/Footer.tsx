@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold mb-2">PUENTE Consulting Co.</h3>
+            <h3 className="text-lg font-bold mb-2">Puente Bilingual Services</h3>
             <p className="text-sm text-gray-400">{t.footer.tagline}</p>
           </div>
 
@@ -22,16 +22,6 @@ export default function Footer() {
               {t.footer.quickLinks}
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link href="/college-advising" className="hover:text-white transition-colors">
-                  {t.footer.collegeAdvising}
-                </Link>
-              </li>
-              <li>
-                <Link href="/business-startup" className="hover:text-white transition-colors">
-                  {t.footer.businessStartup}
-                </Link>
-              </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   {t.footer.about}
@@ -54,15 +44,19 @@ export default function Footer() {
               <li>email@puenteconsulting.com</li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
-                  {t.footer.bookConsultation}
+                  {t.footer.bookSession}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} PUENTE Consulting Co. {t.footer.allRightsReserved}
+        {/* Disclaimer */}
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-xs text-gray-500 max-w-3xl mx-auto">
+          <p className="mb-4">{t.footer.disclaimer}</p>
+          <p>
+            &copy; {new Date().getFullYear()} Puente Bilingual Services. {t.footer.allRightsReserved}
+          </p>
         </div>
       </div>
     </footer>

@@ -31,7 +31,7 @@ export default function ContactPage() {
             {/* Calendly Embed */}
             <div>
               <h2 className="text-2xl font-bold text-primary mb-6">
-                {t.contact.bookConsultation}
+                {t.contact.bookSession}
               </h2>
               <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
                 <p className="text-body mb-4">{t.contact.scheduleText}</p>
