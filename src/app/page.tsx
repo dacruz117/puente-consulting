@@ -67,22 +67,35 @@ export default function Home() {
 
       {/* Services */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-2">
-            {t.home.serviceTitle}
-          </h2>
-          <p className="text-accent font-semibold text-lg mb-8">
-            {t.home.servicePriceSuffix}
-          </p>
-          <ul className="space-y-3 mb-8">
-            {t.home.serviceBullets.map((bullet, idx) => (
-              <li key={idx} className="flex items-start gap-3 text-body">
-                <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
-                <span>{bullet}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-gray-500 italic">{t.home.serviceDisclaimer}</p>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-primary mb-2">
+                {t.home.serviceTitle}
+              </h2>
+              <p className="text-accent font-semibold text-lg mb-8">
+                {t.home.servicePriceSuffix}
+              </p>
+              <ul className="space-y-3 mb-8">
+                {t.home.serviceBullets.map((bullet, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-body">
+                    <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-gray-500 italic">{t.home.serviceDisclaimer}</p>
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="/man_smiling.webp"
+                alt="Professional assistance"
+                width={480}
+                height={360}
+                className="rounded-xl shadow-lg object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -113,21 +126,34 @@ export default function Home() {
 
       {/* Why Trust Me */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-8">
-            {t.home.trustTitle}
-          </h2>
-          <ul className="space-y-3 mb-8">
-            {t.home.trustBullets.map((bullet, idx) => (
-              <li key={idx} className="flex items-start gap-3 text-body">
-                <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
-                <span>{bullet}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-primary font-medium italic border-l-4 border-accent pl-4">
-            {t.home.trustGoal}
-          </p>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/handshake.webp"
+                alt="Trust and professionalism"
+                width={480}
+                height={320}
+                className="rounded-xl shadow-lg object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-primary mb-8">
+                {t.home.trustTitle}
+              </h2>
+              <ul className="space-y-3 mb-8">
+                {t.home.trustBullets.map((bullet, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-body">
+                    <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-primary font-medium italic border-l-4 border-accent pl-4">
+                {t.home.trustGoal}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

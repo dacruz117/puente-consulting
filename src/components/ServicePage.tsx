@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -32,8 +33,15 @@ export default function ServicePage({
   return (
     <>
       {/* Page Hero */}
-      <section className="bg-primary text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="relative bg-primary text-white py-20 overflow-hidden">
+        <Image
+          src="/austin-skyline.jpg"
+          alt="Austin skyline"
+          fill
+          className="object-cover object-center opacity-20"
+          priority
+        />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{heroTitle}</h1>
           <p className="text-lg text-gray-300">{heroDescription}</p>
         </div>

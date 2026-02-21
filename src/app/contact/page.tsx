@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -9,8 +10,15 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="relative bg-primary text-white py-20 overflow-hidden">
+        <Image
+          src="/austin-skyline.jpg"
+          alt="Austin skyline"
+          fill
+          className="object-cover object-center opacity-20"
+          priority
+        />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.contact.heroTitle}</h1>
           <p className="text-lg text-gray-300">{t.contact.heroSubtitle}</p>
         </div>
@@ -28,22 +36,32 @@ export default function ContactPage() {
               <ContactForm />
             </div>
 
-            {/* Calendly Embed */}
+            {/* Calendly + image */}
             <div>
               <h2 className="text-2xl font-bold text-primary mb-6">
                 {t.contact.bookSession}
               </h2>
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <p className="text-body mb-4">{t.contact.scheduleText}</p>
-                <div className="aspect-[3/4] w-full">
-                  <iframe
-                    src="https://calendly.com/YOUR_CALENDLY_URL"
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    title="Schedule a consultation"
-                    className="rounded-lg"
+              <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src="/laptop-professional.jpg"
+                    alt="Professional at laptop"
+                    fill
+                    className="object-cover object-center"
                   />
+                </div>
+                <div className="p-8">
+                  <p className="text-body mb-4">{t.contact.scheduleText}</p>
+                  <div className="aspect-[3/4] w-full">
+                    <iframe
+                      src="https://calendly.com/YOUR_CALENDLY_URL"
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      title="Schedule a consultation"
+                      className="rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
