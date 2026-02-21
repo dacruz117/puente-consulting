@@ -6,6 +6,7 @@ export const translations = {
       home: "Home",
       collegeAdvising: "College Advising",
       businessStartup: "Business Start-Up",
+      translationServices: "Translation Services",
       about: "About",
       contact: "Contact",
       bookSession: "Book a Session",
@@ -18,6 +19,7 @@ export const translations = {
       allRightsReserved: "All rights reserved.",
       about: "About",
       contact: "Contact",
+      translationServices: "Translation Services",
       disclaimer:
         "Puente Bilingual Services provides assistance and informational guidance only. We do not provide legal, financial, immigration, or medical advice. Clients are responsible for final decisions and submissions.",
     },
@@ -207,6 +209,53 @@ export const translations = {
         },
       ],
     },
+    translationServices: {
+      heroTitle: "Clear, Accurate, Bilingual Translation Support",
+      heroSubtitle:
+        "Helping individuals and families understand documents, emails, and everyday communications with confidence.",
+      primaryCta: "Request Translation",
+      secondaryCta: "Book a Translation Session",
+      overviewTagline: "Language should never be a barrier to opportunity.",
+      overviewParagraphs: [
+        "Puente Bilingual Services provides general English\u2013Spanish translation support for everyday documents and communications. Whether you need help understanding an official letter or translating a form, I provide clear and accurate language assistance.",
+        "All translations are completed with professionalism, confidentiality, and attention to context.",
+      ],
+      servicesTitle: "General Translation Services Include:",
+      serviceBullets: [
+        "Personal letters",
+        "Emails and digital communications",
+        "School documents",
+        "Employment-related documents",
+        "Resumes and cover letters",
+        "Government correspondence (non-legal interpretation)",
+        "Business communications",
+        "Application forms",
+        "Website content translation",
+        "Live phone interpretation for appointments (non-legal, non-medical)",
+      ],
+      servicesPricingNote:
+        "Pricing available per hour or per document depending on scope.",
+      pricingTitle: "Simple & Transparent Pricing",
+      pricingBullets: [
+        "$25/hour for live assistance",
+        "Per-document pricing available upon review",
+        "Large projects quoted individually",
+      ],
+      pricingEstimate:
+        "Before starting any work, you will receive a clear estimate.",
+      pricingTagline: "No hidden fees. No surprises.",
+      confidentialityTitle: "Your Privacy Matters",
+      confidentialityParagraphs: [
+        "Your documents and information are treated with strict confidentiality.",
+        "All materials are handled respectfully and securely. Information is never shared with third parties.",
+      ],
+      disclaimerTitle: "Important Disclaimer",
+      disclaimerText:
+        "Puente Bilingual Services provides general translation and language assistance only. We are not certified court interpreters and do not provide legal, immigration, financial, or medical advice. Translations provided are informal unless otherwise agreed upon in writing. Clients are responsible for verifying whether certified translations are required for official submissions.",
+      ctaHeading: "Have a document you need help with?",
+      ctaSubheading: "Let\u2019s make it clear and understandable.",
+      ctaButton: "Book your translation session today.",
+    },
     contact: {
       heroTitle: "Get in Touch",
       heroSubtitle:
@@ -243,6 +292,7 @@ export const translations = {
       home: "Inicio",
       collegeAdvising: "Asesor\u00eda Universitaria",
       businessStartup: "Inicio de Negocios",
+      translationServices: "Servicios de Traducci\u00f3n",
       about: "Nosotros",
       contact: "Contacto",
       bookSession: "Agenda una Sesi\u00f3n",
@@ -255,6 +305,7 @@ export const translations = {
       allRightsReserved: "Todos los derechos reservados.",
       about: "Nosotros",
       contact: "Contacto",
+      translationServices: "Servicios de Traducci\u00f3n",
       disclaimer:
         "Puente Bilingual Services ofrece asistencia y orientaci\u00f3n informativa \u00fanicamente. No brindamos asesor\u00eda legal, financiera, migratoria ni m\u00e9dica. Los clientes son responsables de decisiones y env\u00edos finales.",
     },
@@ -443,6 +494,53 @@ export const translations = {
             "Trabajamos a tu lado para ejecutar el plan \u2014construyendo tu base, refinando tu estrategia y prepar\u00e1ndote para el lanzamiento.",
         },
       ],
+    },
+    translationServices: {
+      heroTitle: "Servicios de Traducci\u00f3n Biling\u00fce Claros y Confiables",
+      heroSubtitle:
+        "Ayudando a individuos y familias a comprender documentos, correos electr\u00f3nicos y comunicaciones cotidianas con confianza.",
+      primaryCta: "Solicitar Traducci\u00f3n",
+      secondaryCta: "Agendar Sesi\u00f3n",
+      overviewTagline: "El idioma nunca debe ser una barrera para las oportunidades.",
+      overviewParagraphs: [
+        "Puente Bilingual Services ofrece apoyo general de traducci\u00f3n Ingl\u00e9s\u2013Espa\u00f1ol para documentos y comunicaciones cotidianas. Ya sea que necesite ayuda para entender una carta oficial o traducir un formulario, brindo asistencia clara y precisa.",
+        "Todas las traducciones se realizan con profesionalismo, confidencialidad y atenci\u00f3n al contexto.",
+      ],
+      servicesTitle: "Servicios de Traducci\u00f3n Incluyen:",
+      serviceBullets: [
+        "Cartas personales",
+        "Correos electr\u00f3nicos y comunicaciones digitales",
+        "Documentos escolares",
+        "Documentos relacionados con empleo",
+        "Curr\u00edculums y cartas de presentaci\u00f3n",
+        "Correspondencia gubernamental (sin interpretaci\u00f3n legal)",
+        "Comunicaciones comerciales",
+        "Formularios de solicitud",
+        "Traducci\u00f3n de contenido web",
+        "Interpretaci\u00f3n telef\u00f3nica en citas (no legal ni m\u00e9dica)",
+      ],
+      servicesPricingNote:
+        "Precios disponibles por hora o por documento seg\u00fan el alcance.",
+      pricingTitle: "Precios Claros y Transparentes",
+      pricingBullets: [
+        "$25 por hora para asistencia en vivo",
+        "Precio por documento disponible tras revisi\u00f3n",
+        "Proyectos grandes se cotizan individualmente",
+      ],
+      pricingEstimate:
+        "Antes de comenzar cualquier trabajo, recibir\u00e1 un estimado claro.",
+      pricingTagline: "Sin costos ocultos. Sin sorpresas.",
+      confidentialityTitle: "Su Privacidad Importa",
+      confidentialityParagraphs: [
+        "Sus documentos e informaci\u00f3n se manejan con estricta confidencialidad.",
+        "Todo el material se trata con respeto y seguridad. La informaci\u00f3n nunca se comparte con terceros.",
+      ],
+      disclaimerTitle: "Aviso Importante",
+      disclaimerText:
+        "Puente Bilingual Services ofrece servicios generales de traducci\u00f3n y asistencia ling\u00fc\u00edstica \u00fanicamente. No somos int\u00e9rpretes certificados de corte ni brindamos asesor\u00eda legal, migratoria, financiera o m\u00e9dica. Las traducciones proporcionadas son informales a menos que se acuerde lo contrario por escrito. El cliente es responsable de verificar si se requiere una traducci\u00f3n certificada para presentaciones oficiales.",
+      ctaHeading: "\u00bfTiene un documento con el que necesita ayuda?",
+      ctaSubheading: "Hag\u00e1moslo claro y comprensible.",
+      ctaButton: "Agende su sesi\u00f3n hoy mismo.",
     },
     contact: {
       heroTitle: "Cont\u00e1ctanos",

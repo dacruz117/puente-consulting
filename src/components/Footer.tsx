@@ -23,6 +23,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
+                <Link href="/translation-services" className="hover:text-white transition-colors">
+                  {t.footer.translationServices}
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   {t.footer.about}
                 </Link>
