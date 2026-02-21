@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -10,8 +11,15 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary text-white py-24">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="relative bg-primary text-white py-24 overflow-hidden">
+        <Image
+          src="/austin-skyline.jpg"
+          alt="Austin skyline"
+          fill
+          className="object-cover object-center opacity-20"
+          priority
+        />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             {t.home.heroTitle}
           </h1>
