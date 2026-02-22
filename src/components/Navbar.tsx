@@ -23,16 +23,14 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="bg-white rounded-lg px-4 py-2">
-            <Image
-              src="/logo.png"
-              alt="Puente Consulting"
-              width={220}
-              height={80}
-              className="object-contain h-20 w-auto"
-              priority
-            />
-          </div>
+          <Image
+            src="/logo-transparent.png"
+            alt="Puente Consulting"
+            width={260}
+            height={87}
+            className="object-contain h-16 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

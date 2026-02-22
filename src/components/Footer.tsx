@@ -13,13 +13,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="bg-white rounded-lg inline-block px-3 py-2 mb-3">
+            <div className="mb-3">
               <Image
-                src="/logo.png"
+                src="/logo-transparent.png"
                 alt="Puente Consulting"
-                width={130}
-                height={48}
-                className="object-contain h-10 w-auto"
+                width={200}
+                height={67}
+                className="object-contain h-14 w-auto"
               />
             </div>
             <p className="text-sm text-gray-400">{t.footer.tagline}</p>
