@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import CheckIcon from "@/components/CheckIcon";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function TranslationServicesPage() {
@@ -75,7 +76,7 @@ export default function TranslationServicesPage() {
           <ul className="space-y-3 mb-6">
             {ts.serviceBullets.map((bullet, idx) => (
               <li key={idx} className="flex items-start gap-3 text-body">
-                <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
+                <CheckIcon />
                 <span>{bullet}</span>
               </li>
             ))}
@@ -91,7 +92,7 @@ export default function TranslationServicesPage() {
           <ul className="space-y-3 mb-6">
             {ts.pricingBullets.map((bullet, idx) => (
               <li key={idx} className="flex items-start gap-3 text-body">
-                <span className="text-accent mt-1 flex-shrink-0">&#10003;</span>
+                <CheckIcon />
                 <span>{bullet}</span>
               </li>
             ))}
