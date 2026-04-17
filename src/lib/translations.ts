@@ -166,47 +166,75 @@ export const translations = {
     businessStartup: {
       heroTitle: "Business Start-Up",
       heroDescription:
-        "Turn your business idea into reality with strategic guidance and hands-on support.",
-      services: [
+        "Turn your business idea into reality with a proven 109-step system covering every stage — from legal setup and branding to sales, finances, and growth.",
+      seePricingHeading: "View our full services & packages",
+      seePricingButton: "See Pricing →",
+      stages: [
         {
-          title: "Business Plan Development",
+          title: "Stage 1 — Idea & Validation",
           description:
-            "We help you craft a clear, actionable business plan that defines your vision, market, and path to profitability.",
+            "Business concept defined, market researched, feasibility confirmed.",
         },
         {
-          title: "Market Research & Strategy",
+          title: "Stage 2 — Legal & Structure",
           description:
-            "Understand your target market, competition, and positioning to make informed decisions from day one.",
+            "Entity formed, EIN obtained, licenses secured, bank account open.",
         },
         {
-          title: "Launch Strategy",
+          title: "Stage 3 — Brand & Identity",
           description:
-            "From branding to go-to-market, we guide you through the critical steps to launch with confidence.",
+            "Name, logo, tagline, brand colors, business cards, and elevator pitch done.",
         },
         {
-          title: "Operations & Growth",
+          title: "Stage 4 — Digital & Online Presence",
           description:
-            "Set up the systems, processes, and strategies you need to run and scale your business effectively.",
+            "Domain, website, email, social media profiles, and Google Business set up.",
+        },
+        {
+          title: "Stage 5 — Operations & Systems",
+          description:
+            "Phone, CRM, invoicing, templates, insurance, and accounting software in place.",
+        },
+        {
+          title: "Stage 6 — Sales & Marketing",
+          description:
+            "Sales process defined, outreach started, first prospects contacted.",
+        },
+        {
+          title: "Stage 7 — Financial Controls",
+          description:
+            "Bookkeeping active, pricing set, cash flow tracked, tax prep started.",
+        },
+        {
+          title: "Stage 8 — Growth & Scale",
+          description:
+            "First revenue earned, team or contractors hired, systems being optimized.",
         },
       ],
       processSteps: [
         {
           step: 1,
-          title: "Discovery Call",
+          title: "Assess Your Starting Point",
           description:
-            "We start with a free consultation to understand your business idea, goals, and where you need the most support.",
+            "We review where you are and what you need to move forward.",
         },
         {
           step: 2,
-          title: "Custom Plan",
+          title: "Map the Stages You Need",
           description:
-            "We build a tailored roadmap covering your business model, market strategy, and launch timeline.",
+            "We identify which of the 8 stages apply to your situation and build your roadmap.",
         },
         {
           step: 3,
-          title: "Execution & Support",
+          title: "Execute Stage by Stage",
           description:
-            "We work alongside you to execute the plan \u2014 building your foundation, refining your strategy, and preparing for launch.",
+            "We work through each stage together with structured sessions and ongoing support.",
+        },
+        {
+          step: 4,
+          title: "Launch with Confidence",
+          description:
+            "You finish with a running business — not just a well-planned idea.",
         },
       ],
     },
