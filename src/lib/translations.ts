@@ -481,47 +481,75 @@ export const translations = {
     businessStartup: {
       heroTitle: "Inicio de Negocios",
       heroDescription:
-        "Convierte tu idea de negocio en realidad con orientaci\u00f3n estrat\u00e9gica y apoyo pr\u00e1ctico.",
-      services: [
+        "Convierte tu idea de negocio en realidad con un sistema probado de 109 pasos que cubre cada etapa — desde la estructura legal y la marca hasta las ventas, las finanzas y el crecimiento.",
+      seePricingHeading: "Ve nuestros servicios y paquetes completos",
+      seePricingButton: "Ver Precios →",
+      stages: [
         {
-          title: "Desarrollo de Plan de Negocios",
+          title: "Etapa 1 — Idea y Validación",
           description:
-            "Te ayudamos a crear un plan de negocios claro y ejecutable que define tu visi\u00f3n, mercado y camino hacia la rentabilidad.",
+            "Concepto de negocio definido, mercado investigado, factibilidad confirmada.",
         },
         {
-          title: "Investigaci\u00f3n de Mercado y Estrategia",
+          title: "Etapa 2 — Legal y Estructura",
           description:
-            "Comprende tu mercado objetivo, competencia y posicionamiento para tomar decisiones informadas desde el primer d\u00eda.",
+            "Entidad formada, EIN obtenido, licencias aseguradas, cuenta bancaria abierta.",
         },
         {
-          title: "Estrategia de Lanzamiento",
+          title: "Etapa 3 — Marca e Identidad",
           description:
-            "Desde el branding hasta el go-to-market, te guiamos en los pasos cr\u00edticos para lanzar con confianza.",
+            "Nombre, logo, eslog\u00e1n, colores de marca, tarjetas de presentaci\u00f3n y discurso de presentaci\u00f3n listos.",
         },
         {
-          title: "Operaciones y Crecimiento",
+          title: "Etapa 4 — Presencia Digital y en Línea",
           description:
-            "Establece los sistemas, procesos y estrategias que necesitas para operar y escalar tu negocio de manera efectiva.",
+            "Dominio, sitio web, correo, perfiles de redes sociales y Google Business configurados.",
+        },
+        {
+          title: "Etapa 5 — Operaciones y Sistemas",
+          description:
+            "Tel\u00e9fono, CRM, facturaci\u00f3n, plantillas, seguro y software contable en su lugar.",
+        },
+        {
+          title: "Etapa 6 — Ventas y Marketing",
+          description:
+            "Proceso de ventas definido, difusi\u00f3n iniciada, primeros prospectos contactados.",
+        },
+        {
+          title: "Etapa 7 — Control Financiero",
+          description:
+            "Contabilidad activa, precios establecidos, flujo de caja monitoreado, preparaci\u00f3n fiscal iniciada.",
+        },
+        {
+          title: "Etapa 8 — Crecimiento y Escalabilidad",
+          description:
+            "Primeros ingresos obtenidos, equipo o contratistas contratados, sistemas en optimizaci\u00f3n.",
         },
       ],
       processSteps: [
         {
           step: 1,
-          title: "Llamada de Descubrimiento",
+          title: "Evaluamos tu punto de partida",
           description:
-            "Comenzamos con una consulta gratuita para entender tu idea de negocio, metas y d\u00f3nde necesitas m\u00e1s apoyo.",
+            "Revisamos en qu\u00e9 etapa te encuentras y qu\u00e9 necesitas para avanzar.",
         },
         {
           step: 2,
-          title: "Plan Personalizado",
+          title: "Mapeamos las etapas que necesitas",
           description:
-            "Creamos una hoja de ruta personalizada que cubre tu modelo de negocio, estrategia de mercado y cronograma de lanzamiento.",
+            "Identificamos cu\u00e1les de las 8 etapas aplican a tu situaci\u00f3n y construimos tu hoja de ruta.",
         },
         {
           step: 3,
-          title: "Ejecuci\u00f3n y Apoyo",
+          title: "Lo ejecutamos etapa por etapa",
           description:
-            "Trabajamos a tu lado para ejecutar el plan \u2014construyendo tu base, refinando tu estrategia y prepar\u00e1ndote para el lanzamiento.",
+            "Trabajamos juntos a trav\u00e9s de cada etapa con sesiones estructuradas y apoyo continuo.",
+        },
+        {
+          step: 4,
+          title: "Lanzas con confianza",
+          description:
+            "Terminas con un negocio operativo \u2014 no solo una idea bien planificada.",
         },
       ],
     },
