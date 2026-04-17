@@ -315,6 +315,152 @@ export const translations = {
       defaultHeading: "Ready to get started?",
       defaultButton: "Book a Session",
     },
+    services: {
+      heroTitle: "Let's build your business the right way.",
+      heroSubtitle:
+        "I help first-time and aspiring business owners go from idea to open for business — with a proven 109-step system covering every stage: legal setup, branding, website, sales, finances, and growth.",
+      packagesTitle: "Choose Your Package",
+      mostPopular: "Most Popular",
+      packageCta: "Get Started",
+      foundingNote:
+        "Founding client pricing — limited to 3 spots. Rate increases once spots are filled.",
+      packages: [
+        {
+          name: "Inform Me",
+          price: "$97",
+          duration: "one-time",
+          features: [
+            "Full 109-task startup checklist",
+            "All 8 launch stages",
+            "Tool & vendor recommendations",
+            "30-day email support",
+            "Self-paced",
+          ],
+        },
+        {
+          name: "Walk Me Through It",
+          price: "$297",
+          duration: "3 sessions over 90 days",
+          features: [
+            "Everything in Inform Me",
+            "3 × 60-min strategy sessions",
+            "Personalized stage-by-stage plan",
+            "Sales process + outreach help",
+            "Priority email between sessions",
+          ],
+        },
+        {
+          name: "Done With You",
+          price: "$750",
+          duration: "60-day co-pilot program",
+          features: [
+            "Everything in Walk Me Through It",
+            "Weekly 1:1 sessions (8 total)",
+            "Brand + digital presence built",
+            "Financial model & pricing setup",
+            "First proposal reviewed & coached",
+          ],
+        },
+      ],
+      alaCarte: {
+        title: "Only need help with one piece? Pick your stage.",
+        bundleNote: "Bundle 3 or more stages and save 15%.",
+        stages: [
+          {
+            name: "Idea & Validation",
+            items: [
+              { label: "Business concept + target market session", price: "$97" },
+              { label: "Competitive landscape research report", price: "$147" },
+              { label: "Customer discovery interview framework", price: "$97" },
+            ],
+            fullLabel: "Full Stage 1 advisory",
+            fullPrice: "$247",
+          },
+          {
+            name: "Legal & Structure",
+            items: [
+              { label: "Entity selection + formation walkthrough", price: "$147" },
+              { label: "Business banking + EIN setup guide", price: "$97" },
+              { label: "License & permit research", price: "$127" },
+            ],
+            fullLabel: "Full Stage 2 advisory",
+            fullPrice: "$297",
+          },
+          {
+            name: "Brand & Identity",
+            items: [
+              { label: "Brand positioning + audience persona", price: "$97" },
+              { label: "Logo brief + vendor sourcing", price: "$127" },
+              { label: "Brand style guide", price: "$147" },
+            ],
+            fullLabel: "Full Stage 3 advisory",
+            fullPrice: "$247",
+          },
+          {
+            name: "Digital & Online Presence",
+            items: [
+              { label: "Website copy framework (5 pages)", price: "$197" },
+              { label: "Google Business + LinkedIn optimization", price: "$127" },
+              { label: "Full digital presence audit + plan", price: "$167" },
+            ],
+            fullLabel: "Full Stage 4 advisory",
+            fullPrice: "$297",
+          },
+          {
+            name: "Operations & Systems",
+            items: [
+              { label: "CRM setup + email template kit", price: "$147" },
+              { label: "Contract + invoice template build", price: "$127" },
+              { label: "Operations systems audit + recommendations", price: "$167" },
+            ],
+            fullLabel: "Full Stage 5 advisory",
+            fullPrice: "$297",
+          },
+          {
+            name: "Sales & Marketing",
+            items: [
+              { label: "Sales process map + outreach sequence", price: "$197" },
+              { label: "Prospect list build (50 targets)", price: "$147" },
+              { label: "Proposal / pitch deck template", price: "$147" },
+            ],
+            fullLabel: "Full Stage 6 advisory",
+            fullPrice: "$347",
+          },
+          {
+            name: "Financial Controls",
+            items: [
+              { label: "Financial model + break-even analysis", price: "$197" },
+              { label: "Cash flow tracker + 90-day forecast", price: "$167" },
+              { label: "Bookkeeping system setup", price: "$147" },
+            ],
+            fullLabel: "Full Stage 7 advisory",
+            fullPrice: "$347",
+          },
+          {
+            name: "Growth & Scale",
+            items: [
+              { label: "SOP creation (5 core processes)", price: "$247" },
+              { label: "Referral program + partner strategy", price: "$197" },
+              { label: "90-day growth review session", price: "$197" },
+            ],
+            fullLabel: "Full Stage 8 advisory",
+            fullPrice: "$347",
+          },
+        ],
+      },
+      howItWorks: {
+        title: "How It Works",
+        steps: [
+          "We assess where you are",
+          "You get your custom roadmap",
+          "We work through it together",
+          "You launch with confidence",
+        ],
+      },
+      ctaHeading:
+        "Ready to start? Contact us to claim your founding client spot.",
+      ctaButton: "Book a Free Intro Call",
+    },
   },
   es: {
     nav: {
