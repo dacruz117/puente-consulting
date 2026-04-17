@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import CTABanner from "@/components/CTABanner";
+import CTABanner, { type CTABannerProps } from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface Service {
@@ -20,6 +20,7 @@ interface ServicePageProps {
   heroDescription: string;
   services: readonly Service[];
   processSteps: readonly ProcessStep[];
+  ctaBannerProps?: CTABannerProps;
 }
 
 export default function ServicePage({
@@ -27,6 +28,7 @@ export default function ServicePage({
   heroDescription,
   services,
   processSteps,
+  ctaBannerProps,
 }: ServicePageProps) {
   const { t } = useLanguage();
 
@@ -94,7 +96,7 @@ export default function ServicePage({
       </section>
 
       {/* CTA */}
-      <CTABanner />
+      <CTABanner {...ctaBannerProps} />
     </>
   );
 }

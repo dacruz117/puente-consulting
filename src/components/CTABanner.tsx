@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
-interface CTABannerProps {
+export interface CTABannerProps {
   heading?: string;
   buttonText?: string;
   href?: string;

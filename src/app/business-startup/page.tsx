@@ -10,8 +10,13 @@ export default function BusinessStartupPage() {
     <ServicePage
       heroTitle={t.businessStartup.heroTitle}
       heroDescription={t.businessStartup.heroDescription}
-      services={t.businessStartup.services}
+      services={t.businessStartup.stages}
       processSteps={t.businessStartup.processSteps}
+      ctaBannerProps={{
+        heading: t.businessStartup.seePricingHeading,
+        buttonText: t.businessStartup.seePricingButton,
+        href: "/services",
+      }}
     />
   );
 }
