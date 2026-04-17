@@ -776,5 +776,151 @@ export const translations = {
       defaultHeading: "\u00bfListo para comenzar?",
       defaultButton: "Agenda una Sesi\u00f3n",
     },
+    services: {
+      heroTitle: "Construyamos tu negocio de la manera correcta.",
+      heroSubtitle:
+        "Ayudo a emprendedores y aspirantes a due\u00f1os de negocios a pasar de la idea a la apertura — con un sistema probado de 109 pasos que cubre cada etapa: estructura legal, marca, sitio web, ventas, finanzas y crecimiento.",
+      packagesTitle: "Elige Tu Paquete",
+      mostPopular: "M\u00e1s Popular",
+      packageCta: "Comenzar",
+      foundingNote:
+        "Precios de cliente fundador — limitado a 3 cupos. El precio aumenta una vez que los cupos se llenen.",
+      packages: [
+        {
+          name: "Inf\u00f3rmame",
+          price: "$97",
+          duration: "pago \u00fanico",
+          features: [
+            "Lista completa de 109 tareas de inicio",
+            "Las 8 etapas de lanzamiento",
+            "Recomendaciones de herramientas y proveedores",
+            "Apoyo por correo durante 30 d\u00edas",
+            "A tu propio ritmo",
+          ],
+        },
+        {
+          name: "Gu\u00edame Paso a Paso",
+          price: "$297",
+          duration: "3 sesiones en 90 d\u00edas",
+          features: [
+            "Todo lo incluido en Inf\u00f3rmame",
+            "3 sesiones de estrategia de 60 min",
+            "Plan personalizado por etapa",
+            "Ayuda con el proceso de ventas y difusi\u00f3n",
+            "Correo prioritario entre sesiones",
+          ],
+        },
+        {
+          name: "Lo Hacemos Juntos",
+          price: "$750",
+          duration: "programa de 60 d\u00edas",
+          features: [
+            "Todo lo incluido en Gu\u00edame Paso a Paso",
+            "Sesiones semanales 1:1 (8 en total)",
+            "Marca y presencia digital constru\u00eddas",
+            "Modelo financiero y estructura de precios",
+            "Primera propuesta revisada y asesorada",
+          ],
+        },
+      ],
+      alaCarte: {
+        title: "\u00bfSolo necesitas ayuda con una parte? Elige tu etapa.",
+        bundleNote: "Al agrupar 3 o m\u00e1s etapas, ahorras un 15%.",
+        stages: [
+          {
+            name: "Idea y Validaci\u00f3n",
+            items: [
+              { label: "Sesi\u00f3n de concepto de negocio + mercado objetivo", price: "$97" },
+              { label: "Informe de an\u00e1lisis competitivo", price: "$147" },
+              { label: "Marco de entrevista de descubrimiento de clientes", price: "$97" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 1",
+            fullPrice: "$247",
+          },
+          {
+            name: "Legal y Estructura",
+            items: [
+              { label: "Selecci\u00f3n de entidad + orientaci\u00f3n de formaci\u00f3n", price: "$147" },
+              { label: "Gu\u00eda de banca empresarial + EIN", price: "$97" },
+              { label: "Investigaci\u00f3n de licencias y permisos", price: "$127" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 2",
+            fullPrice: "$297",
+          },
+          {
+            name: "Marca e Identidad",
+            items: [
+              { label: "Posicionamiento de marca + perfil de audiencia", price: "$97" },
+              { label: "Brief de logo + b\u00fasqueda de proveedores", price: "$127" },
+              { label: "Gu\u00eda de estilo de marca", price: "$147" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 3",
+            fullPrice: "$247",
+          },
+          {
+            name: "Presencia Digital y en L\u00ednea",
+            items: [
+              { label: "Marco de contenido web (5 p\u00e1ginas)", price: "$197" },
+              { label: "Optimizaci\u00f3n de Google Business + LinkedIn", price: "$127" },
+              { label: "Auditor\u00eda y plan de presencia digital", price: "$167" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 4",
+            fullPrice: "$297",
+          },
+          {
+            name: "Operaciones y Sistemas",
+            items: [
+              { label: "Configuraci\u00f3n de CRM + kit de plantillas de correo", price: "$147" },
+              { label: "Creaci\u00f3n de contratos y plantillas de factura", price: "$127" },
+              { label: "Auditor\u00eda de sistemas operativos + recomendaciones", price: "$167" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 5",
+            fullPrice: "$297",
+          },
+          {
+            name: "Ventas y Marketing",
+            items: [
+              { label: "Mapa de proceso de ventas + secuencia de difusi\u00f3n", price: "$197" },
+              { label: "Lista de 50 prospectos objetivo", price: "$147" },
+              { label: "Plantilla de propuesta / presentaci\u00f3n", price: "$147" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 6",
+            fullPrice: "$347",
+          },
+          {
+            name: "Control Financiero",
+            items: [
+              { label: "Modelo financiero + an\u00e1lisis de punto de equilibrio", price: "$197" },
+              { label: "Rastreador de flujo de caja + pron\u00f3stico a 90 d\u00edas", price: "$167" },
+              { label: "Configuraci\u00f3n de sistema de contabilidad", price: "$147" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 7",
+            fullPrice: "$347",
+          },
+          {
+            name: "Crecimiento y Escalabilidad",
+            items: [
+              { label: "Creaci\u00f3n de SOPs (5 procesos principales)", price: "$247" },
+              { label: "Programa de referidos + estrategia de socios", price: "$197" },
+              { label: "Sesi\u00f3n de revisi\u00f3n de crecimiento a 90 d\u00edas", price: "$197" },
+            ],
+            fullLabel: "Asesor\u00eda completa Etapa 8",
+            fullPrice: "$347",
+          },
+        ],
+      },
+      howItWorks: {
+        title: "C\u00f3mo Funciona",
+        steps: [
+          "Evaluamos d\u00f3nde est\u00e1s",
+          "Recibes tu hoja de ruta personalizada",
+          "Lo trabajamos juntos",
+          "Lanzas con confianza",
+        ],
+      },
+      ctaHeading:
+        "\u00bfListo para comenzar? Cont\u00e1ctanos para reservar tu cupo de cliente fundador.",
+      ctaButton: "Agenda una Llamada Gratuita",
+    },
   },
 } as const;
