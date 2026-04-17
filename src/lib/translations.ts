@@ -292,6 +292,7 @@ export const translations = {
       sendMessage: "Send a Message",
       bookSession: "Book a Session",
       scheduleText: "Schedule a session at a time that works for you.",
+      emailUs: "Or email us directly at",
     },
     contactForm: {
       name: "Name",
@@ -753,6 +754,7 @@ export const translations = {
       sendMessage: "Enviar un Mensaje",
       bookSession: "Agenda una Sesi\u00f3n",
       scheduleText: "Agenda una sesi\u00f3n en el horario que mejor te convenga.",
+      emailUs: "O escr\u00edbenos directamente a",
     },
     contactForm: {
       name: "Nombre",

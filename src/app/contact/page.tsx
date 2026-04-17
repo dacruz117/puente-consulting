@@ -33,6 +33,15 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-primary mb-6">
                 {t.contact.sendMessage}
               </h2>
+              <p className="text-body mb-4">
+                {t.contact.emailUs}{" "}
+                <a
+                  href="mailto:info@puenteco.org"
+                  className="text-accent hover:underline font-medium"
+                >
+                  info@puenteco.org
+                </a>
+              </p>
               <ContactForm />
             </div>
 
@@ -52,16 +61,16 @@ export default function ContactPage() {
                 </div>
                 <div className="p-8">
                   <p className="text-body mb-4">{t.contact.scheduleText}</p>
-                  <div className="aspect-[3/4] w-full">
-                    <iframe
-                      src="https://calendly.com/YOUR_CALENDLY_URL"
-                      width="100%"
-                      height="100%"
-                      frameBorder="0"
-                      title="Schedule a consultation"
-                      className="rounded-lg"
-                    />
-                  </div>
+                  <div
+                    className="calendly-inline-widget"
+                    data-url="https://calendly.com/puenteco-info"
+                    style={{ minWidth: "320px", height: "700px" }}
+                  />
+                  <script
+                    type="text/javascript"
+                    src="https://assets.calendly.com/assets/external/widget.js"
+                    async
+                  />
                 </div>
               </div>
             </div>

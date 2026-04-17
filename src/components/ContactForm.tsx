@@ -13,12 +13,15 @@ export default function ContactForm() {
     const formData = new FormData(form);
 
     try {
-      await fetch("/", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        body: formData,
       });
-      setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        alert(t.contactForm.errorMessage);
+      }
     } catch {
       alert(t.contactForm.errorMessage);
     }
@@ -35,13 +38,12 @@ export default function ContactForm() {
 
   return (
     <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
       onSubmit={handleSubmit}
       className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 space-y-6"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+      <input type="hidden" name="subject" value="New Contact Form Submission — Puente Consulting" />
+      <input type="hidden" name="from_name" value="Puente Consulting Website" />
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-primary mb-1">
