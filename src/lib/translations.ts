@@ -3,13 +3,11 @@ export type Language = "en" | "es";
 export const translations = {
   en: {
     nav: {
-      home: "Home",
       collegeAdvising: "College Advising",
       businessStartup: "Business Start-Up",
       pricing: "Pricing",
       translationServices: "Translations",
       about: "About",
-      contact: "Contact",
       bookSession: "Book a Session",
       langButtonToEs: "Español",
       langButtonToEn: "English",
@@ -717,13 +715,11 @@ export const translations = {
   },
   es: {
     nav: {
-      home: "Inicio",
       collegeAdvising: "Asesor\u00eda Universitaria",
       businessStartup: "Inicio de Negocios",
       pricing: "Precios",
       translationServices: "Traducciones",
       about: "Nosotros",
-      contact: "Contacto",
       bookSession: "Agenda una Sesi\u00f3n",
       langButtonToEs: "Español",
       langButtonToEn: "English",
