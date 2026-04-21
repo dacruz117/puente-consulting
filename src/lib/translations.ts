@@ -1083,8 +1083,8 @@ export const translations = {
       academic: {
         packages: [
           {
-            name: "Show Me the Map",
-            nameAlt: "Mu\u00e9strame el Camino",
+            name: "Mu\u00e9strame el Camino",
+            nameAlt: "Show Me the Map",
             price: "$79",
             duration: "Pago \u00fanico \u2014 a tu ritmo",
             features: [
@@ -1096,8 +1096,8 @@ export const translations = {
             ],
           },
           {
-            name: "Walk Me Through It",
-            nameAlt: "Gu\u00edame Paso a Paso",
+            name: "Gu\u00edame Paso a Paso",
+            nameAlt: "Walk Me Through It",
             price: "$197",
             duration: "3 sesiones / 90 d\u00edas",
             popular: true,
@@ -1110,8 +1110,8 @@ export const translations = {
             ],
           },
           {
-            name: "Done With You",
-            nameAlt: "Lo Hacemos Juntos",
+            name: "Lo Hacemos Juntos",
+            nameAlt: "Done With You",
             price: "$375",
             duration: "Copiloto de 60 d\u00edas",
             features: [
@@ -1126,14 +1126,14 @@ export const translations = {
         ],
         communityCredit: {
           text: "Cr\u00e9dito de sesi\u00f3n comunitaria aplica",
-          description: "If you attended a community session, your $15 fee is credited toward any package booked within 7 days.",
-          descriptionEs: "Si asisti\u00f3 a una sesi\u00f3n comunitaria, su pago de $15 se aplica como cr\u00e9dito hacia cualquier paquete reservado dentro de 7 d\u00edas.",
+          description: "Si asisti\u00f3 a una sesi\u00f3n comunitaria, su pago de $15 se aplica como cr\u00e9dito hacia cualquier paquete reservado dentro de 7 d\u00edas.",
+          descriptionEs: "If you attended a community session, your $15 fee is credited toward any package booked within 7 days.",
         },
         alaCarte: {
-          toggle: "Only need help with one part? \u2014 \u00c0 la carte pricing",
-          toggleEs: "\u00bfSolo necesita ayuda con una parte? \u2014 Precios por etapa",
-          bundleNote: "Bundle 3 or more stages and save 15%",
-          bundleNoteEs: "Agrupe 3 o m\u00e1s etapas y ahorre 15%",
+          toggle: "\u00bfSolo necesita ayuda con una parte? \u2014 Precios por etapa",
+          toggleEs: "Only need help with one part? \u2014 \u00c0 la carte pricing",
+          bundleNote: "Agrupe 3 o m\u00e1s etapas y ahorre 15%",
+          bundleNoteEs: "Bundle 3 or more stages and save 15%",
           stages: [
             {
               num: "01",

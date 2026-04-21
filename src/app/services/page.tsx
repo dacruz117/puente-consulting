@@ -19,7 +19,7 @@ const BIZ_STAGE_COLORS = [
 type Tab = "general" | "academic" | "business";
 
 export default function ServicesPage() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const s = t.services;
   const [activeTab, setActiveTab] = useState<Tab>("academic");
   const [alaCarteOpen, setAlaCarteOpen] = useState(false);
@@ -44,7 +44,7 @@ export default function ServicesPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{s.heroTitle}</h1>
           <p className="text-xl text-gray-300 mb-1">{s.heroSubtitle}</p>
-          <p className="text-sm text-gray-500 italic">{s.heroSub2}</p>
+          <p className="text-sm text-gray-400">{s.heroSub2}</p>
         </div>
       </section>
 
@@ -134,12 +134,9 @@ export default function ServicesPage() {
                     )}
                     <div className="p-8 flex flex-col flex-1">
                       <div className="mb-5">
-                        <h3 className={`text-xl font-bold mb-0.5 ${isPopular ? "text-white" : "text-primary"}`}>
+                        <h3 className={`text-xl font-bold ${isPopular ? "text-white" : "text-primary"}`}>
                           {pkg.name}
                         </h3>
-                        <p className={`text-sm italic ${isPopular ? "text-white/60" : "text-gray-400"}`}>
-                          {pkg.nameAlt}
-                        </p>
                       </div>
                       <p className={`text-4xl font-bold mb-1 ${isPopular ? "text-white" : "text-accent"}`}>
                         {pkg.price}
@@ -149,21 +146,16 @@ export default function ServicesPage() {
                       </p>
                       <ul className="space-y-3 flex-1 mb-8">
                         {pkg.features.map((f) => (
-                          <li key={f.en} className="flex flex-col gap-0.5">
-                            <div className="flex gap-2 items-start">
-                              <svg
-                                className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                              >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                              </svg>
-                              <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
-                                {f.en}
-                              </span>
-                            </div>
-                            <p className={`text-xs pl-6 italic ${isPopular ? "text-white/50" : "text-gray-400"}`}>
-                              {f.es}
-                            </p>
+                          <li key={f.en} className="flex gap-2 items-start">
+                            <svg
+                              className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
+                              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
+                              {lang === "en" ? f.en : f.es}
+                            </span>
                           </li>
                         ))}
                       </ul>
@@ -189,7 +181,6 @@ export default function ServicesPage() {
                 <div>
                   <p className="text-sm font-semibold text-primary mb-1">{s.academic.communityCredit.text}</p>
                   <p className="text-xs text-gray-500 leading-relaxed">{s.academic.communityCredit.description}</p>
-                  <p className="text-xs text-gray-400 leading-relaxed italic mt-1">{s.academic.communityCredit.descriptionEs}</p>
                 </div>
               </div>
             </div>
@@ -202,12 +193,9 @@ export default function ServicesPage() {
                 onClick={() => setAlaCarteOpen(!alaCarteOpen)}
                 className="w-full flex items-center justify-between text-left group"
               >
-                <div>
-                  <p className="text-base font-semibold text-primary group-hover:text-accent transition-colors">
-                    {s.academic.alaCarte.toggle}
-                  </p>
-                  <p className="text-sm text-gray-400 italic">{s.academic.alaCarte.toggleEs}</p>
-                </div>
+                <p className="text-base font-semibold text-primary group-hover:text-accent transition-colors">
+                  {s.academic.alaCarte.toggle}
+                </p>
                 <svg
                   className={`w-5 h-5 text-accent transition-transform flex-shrink-0 ${alaCarteOpen ? "rotate-180" : ""}`}
                   fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -218,11 +206,8 @@ export default function ServicesPage() {
 
               {alaCarteOpen && (
                 <div className="mt-8">
-                  <p className="text-center text-sm font-medium text-accent mb-1">
+                  <p className="text-center text-sm font-medium text-accent mb-8">
                     {s.academic.alaCarte.bundleNote}
-                  </p>
-                  <p className="text-center text-xs text-gray-400 italic mb-8">
-                    {s.academic.alaCarte.bundleNoteEs}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {s.academic.alaCarte.stages.map((stage, i) => (
@@ -260,7 +245,6 @@ export default function ServicesPage() {
           {/* Founding note */}
           <div className="bg-cream border-t border-gray-100 py-4 text-center">
             <p className="text-sm text-gray-500 italic">{s.academic.foundingNote}</p>
-            <p className="text-xs text-gray-400 italic">{s.academic.foundingNoteEs}</p>
           </div>
         </>
       )}
@@ -375,9 +359,8 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-16 bg-cream border-t border-gray-100 text-center">
         <div className="max-w-xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-primary mb-1">{s.ctaHeading}</h2>
-          <p className="text-body mb-1">{s.ctaSub}</p>
-          <p className="text-sm text-gray-400 italic mb-6">{s.ctaSubEs}</p>
+          <h2 className="text-2xl font-bold text-primary mb-3">{s.ctaHeading}</h2>
+          <p className="text-body mb-6">{s.ctaSub}</p>
           <Link
             href="/contact"
             className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent-light transition-colors"
@@ -390,7 +373,7 @@ export default function ServicesPage() {
       {/* Disclaimer */}
       <div className="max-w-4xl mx-auto px-4 py-8">
         <p className="text-xs text-gray-400 leading-relaxed border-t border-gray-100 pt-6">
-          {s.disclaimer} / <span className="italic">{s.disclaimerEs}</span>
+          {s.disclaimer}
         </p>
       </div>
     </>
