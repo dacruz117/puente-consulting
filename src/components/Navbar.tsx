@@ -53,22 +53,16 @@ export default function Navbar() {
           </Link>
           <button
             onClick={toggle}
-            className="text-sm font-semibold text-white/60 hover:text-white transition-colors tracking-widest"
+            className="bg-white text-primary text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2"
             aria-label="Toggle language"
           >
-            {lang === "en" ? "ES" : "EN"}
+            <span>{lang === "en" ? "🇲🇽" : "🇺🇸"}</span>
+            <span>{lang === "en" ? t.nav.langButtonToEs : t.nav.langButtonToEn}</span>
           </button>
         </div>
 
-        {/* Mobile: language toggle + hamburger */}
+        {/* Mobile: hamburger only */}
         <div className="md:hidden flex items-center gap-4">
-          <button
-            onClick={toggle}
-            className="text-sm font-semibold text-white/60 hover:text-white transition-colors tracking-widest"
-            aria-label="Toggle language"
-          >
-            {lang === "en" ? "ES" : "EN"}
-          </button>
           <button
             className="text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -106,6 +100,14 @@ export default function Navbar() {
           >
             {t.nav.bookSession}
           </Link>
+          <button
+            onClick={() => { toggle(); setMobileOpen(false); }}
+            className="w-full bg-white text-primary text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
+            aria-label="Toggle language"
+          >
+            <span>{lang === "en" ? "🇲🇽" : "🇺🇸"}</span>
+            <span>{lang === "en" ? t.nav.langButtonToEs : t.nav.langButtonToEn}</span>
+          </button>
         </div>
       )}
     </nav>

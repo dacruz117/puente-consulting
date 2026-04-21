@@ -3,31 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import CTABanner from "@/components/CTABanner";
-import CheckIcon from "@/components/CheckIcon";
 import { useLanguage } from "@/context/LanguageContext";
-
-const howItWorksIcons = [
-  // Phone / calendar
-  <svg key="phone" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-  </svg>,
-  // Clipboard
-  <svg key="clipboard" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-  </svg>,
-  // Check circle
-  <svg key="check" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>,
-];
 
 export default function Home() {
   const { t } = useLanguage();
+  const h = t.home;
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative bg-primary text-white py-24 overflow-hidden">
+      {/* ── HERO ── */}
+      <section className="relative bg-primary text-white pt-20 pb-0 overflow-hidden">
         <Image
           src="/austin-skyline.jpg"
           alt="Austin skyline"
@@ -35,166 +20,155 @@ export default function Home() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            {t.home.heroTitle}
-          </h1>
-          <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-            {t.home.heroSubtitle}
+        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+          <p className="inline-block text-xs font-semibold uppercase tracking-widest text-accent-light border border-accent-light/30 px-4 py-1 rounded-full mb-6">
+            {h.heroEyebrow}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent-light transition-colors"
-            >
-              {t.home.primaryCta}
-            </Link>
-            <Link
-              href="/contact"
-              className="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition-colors"
-            >
-              {t.home.secondaryCta}
-            </Link>
-          </div>
-        </div>
-      </section>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">
+            {h.heroTitle}
+          </h1>
+          <p className="text-base text-white/60 max-w-xl mx-auto mb-10">
+            {h.heroSubtitle}
+          </p>
 
-      {/* About Blurb */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-8">
-            {t.home.aboutTitle}
-          </h2>
-          <div className="space-y-4 text-body leading-relaxed">
-            {t.home.aboutParagraphs.map((para, idx) => (
-              <p key={idx}>{para}</p>
+          {/* Hero service cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 border border-white/10 rounded-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-white/10">
+            {h.heroCards.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="bg-white/[0.04] hover:bg-white/[0.08] transition-colors p-6 text-left group"
+              >
+                <div className="text-2xl mb-3">{card.icon}</div>
+                <h3 className="text-sm font-semibold text-white mb-1">{card.name}</h3>
+                <p className="text-xs text-white/45 leading-relaxed mb-4">{card.description}</p>
+                <span className="text-xs font-semibold text-accent-light uppercase tracking-wide">
+                  {card.priceLabel}
+                </span>
+              </Link>
             ))}
           </div>
-          <div className="mt-8">
-            <Link
-              href="/about"
-              className="text-accent font-semibold hover:text-accent-light transition-colors"
-            >
-              Learn More &rarr;
-            </Link>
+        </div>
+
+        {/* fade into next section */}
+        <div className="relative z-10 h-16 bg-gradient-to-b from-transparent to-accent mt-6" />
+      </section>
+
+      {/* ── WHO IT'S FOR ── */}
+      <section className="bg-accent py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-xs font-semibold uppercase tracking-widest text-accent-light mb-3">
+            {h.whoEyebrow}
+          </p>
+          <h2 className="text-3xl font-bold text-white mb-8 tracking-tight">
+            {h.whoTitle}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {h.personas.map((persona) => (
+              <div
+                key={persona.href}
+                className="bg-white/[0.06] border border-white/10 rounded-xl p-6"
+              >
+                <p className="text-sm text-white/85 italic leading-relaxed border-l-2 border-accent-light pl-3 mb-4">
+                  {persona.quote}
+                </p>
+                <Link
+                  href={persona.href}
+                  className="text-xs font-semibold text-accent-light uppercase tracking-wide hover:text-white transition-colors"
+                >
+                  {persona.link}
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-20 bg-white">
+      {/* ── SERVICE SNAPSHOTS ── */}
+      <section className="bg-cream py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+            {h.snapshotsEyebrow}
+          </p>
+          <h2 className="text-3xl font-bold text-primary mb-8 tracking-tight">
+            {h.snapshotsTitle}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {h.snapshots.map((snap) => (
+              <div
+                key={snap.href}
+                className={`bg-white rounded-2xl border flex flex-col p-7 ${
+                  snap.featured
+                    ? "border-accent ring-1 ring-accent"
+                    : "border-gray-200"
+                }`}
+              >
+                <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded-full mb-4 self-start">
+                  {snap.tag}
+                </span>
+                <h3 className="text-base font-bold text-primary mb-1">{snap.title}</h3>
+                <p className="text-xs text-body leading-relaxed mb-4">{snap.description}</p>
+                <ul className="space-y-1 mb-4 flex-1">
+                  {snap.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-2 text-xs text-gray-500">
+                      <span className="text-accent font-bold mt-px">✓</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm font-semibold text-accent mb-4">{snap.price}</p>
+                <Link
+                  href={snap.href}
+                  className="self-start bg-accent text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-accent-light transition-colors"
+                >
+                  {snap.cta}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TRUST BLOCK ── */}
+      <section className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-2">
-                {t.home.serviceTitle}
-              </h2>
-              <p className="text-accent font-semibold text-lg mb-8">
-                {t.home.servicePriceSuffix}
-              </p>
-              <ul className="space-y-3 mb-8">
-                {t.home.serviceBullets.map((bullet, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-body">
-                    <CheckIcon />
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-sm text-gray-500 italic">{t.home.serviceDisclaimer}</p>
-            </div>
-            <div className="flex justify-center">
               <Image
-                src="/man_smiling.webp"
-                alt="Professional assistance"
+                src="/profile.png"
+                alt="Puente founder"
                 width={480}
                 height={360}
-                className="rounded-xl shadow-lg object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">
-            {t.home.howItWorksTitle}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            {t.home.howItWorksSteps.map((step, idx) => (
-              <div key={step.step} className="text-center">
-                <div className="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center mx-auto mb-4">
-                  {howItWorksIcons[idx]}
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-body">{step.description}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-primary font-semibold text-lg">
-            {t.home.howItWorksTagline}
-          </p>
-        </div>
-      </section>
-
-      {/* Why Trust Me */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <Image
-                src="/handshake.webp"
-                alt="Trust and professionalism"
-                width={480}
-                height={320}
-                className="rounded-xl shadow-lg object-cover"
+                className="rounded-2xl shadow-lg object-cover w-full"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-8">
-                {t.home.trustTitle}
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+                {h.trustEyebrow}
+              </p>
+              <h2 className="text-3xl font-bold text-primary tracking-tight mb-4">
+                {h.trustTitle}
               </h2>
-              <ul className="space-y-3 mb-8">
-                {t.home.trustBullets.map((bullet, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-body">
-                    <CheckIcon />
-                    <span>{bullet}</span>
-                  </li>
+              <p className="text-sm text-body leading-relaxed mb-6">{h.trustParagraph}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {h.trustPills.map((pill) => (
+                  <span
+                    key={pill}
+                    className="text-xs font-medium text-accent bg-accent/10 border border-accent/20 px-3 py-1 rounded-full"
+                  >
+                    {pill}
+                  </span>
                 ))}
-              </ul>
-              <p className="text-primary font-medium italic border-l-4 border-accent pl-4">
-                {t.home.trustGoal}
+              </div>
+              <p className="text-sm italic text-primary border-l-4 border-accent pl-4 leading-relaxed">
+                {h.trustGoal}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Advanced Services Upsell */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-primary mb-2">
-            {t.home.upsellTitle}
-          </h2>
-          <p className="text-body mb-8">{t.home.upsellSubtitle}</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            {t.home.upsellItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg px-6 py-4 shadow-sm border border-gray-100 text-body"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-gray-500 italic">{t.home.upsellNote}</p>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
+      {/* ── CTA BANNER ── */}
       <CTABanner />
     </>
   );
