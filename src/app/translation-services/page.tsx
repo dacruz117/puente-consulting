@@ -20,7 +20,7 @@ export default function TranslationServicesPage() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{ts.heroTitle}</h1>
           <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
             {ts.heroSubtitle}
@@ -44,7 +44,7 @@ export default function TranslationServicesPage() {
 
       {/* Overview */}
       <section className="py-20 bg-cream">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-xl font-semibold text-primary mb-6 leading-relaxed">

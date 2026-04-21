@@ -41,7 +41,7 @@ export default function ServicesPage() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{s.heroTitle}</h1>
           <p className="text-xl text-gray-300 mb-1">{s.heroSubtitle}</p>
           <p className="text-sm text-gray-400">{s.heroSub2}</p>
@@ -50,7 +50,7 @@ export default function ServicesPage() {
 
       {/* Tab Bar */}
       <div className="sticky top-[60px] z-40 bg-white border-b border-gray-100 shadow-sm">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="flex">
             {tabs.map((tab) => (
               <button
@@ -72,7 +72,7 @@ export default function ServicesPage() {
       {/* ── GENERAL ASSISTANCE TAB ── */}
       {activeTab === "general" && (
         <section className="py-20 bg-cream">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold text-primary mb-2">{s.general.title}</h2>
               <p className="text-body">{s.general.subtitle}</p>
@@ -371,7 +371,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Disclaimer */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         <p className="text-xs text-gray-400 leading-relaxed border-t border-gray-100 pt-6">
           {s.disclaimer}
         </p>

@@ -20,7 +20,7 @@ export default function CollegeAdvisingPage() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <p className="inline-block text-xs font-semibold tracking-widest uppercase text-accent-light border border-accent-light/30 bg-white/5 px-4 py-1.5 rounded-full mb-6">
             {ca.eyebrow}
           </p>
@@ -73,7 +73,7 @@ export default function CollegeAdvisingPage() {
 
       {/* 7-Stage Roadmap */}
       <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-3">
             {ca.stagesEyebrow}
           </p>
@@ -140,7 +140,7 @@ export default function CollegeAdvisingPage() {
 
       {/* How It Works + Scenarios */}
       <section className="py-20 bg-cream">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-3">
             {ca.processEyebrow}
           </p>
@@ -182,7 +182,7 @@ export default function CollegeAdvisingPage() {
       <CTABanner heading={ca.ctaHeading} buttonText={ca.ctaButton} href="/contact" />
 
       {/* Disclaimer */}
-      <div className="max-w-4xl mx-auto px-4 py-10">
+      <div className="max-w-6xl mx-auto px-4 py-10">
         <p className="text-xs text-gray-400 leading-relaxed border-t border-gray-100 pt-6">
           {ca.disclaimer}
         </p>

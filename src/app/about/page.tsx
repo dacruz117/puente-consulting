@@ -18,7 +18,7 @@ export default function AboutPage() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {t.about.heroTitle}
           </h1>
@@ -28,7 +28,7 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* Headshot */}
             <div className="flex justify-center md:justify-start">

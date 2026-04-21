@@ -20,7 +20,7 @@ export default function Home() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <p className="inline-block text-xs font-semibold uppercase tracking-widest text-accent-light border border-accent-light/30 px-4 py-1 rounded-full mb-6">
             {h.heroEyebrow}
           </p>
@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* ── WHO IT'S FOR ── */}
       <section className="bg-accent py-16">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-semibold uppercase tracking-widest text-accent-light mb-3">
             {h.whoEyebrow}
           </p>
@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* ── SERVICE SNAPSHOTS ── */}
       <section className="bg-cream py-16">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-3">
             {h.snapshotsEyebrow}
           </p>
@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* ── TRUST BLOCK ── */}
       <section className="bg-white py-16">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <Image

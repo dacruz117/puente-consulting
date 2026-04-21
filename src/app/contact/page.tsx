@@ -18,7 +18,7 @@ export default function ContactPage() {
           className="object-cover object-center opacity-20"
           priority
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.contact.heroTitle}</h1>
           <p className="text-lg text-gray-300">{t.contact.heroSubtitle}</p>
         </div>
