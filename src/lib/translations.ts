@@ -164,7 +164,7 @@ export const translations = {
       heroPricing: "See Pricing \u2192",
       storyHeading: "Most families don\u2019t know what they don\u2019t know.",
       storyP1: "The college process has deadlines, documents, financial forms, portals, and unwritten rules that no one explains to first-generation families. Students miss opportunities, not because of talent, but because of information.",
-      storyP2: "Puente exists to close that gap. With someone who has been inside these systems, as a student, as a staff member, and now as your guide.",
+      storyP2: "Puente exists to close that gap. With someone who has been inside these systems as a student, as a staff member, and now as your guide.",
       storyQuote: "My daughter got accepted, but we don\u2019t understand what to do next.",
       storyQuoteAttr: "The question Puente was built to answer.",
       stats: [
