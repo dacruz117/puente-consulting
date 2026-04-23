@@ -28,7 +28,7 @@ export const translations = {
       heroEyebrow: "Bilingual · Austin, TX · EN / ES",
       heroTitle: "Guidance for college, business, and everyday life.",
       heroSubtitle:
-        "Helping Spanish-speaking families navigate the systems that were never explained to them — in English, in Spanish, or both.",
+        "Helping Spanish-speaking families navigate the systems that were never explained to them, in English, in Spanish, or both.",
       heroCards: [
         {
           icon: "📋",
@@ -40,14 +40,14 @@ export const translations = {
         {
           icon: "🎓",
           name: "College Advising",
-          description: "From first question to first day of class — the full 7-stage roadmap.",
+          description: "From first question to first day of class, the full 7-stage roadmap.",
           priceLabel: "From $79 · See packages →",
           href: "/college-advising",
         },
         {
           icon: "💼",
           name: "Business Start-Up",
-          description: "Idea to open for business — 8 stages, 109 steps, done with you.",
+          description: "Idea to open for business. Eight stages, 109 steps, done with you.",
           priceLabel: "From $97 · See packages →",
           href: "/business-startup",
         },
@@ -66,7 +66,7 @@ export const translations = {
           href: "/business-startup",
         },
         {
-          quote: "\"I need help with forms, appointments, and paperwork — in Spanish.\"",
+          quote: "\"I need help with forms, appointments, and paperwork, in Spanish.\"",
           link: "→ General Assistance",
           href: "/services",
         },
@@ -92,14 +92,14 @@ export const translations = {
         {
           tag: "College Advising",
           title: "The 7-Stage Academic Roadmap",
-          description: "From choosing schools to enrolling — we guide every step, bilingually.",
+          description: "From choosing schools to enrolling, we guide every step, bilingually.",
           bullets: [
             "School list & research",
             "Essays & personal statement",
             "FAFSA & financial aid",
             "Acceptance & enrollment",
           ],
-          price: "From $79 — packages available",
+          price: "From $79, packages available",
           cta: "See the roadmap →",
           href: "/college-advising",
           featured: true,
@@ -114,7 +114,7 @@ export const translations = {
             "Sales process & outreach",
             "Financial controls & growth",
           ],
-          price: "From $97 — packages available",
+          price: "From $97, packages available",
           cta: "See the 8 stages →",
           href: "/business-startup",
           featured: false,
@@ -133,7 +133,7 @@ export const translations = {
         "Transparent Pricing",
       ],
       trustGoal:
-        "My goal is not just to complete the task — but to empower you to feel confident doing it next time.",
+        "My goal is not just to complete the task, but to empower you to feel confident doing it next time.",
       ctaHeading: "Not sure where to start?",
       ctaSub: "The intro call is free. We'll figure out together what you need.",
       ctaButton: "Book a Free Intro Call →",
@@ -145,7 +145,7 @@ export const translations = {
       ourStory: "Our Story",
       paragraphs: [
         "Puente Bilingual Services was created to bridge the gap between complex systems and the people who need help navigating them.",
-        "Many families struggle with online forms, registrations, appointments, and digital processes — not because they lack intelligence, but because these systems were not designed with them in mind.",
+        "Many families struggle with online forms, registrations, appointments, and digital processes, not because they lack intelligence, but because these systems were not designed with them in mind.",
         "With a bachelor's degree and professional experience in higher education and administration, I provide patient, bilingual guidance through screen-share or phone support.",
         "My role is simple: To be the trusted advisor, the organized guide, and the steady support when things feel overwhelming.",
       ],
@@ -157,9 +157,9 @@ export const translations = {
     },
     collegeAdvising: {
       eyebrow: "Academic & University Support",
-      heroTitle: "Your bridge to college — from first question to first day of class.",
-      heroSub: "We help students and families navigate college admissions, financial aid, and university systems — with someone who has been inside these institutions and knows exactly how they work.",
-      heroSubEs: "Tu puente hacia la universidad — desde la primera pregunta hasta el primer día de clases.",
+      heroTitle: "Your bridge to college, from first question to first day of class.",
+      heroSub: "We help students and families navigate college admissions, financial aid, and university systems, with someone who has been inside these institutions and knows exactly how they work.",
+      heroSubEs: "Tu puente hacia la universidad, desde la primera pregunta hasta el primer día de clases.",
       heroCta: "Book a Free Intro Call",
       heroPricing: "See Pricing \u2192",
       storyHeading: "Most families don\u2019t know what they don\u2019t know.",
@@ -264,47 +264,47 @@ export const translations = {
     businessStartup: {
       heroTitle: "Business Start-Up",
       heroDescription:
-        "Turn your business idea into reality with a proven 109-step system covering every stage — from legal setup and branding to sales, finances, and growth.",
+        "Turn your business idea into reality with a proven 109-step system covering every stage, from legal setup and branding to sales, finances, and growth.",
       seePricingHeading: "View our full services & packages",
       seePricingButton: "See Pricing →",
       stages: [
         {
-          title: "Stage 1 — Idea & Validation",
+          title: "Stage 1: Idea & Validation",
           description:
             "Business concept defined, market researched, feasibility confirmed.",
         },
         {
-          title: "Stage 2 — Legal & Structure",
+          title: "Stage 2: Legal & Structure",
           description:
             "Entity formed, EIN obtained, licenses secured, bank account open.",
         },
         {
-          title: "Stage 3 — Brand & Identity",
+          title: "Stage 3: Brand & Identity",
           description:
             "Name, logo, tagline, brand colors, business cards, and elevator pitch done.",
         },
         {
-          title: "Stage 4 — Digital & Online Presence",
+          title: "Stage 4: Digital & Online Presence",
           description:
             "Domain, website, email, social media profiles, and Google Business set up.",
         },
         {
-          title: "Stage 5 — Operations & Systems",
+          title: "Stage 5: Operations & Systems",
           description:
             "Phone, CRM, invoicing, templates, insurance, and accounting software in place.",
         },
         {
-          title: "Stage 6 — Sales & Marketing",
+          title: "Stage 6: Sales & Marketing",
           description:
             "Sales process defined, outreach started, first prospects contacted.",
         },
         {
-          title: "Stage 7 — Financial Controls",
+          title: "Stage 7: Financial Controls",
           description:
             "Bookkeeping active, pricing set, cash flow tracked, tax prep started.",
         },
         {
-          title: "Stage 8 — Growth & Scale",
+          title: "Stage 8: Growth & Scale",
           description:
             "First revenue earned, team or contractors hired, systems being optimized.",
         },
@@ -332,7 +332,7 @@ export const translations = {
           step: 4,
           title: "Launch with Confidence",
           description:
-            "You finish with a running business — not just a well-planned idea.",
+            "You finish with a running business, not just a well-planned idea.",
         },
       ],
     },
