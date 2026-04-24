@@ -42,7 +42,7 @@ export default function ContactForm() {
       className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 space-y-6"
     >
       <input type="hidden" name="access_key" value="6f4c986f-f967-4218-813c-2815e591aec0" />
-      <input type="hidden" name="subject" value="New Contact Form Submission — Puente Consulting" />
+      <input type="hidden" name="subject" value="New Contact Form Submission, Puente Consulting" />
       <input type="hidden" name="from_name" value="Puente Consulting Website" />
 
       <div>

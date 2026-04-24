@@ -186,7 +186,7 @@ export default function ServicesPage() {
             </div>
           </section>
 
-          {/* À la carte — collapsible */}
+          {/* À la carte, collapsible */}
           <section className="py-12 bg-white">
             <div className="max-w-6xl mx-auto px-4">
               <button
