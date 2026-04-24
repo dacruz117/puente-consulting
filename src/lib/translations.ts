@@ -740,7 +740,7 @@ export const translations = {
       heroEyebrow: "Bilingüe · Austin, TX · EN / ES",
       heroTitle: "Orientación para la universidad, los negocios y la vida cotidiana.",
       heroSubtitle:
-        "Ayudamos a familias hispanohablantes a navegar los sistemas que nunca les fueron explicados — en inglés, en español, o en ambos.",
+        "Ayudamos a familias hispanohablantes a navegar los sistemas que nunca les fueron explicados, en inglés, en español, o en ambos.",
       heroCards: [
         {
           icon: "📋",
@@ -752,14 +752,14 @@ export const translations = {
         {
           icon: "🎓",
           name: "Asesoría Universitaria",
-          description: "Desde la primera pregunta hasta el primer día de clases — la hoja de ruta completa de 7 etapas.",
+          description: "Desde la primera pregunta hasta el primer día de clases, la hoja de ruta completa de 7 etapas.",
           priceLabel: "Desde $79 · Ver paquetes →",
           href: "/college-advising",
         },
         {
           icon: "💼",
           name: "Inicio de Negocio",
-          description: "De la idea a abrir el negocio — 8 etapas, 109 pasos, contigo.",
+          description: "De la idea a abrir el negocio. Ocho etapas, 109 pasos, contigo.",
           priceLabel: "Desde $97 · Ver paquetes →",
           href: "/business-startup",
         },
@@ -778,7 +778,7 @@ export const translations = {
           href: "/business-startup",
         },
         {
-          quote: "\"Necesito ayuda con formularios, citas y trámites — en español.\"",
+          quote: "\"Necesito ayuda con formularios, citas y trámites, en español.\"",
           link: "→ Asistencia General",
           href: "/services",
         },
@@ -804,14 +804,14 @@ export const translations = {
         {
           tag: "Asesoría Universitaria",
           title: "La Hoja de Ruta Académica de 7 Etapas",
-          description: "Desde elegir escuelas hasta inscribirte — te guiamos en cada paso, bilingüemente.",
+          description: "Desde elegir escuelas hasta inscribirte, te guiamos en cada paso, bilingüemente.",
           bullets: [
             "Lista e investigación de escuelas",
             "Ensayos y declaración personal",
             "FAFSA y ayuda financiera",
             "Aceptación e inscripción",
           ],
-          price: "Desde $79 — paquetes disponibles",
+          price: "Desde $79, paquetes disponibles",
           cta: "Ver la hoja de ruta →",
           href: "/college-advising",
           featured: true,
@@ -826,7 +826,7 @@ export const translations = {
             "Proceso de ventas y alcance",
             "Controles financieros y crecimiento",
           ],
-          price: "Desde $97 — paquetes disponibles",
+          price: "Desde $97, paquetes disponibles",
           cta: "Ver las 8 etapas →",
           href: "/business-startup",
           featured: false,
@@ -845,7 +845,7 @@ export const translations = {
         "Precios Transparentes",
       ],
       trustGoal:
-        "Mi meta no es solo completar la tarea — sino empoderarte para que te sientas seguro haciéndolo la próxima vez.",
+        "Mi meta no es solo completar la tarea, sino empoderarte para que te sientas seguro haciéndolo la próxima vez.",
       ctaHeading: "¿No sabes por dónde empezar?",
       ctaSub: "La llamada inicial es gratis. Juntos descubriremos qué necesitas.",
       ctaButton: "Reservar una Llamada Gratis →",
@@ -869,9 +869,9 @@ export const translations = {
     },
     collegeAdvising: {
       eyebrow: "Apoyo Acad\u00e9mico y Universitario",
-      heroTitle: "Tu puente hacia la universidad \u2014 desde la primera pregunta hasta el primer d\u00eda de clases.",
-      heroSub: "Ayudamos a estudiantes y familias a navegar las admisiones universitarias, la ayuda financiera y los sistemas universitarios \u2014 con alguien que ha estado dentro de estas instituciones y sabe exactamente c\u00f3mo funcionan.",
-      heroSubEs: "Your bridge to college \u2014 from first question to first day of class.",
+      heroTitle: "Tu puente hacia la universidad, desde la primera pregunta hasta el primer d\u00eda de clases.",
+      heroSub: "Ayudamos a estudiantes y familias a navegar las admisiones universitarias, la ayuda financiera y los sistemas universitarios, con alguien que ha estado dentro de estas instituciones y sabe exactamente c\u00f3mo funcionan.",
+      heroSubEs: "Your bridge to college, from first question to first day of class.",
       heroCta: "Agenda una Llamada Gratuita",
       heroPricing: "Ver Precios \u2192",
       storyHeading: "La mayor\u00eda de las familias no saben lo que no saben.",
@@ -976,47 +976,47 @@ export const translations = {
     businessStartup: {
       heroTitle: "Inicio de Negocios",
       heroDescription:
-        "Convierte tu idea de negocio en realidad con un sistema probado de 109 pasos que cubre cada etapa — desde la estructura legal y la marca hasta las ventas, las finanzas y el crecimiento.",
+        "Convierte tu idea de negocio en realidad con un sistema probado de 109 pasos que cubre cada etapa, desde la estructura legal y la marca hasta las ventas, las finanzas y el crecimiento.",
       seePricingHeading: "Ve nuestros servicios y paquetes completos",
       seePricingButton: "Ver Precios →",
       stages: [
         {
-          title: "Etapa 1 — Idea y Validación",
+          title: "Etapa 1: Idea y Validación",
           description:
             "Concepto de negocio definido, mercado investigado, factibilidad confirmada.",
         },
         {
-          title: "Etapa 2 — Legal y Estructura",
+          title: "Etapa 2: Legal y Estructura",
           description:
             "Entidad formada, EIN obtenido, licencias aseguradas, cuenta bancaria abierta.",
         },
         {
-          title: "Etapa 3 — Marca e Identidad",
+          title: "Etapa 3: Marca e Identidad",
           description:
             "Nombre, logo, eslog\u00e1n, colores de marca, tarjetas de presentaci\u00f3n y discurso de presentaci\u00f3n listos.",
         },
         {
-          title: "Etapa 4 — Presencia Digital y en Línea",
+          title: "Etapa 4: Presencia Digital y en Línea",
           description:
             "Dominio, sitio web, correo, perfiles de redes sociales y Google Business configurados.",
         },
         {
-          title: "Etapa 5 — Operaciones y Sistemas",
+          title: "Etapa 5: Operaciones y Sistemas",
           description:
             "Tel\u00e9fono, CRM, facturaci\u00f3n, plantillas, seguro y software contable en su lugar.",
         },
         {
-          title: "Etapa 6 — Ventas y Marketing",
+          title: "Etapa 6: Ventas y Marketing",
           description:
             "Proceso de ventas definido, difusi\u00f3n iniciada, primeros prospectos contactados.",
         },
         {
-          title: "Etapa 7 — Control Financiero",
+          title: "Etapa 7: Control Financiero",
           description:
             "Contabilidad activa, precios establecidos, flujo de caja monitoreado, preparaci\u00f3n fiscal iniciada.",
         },
         {
-          title: "Etapa 8 — Crecimiento y Escalabilidad",
+          title: "Etapa 8: Crecimiento y Escalabilidad",
           description:
             "Primeros ingresos obtenidos, equipo o contratistas contratados, sistemas en optimizaci\u00f3n.",
         },
