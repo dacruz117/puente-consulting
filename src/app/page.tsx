@@ -1,13 +1,12 @@
 "use client";
 
-import { ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ClipboardList, GraduationCap, Briefcase } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
-const cardIcons: Record<string, ReactElement> = {
+const cardIcons = {
   "/services":         <ClipboardList className="w-6 h-6 text-accent-light" />,
   "/college-advising": <GraduationCap className="w-6 h-6 text-accent-light" />,
   "/business-startup": <Briefcase     className="w-6 h-6 text-accent-light" />,
