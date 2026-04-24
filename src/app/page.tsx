@@ -1,9 +1,17 @@
 "use client";
 
+import { ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { ClipboardList, GraduationCap, Briefcase } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
+
+const cardIcons: Record<string, ReactElement> = {
+  "/services":         <ClipboardList className="w-6 h-6 text-accent-light" />,
+  "/college-advising": <GraduationCap className="w-6 h-6 text-accent-light" />,
+  "/business-startup": <Briefcase     className="w-6 h-6 text-accent-light" />,
+};
 
 export default function Home() {
   const { t } = useLanguage();
@@ -39,8 +47,8 @@ export default function Home() {
                 href={card.href}
                 className="bg-white/[0.04] hover:bg-white/[0.08] transition-colors p-6 text-left group"
               >
-                <div className="text-2xl mb-3">{card.icon}</div>
-                <h3 className="text-sm font-semibold text-white mb-1">{card.name}</h3>
+                <div className="mb-3">{cardIcons[card.href]}</div>
+                <h3 className="text-base font-bold text-white mb-1">{card.name}</h3>
                 <p className="text-xs text-white/45 leading-relaxed mb-4">{card.description}</p>
                 <span className="text-xs font-semibold text-accent-light uppercase tracking-wide">
                   {card.priceLabel}

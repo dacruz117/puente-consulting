@@ -31,21 +31,18 @@ export const translations = {
         "Helping Spanish-speaking families navigate the systems that were never explained to them, in English, in Spanish, or both.",
       heroCards: [
         {
-          icon: "📋",
           name: "General Assistance",
           description: "Forms, appointments, registrations, and everyday digital systems.",
           priceLabel: "$25/hr · See services →",
           href: "/services",
         },
         {
-          icon: "🎓",
           name: "College Advising",
           description: "From first question to first day of class, the full 7-stage roadmap.",
           priceLabel: "From $79 · See packages →",
           href: "/college-advising",
         },
         {
-          icon: "💼",
           name: "Business Start-Up",
           description: "Idea to open for business. Eight stages, 109 steps, done with you.",
           priceLabel: "From $97 · See packages →",
@@ -743,21 +740,18 @@ export const translations = {
         "Ayudamos a familias hispanohablantes a navegar los sistemas que nunca les fueron explicados, en inglés, en español, o en ambos.",
       heroCards: [
         {
-          icon: "📋",
           name: "Asistencia General",
           description: "Formularios, citas, registros y sistemas digitales del día a día.",
           priceLabel: "$25/hr · Ver servicios →",
           href: "/services",
         },
         {
-          icon: "🎓",
           name: "Asesoría Universitaria",
           description: "Desde la primera pregunta hasta el primer día de clases, la hoja de ruta completa de 7 etapas.",
           priceLabel: "Desde $79 · Ver paquetes →",
           href: "/college-advising",
         },
         {
-          icon: "💼",
           name: "Inicio de Negocio",
           description: "De la idea a abrir el negocio. Ocho etapas, 109 pasos, contigo.",
           priceLabel: "Desde $97 · Ver paquetes →",
