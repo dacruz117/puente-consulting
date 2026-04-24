@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ClipboardList, GraduationCap, Briefcase } from "lucide-react";
+import { ClipboardList, GraduationCap, Briefcase, ChevronDown } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -55,10 +55,15 @@ export default function Home() {
               </Link>
             ))}
           </div>
+
+          {/* scroll indicator */}
+          <div className="flex justify-center pt-6 pb-2">
+            <ChevronDown className="w-6 h-6 text-white/50 animate-bounce" />
+          </div>
         </div>
 
         {/* fade into next section */}
-        <div className="relative z-10 h-16 bg-gradient-to-b from-transparent to-accent mt-6" />
+        <div className="relative z-10 h-16 bg-gradient-to-b from-transparent to-accent mt-2" />
       </section>
 
       {/* ── WHO IT'S FOR ── */}
