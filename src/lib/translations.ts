@@ -26,7 +26,7 @@ export const translations = {
     },
     home: {
       heroEyebrow: "Bilingual · Austin, TX · EN / ES",
-      heroTitle: "Guidance for college, business, and everyday life.",
+      heroTitle: "A Bridge to Progress",
       heroSubtitle:
         "Helping Spanish-speaking families navigate the systems that were never explained to them, in English, in Spanish, or both.",
       heroCards: [
@@ -738,7 +738,7 @@ export const translations = {
     },
     home: {
       heroEyebrow: "Bilingüe · Austin, TX · EN / ES",
-      heroTitle: "Orientación para la universidad, los negocios y la vida cotidiana.",
+      heroTitle: "Un Puente al Progreso",
       heroSubtitle:
         "Ayudamos a familias hispanohablantes a navegar los sistemas que nunca les fueron explicados, en inglés, en español, o en ambos.",
       heroCards: [
