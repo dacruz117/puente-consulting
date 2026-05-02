@@ -711,6 +711,86 @@ export const translations = {
       disclaimer: "Puente Bilingual Services provides assistance and informational guidance only. We are not licensed school counselors, certified college advisors, financial aid officers, attorneys, or CPAs. All guidance is informational in nature. Clients are responsible for all final decisions and submissions.",
       disclaimerEs: "Puente Bilingual Services proporciona asistencia y orientaci\u00f3n informativa \u00fanicamente. No somos consejeros escolares con licencia, asesores universitarios certificados, oficiales de ayuda financiera, abogados ni CPAs. Toda orientaci\u00f3n es de car\u00e1cter informativo. Los clientes son responsables de todas las decisiones y presentaciones finales.",
     },
+    webDesign: {
+      heroTitle: "Web Design for Local Businesses",
+      heroSubtitle: "Professional websites for local businesses, starting at $300.",
+      mostPopular: "Most Popular",
+      packageCta: "Get Started",
+      setupLabel: "setup",
+      monthlyLabel: "/mo",
+      addOnsTitle: "Add-Ons",
+      addOnsSubtitle: "Optional upgrades available with any plan.",
+      ctaHeading: "Not sure where to start?",
+      ctaSub: "The intro call is free. We'll figure out together what you need.",
+      ctaButton: "Book a Free Intro Call \u2192",
+      packages: [
+        {
+          name: "Basic",
+          setupPrice: "$300",
+          monthlyPrice: "$75",
+          features: [
+            { en: "Single-page professional website", es: "Sitio web profesional de una p\u00e1gina" },
+            { en: "Logo, services list & photo gallery (up to 10 photos)", es: "Logo, lista de servicios y galer\u00eda de fotos (hasta 10 fotos)" },
+            { en: "Phone number, contact form & Google Maps embed", es: "N\u00famero de tel\u00e9fono, formulario de contacto e integraci\u00f3n de Google Maps" },
+            { en: "Social media links", es: "Enlaces a redes sociales" },
+            { en: "Mobile-friendly design", es: "Dise\u00f1o adaptable a m\u00f3viles" },
+            { en: "Domain & hosting included", es: "Dominio y alojamiento incluidos" },
+            { en: "Monthly maintenance included", es: "Mantenimiento mensual incluido" },
+          ],
+        },
+        {
+          name: "Standard",
+          setupPrice: "$500",
+          monthlyPrice: "$100",
+          features: [
+            { en: "Multi-page website (Home, Services, Gallery, Contact)", es: "Sitio web multip\u00e1gina (Inicio, Servicios, Galer\u00eda, Contacto)" },
+            { en: "Testimonials & before/after photo section", es: "Secci\u00f3n de testimonios y fotos de antes/despu\u00e9s" },
+            { en: "FAQ page", es: "P\u00e1gina de preguntas frecuentes" },
+            { en: "Quote request form", es: "Formulario de solicitud de cotizaci\u00f3n" },
+            { en: "Mobile-friendly design", es: "Dise\u00f1o adaptable a m\u00f3viles" },
+            { en: "Domain & hosting included", es: "Dominio y alojamiento incluidos" },
+            { en: "Monthly maintenance included", es: "Mantenimiento mensual incluido" },
+          ],
+        },
+        {
+          name: "Premium",
+          setupPrice: "$800",
+          monthlyPrice: "$150",
+          features: [
+            { en: "Everything in Standard, plus:", es: "Todo lo del Est\u00e1ndar, m\u00e1s:" },
+            { en: "Unlimited pages & project portfolio", es: "P\u00e1ginas ilimitadas y portafolio de proyectos" },
+            { en: "Blog/news section", es: "Secci\u00f3n de blog/noticias" },
+            { en: "Appointment or quote scheduling system", es: "Sistema de citas o cotizaciones en l\u00ednea" },
+            { en: "Google Business Profile setup & optimization", es: "Configuraci\u00f3n y optimizaci\u00f3n de Google Business" },
+            { en: "Photo gallery with project filtering", es: "Galer\u00eda de fotos con filtros por proyecto" },
+            { en: "Priority support & faster updates", es: "Soporte prioritario y actualizaciones m\u00e1s r\u00e1pidas" },
+          ],
+        },
+      ],
+      addOns: [
+        {
+          name: { en: "Google Business Profile Setup", es: "Configuraci\u00f3n de Google Business" },
+          price: { en: "$100 one-time", es: "$100 pago \u00fanico" },
+        },
+        {
+          name: { en: "Extra page after launch", es: "P\u00e1gina adicional despu\u00e9s del lanzamiento" },
+          price: { en: "$75/page", es: "$75/p\u00e1gina" },
+        },
+        {
+          name: { en: "Basic logo design", es: "Dise\u00f1o b\u00e1sico de logo" },
+          price: { en: "$150 one-time", es: "$150 pago \u00fanico" },
+        },
+        {
+          name: { en: "Rush delivery (48 hrs)", es: "Entrega urgente (48 hrs)" },
+          price: { en: "+$150", es: "+$150" },
+        },
+        {
+          name: { en: "Bilingual English/Spanish content", es: "Contenido biling\u00fce ingl\u00e9s/espa\u00f1ol" },
+          price: { en: "Included", es: "Incluido" },
+          highlight: true,
+        },
+      ],
+    },
   },
   es: {
     nav: {
