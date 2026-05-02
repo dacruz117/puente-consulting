@@ -99,9 +99,9 @@ export default function WebDesignPage() {
           <h2 className="text-3xl font-bold text-primary text-center mb-2">{wd.addOnsTitle}</h2>
           <p className="text-body text-center mb-8">{wd.addOnsSubtitle}</p>
           <div className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
-            {wd.addOns.map((addon, i) => (
+            {wd.addOns.map((addon) => (
               <div
-                key={i}
+                key={addon.name.en}
                 className="flex items-center justify-between px-6 py-4 border-b border-gray-100 last:border-0"
               >
                 <span className="text-sm text-body">
