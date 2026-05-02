@@ -6,6 +6,7 @@ export const translations = {
       collegeAdvising: "College Advising",
       businessStartup: "Business Start-Up",
       pricing: "Pricing",
+      webDesign: "Web Design",
       translationServices: "Translations",
       about: "About",
       bookSession: "Book a Session",
@@ -21,6 +22,7 @@ export const translations = {
       about: "About",
       contact: "Contact",
       translationServices: "Translation Services",
+      webDesign: "Web Design Services",
       disclaimer:
         "Puente Bilingual Services provides assistance and informational guidance only. We do not provide legal, financial, immigration, or medical advice. Clients are responsible for final decisions and submissions.",
     },
@@ -715,6 +717,7 @@ export const translations = {
       collegeAdvising: "Asesor\u00eda Universitaria",
       businessStartup: "Inicio de Negocios",
       pricing: "Precios",
+      webDesign: "Diseño Web",
       translationServices: "Traducciones",
       about: "Nosotros",
       bookSession: "Agenda una Sesi\u00f3n",
@@ -730,6 +733,7 @@ export const translations = {
       about: "Nosotros",
       contact: "Contacto",
       translationServices: "Servicios de Traducci\u00f3n",
+      webDesign: "Dise\u00f1o Web",
       disclaimer:
         "Puente Bilingual Services ofrece asistencia y orientaci\u00f3n informativa \u00fanicamente. No brindamos asesor\u00eda legal, financiera, migratoria ni m\u00e9dica. Los clientes son responsables de decisiones y env\u00edos finales.",
     },
