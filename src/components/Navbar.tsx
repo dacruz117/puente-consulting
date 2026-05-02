@@ -13,6 +13,7 @@ export default function Navbar() {
     { href: "/college-advising", label: t.nav.collegeAdvising },
     { href: "/business-startup", label: t.nav.businessStartup },
     { href: "/services", label: t.nav.pricing },
+    { href: "/web-design", label: t.nav.webDesign },
     { href: "/translation-services", label: t.nav.translationServices },
     { href: "/about", label: t.nav.about },
   ];
