@@ -82,9 +82,12 @@ export default function ContactForm() {
           className="w-full border border-gray-300 rounded-lg px-4 py-2 text-body focus:outline-none focus:ring-2 focus:ring-accent"
         >
           <option value="">{t.contactForm.selectService}</option>
+          <option value="general-assistance">{t.contactForm.generalAssistance}</option>
           <option value="college-advising">{t.contactForm.collegeAdvising}</option>
           <option value="business-startup">{t.contactForm.businessStartup}</option>
-          <option value="both">{t.contactForm.both}</option>
+          <option value="translation-services">{t.contactForm.translationServices}</option>
+          <option value="web-design">{t.contactForm.webDesign}</option>
+          <option value="multiple-services">{t.contactForm.multipleServices}</option>
         </select>
       </div>
 
