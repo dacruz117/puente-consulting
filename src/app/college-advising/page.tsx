@@ -6,7 +6,7 @@ import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function CollegeAdvisingPage() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const ca = t.collegeAdvising;
 
   return (
@@ -26,7 +26,9 @@ export default function CollegeAdvisingPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">{ca.heroTitle}</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-2">{ca.heroSub}</p>
-          <p className="text-sm text-gray-500 italic mb-8">{ca.heroSubEs}</p>
+          {lang === "es" && (
+            <p className="text-sm text-gray-500 italic mb-8">{ca.heroSubEs}</p>
+          )}
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
               href="/contact"
