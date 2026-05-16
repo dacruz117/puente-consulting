@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import CheckIcon from "@/components/CheckIcon";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function WebDesignPage() {
@@ -22,6 +23,27 @@ export default function WebDesignPage() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{wd.heroTitle}</h1>
           <p className="text-xl text-gray-300">{wd.heroSubtitle}</p>
+        </div>
+      </section>
+
+      {/* Differentiator */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-primary mb-4">{wd.differentiatorHeading}</h2>
+              <p className="text-body mb-4">{wd.differentiatorP1}</p>
+              <p className="text-body mb-6">{wd.differentiatorP2}</p>
+            </div>
+            <ul className="space-y-3">
+              {wd.differentiatorBullets.map((bullet) => (
+                <li key={bullet} className="flex gap-3 items-start text-body">
+                  <CheckIcon />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -90,11 +112,28 @@ export default function WebDesignPage() {
               );
             })}
           </div>
+          <p className="text-center text-xs text-gray-500 italic mt-8">{wd.turnaroundNote}</p>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary text-center mb-10">{wd.howItWorksHeading}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200 rounded-2xl overflow-hidden">
+            {wd.howItWorksSteps.map((step) => (
+              <div key={step.num} className="bg-white p-6">
+                <p className="text-2xl font-bold text-accent mb-3">{step.num}</p>
+                <h4 className="text-sm font-semibold text-primary mb-2">{step.heading}</h4>
+                <p className="text-xs text-body leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Add-Ons */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-cream">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary text-center mb-2">{wd.addOnsTitle}</h2>
           <p className="text-body text-center mb-8">{wd.addOnsSubtitle}</p>
@@ -123,7 +162,7 @@ export default function WebDesignPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-cream border-t border-gray-100 text-center">
+      <section className="py-16 bg-white border-t border-gray-100 text-center">
         <div className="max-w-xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-primary mb-3">{wd.ctaHeading}</h2>
           <p className="text-body mb-6">{wd.ctaSub}</p>
@@ -135,6 +174,13 @@ export default function WebDesignPage() {
           </Link>
         </div>
       </section>
+
+      {/* Disclaimer */}
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <p className="text-xs text-gray-400 leading-relaxed border-t border-gray-100 pt-6">
+          {wd.disclaimer}
+        </p>
+      </div>
     </>
   );
 }

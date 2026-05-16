@@ -780,6 +780,24 @@ export const translations = {
       ctaHeading: "Not sure where to start?",
       ctaSub: "The intro call is free. We'll figure out together what you need.",
       ctaButton: "Book a Free Intro Call \u2192",
+      differentiatorHeading: "Not a template. A real website.",
+      differentiatorP1: "Most budget website options give you a drag-and-drop template and leave you to figure out the rest. Puente builds your site from scratch \u2014 custom design, clean code, version-controlled, and hosted professionally.",
+      differentiatorP2: "You get a site that looks like your business, not like everyone else's.",
+      differentiatorBullets: [
+        "Custom-built, not a Wix or Squarespace template",
+        "Hosted on professional infrastructure",
+        "Version-controlled \u2014 your site is never lost",
+        "Monthly maintenance included in every plan",
+      ],
+      howItWorksHeading: "How it works",
+      howItWorksSteps: [
+        { num: "1", heading: "Kickoff meeting", description: "In person, Austin metro. We review your brand, gather content, and agree on the design direction." },
+        { num: "2", heading: "Build", description: "Your site is built and shared for review within the agreed timeline." },
+        { num: "3", heading: "Revisions", description: "We incorporate your feedback. Two rounds of revisions are included in all plans." },
+        { num: "4", heading: "Launch & maintain", description: "We go live and handle ongoing updates every month." },
+      ],
+      turnaroundNote: "Most Basic sites launch within 2 weeks. Standard and Premium projects typically run 3\u20134 weeks depending on content.",
+      disclaimer: "All websites are built to the specifications agreed upon at project kickoff. Puente Bilingual Services does not guarantee specific business outcomes from web presence. Monthly maintenance covers routine updates and content changes; major redesigns are scoped separately.",
       packages: [
         {
           name: "Basic",
@@ -1628,6 +1646,24 @@ export const translations = {
       ctaHeading: "¿No sabe por dónde empezar?",
       ctaSub: "La llamada inicial es gratis. Juntos descubriremos qué necesita.",
       ctaButton: "Agenda una Llamada Gratuita →",
+      differentiatorHeading: "No una plantilla. Un sitio web real.",
+      differentiatorP1: "La mayoría de las opciones económicas te dan una plantilla de arrastrar y soltar y te dejan resolverlo solo. Puente construye tu sitio desde cero — diseño personalizado, código limpio, controlado por versión y alojado profesionalmente.",
+      differentiatorP2: "Obtienes un sitio que se parece a tu negocio, no al de todos los demás.",
+      differentiatorBullets: [
+        "Hecho a medida, no una plantilla de Wix o Squarespace",
+        "Alojado en infraestructura profesional",
+        "Controlado por versión — tu sitio nunca se pierde",
+        "Mantenimiento mensual incluido en todos los planes",
+      ],
+      howItWorksHeading: "Cómo funciona",
+      howItWorksSteps: [
+        { num: "1", heading: "Reunión inicial", description: "En persona, área metropolitana de Austin. Revisamos tu marca, recopilamos contenido y acordamos la dirección del diseño." },
+        { num: "2", heading: "Construcción", description: "Tu sitio se construye y se comparte para revisión dentro del plazo acordado." },
+        { num: "3", heading: "Revisiones", description: "Incorporamos tus comentarios. Dos rondas de revisiones están incluidas en todos los planes." },
+        { num: "4", heading: "Lanzamiento y mantenimiento", description: "Salimos en vivo y gestionamos las actualizaciones continuas cada mes." },
+      ],
+      turnaroundNote: "La mayoría de los sitios Basic se lanzan en 2 semanas. Los proyectos Standard y Premium suelen tomar 3 a 4 semanas según el contenido.",
+      disclaimer: "Todos los sitios web se construyen según las especificaciones acordadas en la reunión inicial. Puente Bilingual Services no garantiza resultados comerciales específicos derivados de la presencia web. El mantenimiento mensual cubre actualizaciones de rutina y cambios de contenido; los rediseños importantes se presupuestan por separado.",
       packages: [
         {
           name: "Basic",
