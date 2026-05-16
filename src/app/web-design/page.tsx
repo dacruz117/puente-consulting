@@ -161,6 +161,24 @@ export default function WebDesignPage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      {t.testimonials.items.length > 0 && (
+        <section className="bg-cream py-16">
+          <div className="max-w-6xl mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold text-primary mb-6">{t.testimonials.heading}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {t.testimonials.items.map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl border border-gray-100 p-6 text-left">
+                  <p className="text-body italic mb-4">&#8220;{item.quote}&#8221;</p>
+                  <p className="text-sm font-semibold text-primary">{item.name}</p>
+                  <p className="text-xs text-gray-400">{item.service}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA */}
       <section className="py-16 bg-white border-t border-gray-100 text-center">
         <div className="max-w-xl mx-auto px-4">

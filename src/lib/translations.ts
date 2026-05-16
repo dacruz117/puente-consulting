@@ -880,6 +880,11 @@ export const translations = {
         },
       ],
     },
+    testimonials: {
+      heading: "What clients are saying",
+      comingSoon: "Reviews coming soon — currently accepting founding clients.",
+      items: [] as { name: string; quote: string; service: string }[],
+    },
   },
   es: {
     nav: {
@@ -1759,6 +1764,11 @@ export const translations = {
           highlight: true,
         },
       ],
+    },
+    testimonials: {
+      heading: "Lo que dicen nuestros clientes",
+      comingSoon: "Opiniones próximamente — actualmente aceptando clientes fundadores.",
+      items: [] as { name: string; quote: string; service: string }[],
     },
   },
 } as const;

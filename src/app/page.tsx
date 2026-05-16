@@ -181,6 +181,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── TESTIMONIALS ── */}
+      <section className="bg-cream py-16">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-primary mb-6">{t.testimonials.heading}</h2>
+          {t.testimonials.items.length === 0 ? (
+            <p className="text-body italic">{t.testimonials.comingSoon}</p>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {t.testimonials.items.map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl border border-gray-100 p-6 text-left">
+                  <p className="text-body italic mb-4">&#8220;{item.quote}&#8221;</p>
+                  <p className="text-sm font-semibold text-primary">{item.name}</p>
+                  <p className="text-xs text-gray-400">{item.service}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* ── CTA BANNER ── */}
       <CTABanner />
     </>
