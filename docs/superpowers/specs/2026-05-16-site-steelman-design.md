@@ -60,7 +60,7 @@ Spanish translations required for all new options.
 
 **Files:** `src/app/contact/page.tsx`, `src/lib/translations.ts` → `en.contact` and `es.contact`
 
-- All "Book a Session" and "Book a Free Intro Call" buttons/links across the entire site must link to the Calendly URL (to be provided by the user before implementation)
+- All "Book a Session" and "Book a Free Intro Call" buttons/links across the entire site must link to the Calendly URL. Use the placeholder `YOUR_CALENDLY_URL` throughout — the user will replace this with the real link before deploying
 - The contact page should display Calendly as the **primary action** (embedded or as a prominent button)
 - The contact form remains as a **secondary option** for clients who prefer to message first
 - Add a label above the form: "Prefer to send a message? Use the form below."
@@ -380,11 +380,9 @@ Replace vague "Per-document pricing available upon review" with:
 
 **File:** `src/lib/translations.ts` → `en.services.academic.foundingNote` and `en.services.business.foundingNote`
 
-Both notes must use the same format. Options:
-- Both with a number: "Founding client pricing — limited to [N] spots. Rate increases once spots are filled."
-- Both without a number: "Founding client pricing — limited availability. Rate increases once spots are filled."
-
-Choose one format before implementation. The number (if used) must be confirmed by the user.
+Both notes use the same format with a confirmed number:
+- `"Founding client pricing — limited to 5 spots. Rate increases once spots are filled."`
+- ES: `"Precios de cliente fundador — limitado a 5 lugares. La tarifa sube cuando se llenen."`
 
 ---
 
