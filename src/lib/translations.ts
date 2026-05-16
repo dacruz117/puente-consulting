@@ -188,7 +188,7 @@ export const translations = {
       storyQuote: "My daughter got accepted, but we don\u2019t understand what to do next.",
       storyQuoteAttr: "The question Puente was built to answer.",
       stats: [
-        { number: "7", label: "Stages of support, from direction to graduation" },
+        { number: "7", label: "Stages of support, from first question to first day of class" },
         { number: "EN / ES", label: "Fully bilingual sessions for students and families" },
         { number: "1:1", label: "Personalized guidance, never cookie-cutter" },
         { number: "$0", label: "Intro call, no commitment to get started" },
@@ -236,7 +236,7 @@ export const translations = {
         {
           num: "07",
           title: "College Success & Ongoing Support",
-          description: "For students already enrolled who need guidance navigating the university from the inside, communicating with professors, managing time, understanding financial aid issues, resolving holds, or dealing with the registrar. Universities are complex. We help students work them.",
+          description: "Already enrolled? This stage is for students navigating university from the inside. For students already enrolled who need guidance navigating the university from the inside, communicating with professors, managing time, understanding financial aid issues, resolving holds, or dealing with the registrar. Universities are complex. We help students work them.",
           tags: ["Academic success coaching", "Admin problem-solving", "Registrar support"],
         },
       ],
@@ -1054,7 +1054,7 @@ export const translations = {
       storyQuote: "Mi hija fue aceptada, pero no entendemos qu\u00e9 hacer ahora.",
       storyQuoteAttr: "La pregunta que Puente fue creado para responder.",
       stats: [
-        { number: "7", label: "Etapas de apoyo, desde la direcci\u00f3n hasta la graduaci\u00f3n" },
+        { number: "7", label: "Etapas de apoyo, desde la primera pregunta hasta el primer d\u00eda de clases" },
         { number: "EN / ES", label: "Sesiones completamente biling\u00fces para estudiantes y familias" },
         { number: "1:1", label: "Orientaci\u00f3n personalizada, nunca gen\u00e9rica" },
         { number: "$0", label: "Llamada inicial, sin compromiso para comenzar" },
@@ -1102,7 +1102,7 @@ export const translations = {
         {
           num: "07",
           title: "\u00c9xito Universitario y Apoyo Continuo",
-          description: "Para estudiantes ya inscritos que necesitan orientaci\u00f3n para navegar la universidad desde adentro, comunicarse con profesores, manejar el tiempo, entender problemas de ayuda financiera, resolver bloqueos o tratar con el registrador. Las universidades son complejas. Ayudamos a los estudiantes a trabajarlas.",
+          description: "\u00bfYa inscrito? Esta etapa es para estudiantes que navegan la universidad desde adentro. Para estudiantes ya inscritos que necesitan orientaci\u00f3n para comunicarse con profesores, manejar el tiempo, entender problemas de ayuda financiera, resolver bloqueos o tratar con el registrador. Las universidades son complejas. Ayudamos a los estudiantes a trabajarlas.",
           tags: ["Asesor\u00eda de \u00e9xito acad\u00e9mico", "Resoluci\u00f3n de tr\u00e1mites", "Apoyo con el registrador"],
         },
       ],
