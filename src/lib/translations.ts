@@ -566,6 +566,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 1 advisory",
               fullPrice: "$79",
+              savings: "Save $19 vs. individual items",
             },
             {
               num: "02",
@@ -576,6 +577,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 2 advisory",
               fullPrice: "$99",
+              savings: "Save $25 vs. individual items",
             },
             {
               num: "03",
@@ -586,6 +588,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 3 advisory",
               fullPrice: "$79",
+              savings: "Save $19 vs. individual items",
             },
             {
               num: "04",
@@ -597,6 +600,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 4 advisory",
               fullPrice: "$179",
+              savings: "Save $42 vs. individual items",
             },
             {
               num: "05",
@@ -608,6 +612,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 5 advisory",
               fullPrice: "$149",
+              savings: "Save $50 vs. individual items",
             },
             {
               num: "06",
@@ -618,6 +623,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 6 advisory",
               fullPrice: "$79",
+              savings: "Save $19 vs. individual items",
             },
             {
               num: "07",
@@ -628,6 +634,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 7 (monthly)",
               fullPrice: "$79/mo",
+              savings: "Save $19 vs. individual items",
             },
           ],
         },
@@ -686,6 +693,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 1 advisory",
               fullPrice: "$247",
+              savings: "Save $94 vs. individual items",
             },
             {
               name: "Legal & Structure",
@@ -696,6 +704,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 2 advisory",
               fullPrice: "$297",
+              savings: "Save $74 vs. individual items",
             },
             {
               name: "Brand & Identity",
@@ -706,6 +715,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 3 advisory",
               fullPrice: "$247",
+              savings: "Save $124 vs. individual items",
             },
             {
               name: "Digital & Online Presence",
@@ -716,6 +726,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 4 advisory",
               fullPrice: "$297",
+              savings: "Save $194 vs. individual items",
             },
             {
               name: "Operations & Systems",
@@ -726,6 +737,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 5 advisory",
               fullPrice: "$297",
+              savings: "Save $144 vs. individual items",
             },
             {
               name: "Sales & Marketing",
@@ -736,6 +748,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 6 advisory",
               fullPrice: "$347",
+              savings: "Save $144 vs. individual items",
             },
             {
               name: "Financial Controls",
@@ -746,6 +759,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 7 advisory",
               fullPrice: "$347",
+              savings: "Save $164 vs. individual items",
             },
             {
               name: "Growth & Scale",
@@ -756,6 +770,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 8 advisory",
               fullPrice: "$347",
+              savings: "Save $294 vs. individual items",
             },
           ],
         },
@@ -1432,6 +1447,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 1 advisory",
               fullPrice: "$79",
+              savings: "Ahorra $19 al comprar la etapa completa",
             },
             {
               num: "02",
@@ -1442,6 +1458,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 2 advisory",
               fullPrice: "$99",
+              savings: "Ahorra $25 al comprar la etapa completa",
             },
             {
               num: "03",
@@ -1452,6 +1469,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 3 advisory",
               fullPrice: "$79",
+              savings: "Ahorra $19 al comprar la etapa completa",
             },
             {
               num: "04",
@@ -1463,6 +1481,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 4 advisory",
               fullPrice: "$179",
+              savings: "Ahorra $42 al comprar la etapa completa",
             },
             {
               num: "05",
@@ -1474,6 +1493,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 5 advisory",
               fullPrice: "$149",
+              savings: "Ahorra $50 al comprar la etapa completa",
             },
             {
               num: "06",
@@ -1484,6 +1504,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 6 advisory",
               fullPrice: "$79",
+              savings: "Ahorra $19 al comprar la etapa completa",
             },
             {
               num: "07",
@@ -1494,6 +1515,7 @@ export const translations = {
               ],
               fullLabel: "Full Stage 7 (monthly)",
               fullPrice: "$79/mo",
+              savings: "Ahorra $19 al comprar la etapa completa",
             },
           ],
         },
@@ -1552,6 +1574,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 1",
               fullPrice: "$247",
+              savings: "Ahorra $94 al comprar la etapa completa",
             },
             {
               name: "Legal y Estructura",
@@ -1562,6 +1585,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 2",
               fullPrice: "$297",
+              savings: "Ahorra $74 al comprar la etapa completa",
             },
             {
               name: "Marca e Identidad",
@@ -1572,6 +1596,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 3",
               fullPrice: "$247",
+              savings: "Ahorra $124 al comprar la etapa completa",
             },
             {
               name: "Presencia Digital y en L\u00ednea",
@@ -1582,6 +1607,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 4",
               fullPrice: "$297",
+              savings: "Ahorra $194 al comprar la etapa completa",
             },
             {
               name: "Operaciones y Sistemas",
@@ -1592,6 +1618,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 5",
               fullPrice: "$297",
+              savings: "Ahorra $144 al comprar la etapa completa",
             },
             {
               name: "Ventas y Marketing",
@@ -1602,6 +1629,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 6",
               fullPrice: "$347",
+              savings: "Ahorra $144 al comprar la etapa completa",
             },
             {
               name: "Control Financiero",
@@ -1612,6 +1640,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 7",
               fullPrice: "$347",
+              savings: "Ahorra $164 al comprar la etapa completa",
             },
             {
               name: "Crecimiento y Escalabilidad",
@@ -1622,6 +1651,7 @@ export const translations = {
               ],
               fullLabel: "Asesor\u00eda completa Etapa 8",
               fullPrice: "$347",
+              savings: "Ahorra $294 al comprar la etapa completa",
             },
           ],
         },

@@ -223,9 +223,12 @@ export default function ServicesPage() {
                               </li>
                             ))}
                           </ul>
-                          <div className="mt-4 pt-4 border-t border-gray-200 flex justify-between text-sm font-bold">
-                            <span className="text-primary">{stage.fullLabel}</span>
-                            <span className="text-accent">{stage.fullPrice}</span>
+                          <div className="mt-4 pt-4 border-t border-gray-200">
+                            <div className="flex justify-between text-sm font-bold mb-1">
+                              <span className="text-primary">{stage.fullLabel}</span>
+                              <span className="text-accent">{stage.fullPrice}</span>
+                            </div>
+                            <p className="text-xs text-green-600 font-medium">{stage.savings}</p>
                           </div>
                         </div>
                       </div>
@@ -337,9 +340,12 @@ export default function ServicesPage() {
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 pt-4 border-t border-gray-200 flex justify-between text-sm font-bold">
-                        <span className="text-primary">{stage.fullLabel}</span>
-                        <span className="text-accent">{stage.fullPrice}</span>
+                      <div className="mt-4 pt-4 border-t border-gray-200">
+                        <div className="flex justify-between text-sm font-bold mb-1">
+                          <span className="text-primary">{stage.fullLabel}</span>
+                          <span className="text-accent">{stage.fullPrice}</span>
+                        </div>
+                        <p className="text-xs text-green-600 font-medium">{stage.savings}</p>
                       </div>
                     </div>
                   </div>
