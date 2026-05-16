@@ -639,7 +639,6 @@ export const translations = {
           ],
         },
         foundingNote: "Founding client pricing — limited to 5 spots. Rate increases once spots are filled.",
-        foundingNoteEs: "Precios de cliente fundador — limitado a 5 cupos. La tarifa sube cuando se llenen.",
       },
       business: {
         packages: [
@@ -1520,7 +1519,6 @@ export const translations = {
           ],
         },
         foundingNote: "Precios de cliente fundador — limitado a 5 cupos. La tarifa sube cuando se llenen.",
-        foundingNoteEs: "Founding client pricing — limited to 5 spots. Rate increases once spots are filled.",
       },
       business: {
         packages: [
