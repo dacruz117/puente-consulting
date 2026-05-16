@@ -390,6 +390,8 @@ export const translations = {
       bookSession: "Book a Session",
       scheduleText: "Schedule a session at a time that works for you.",
       emailUs: "Or email us directly at",
+      responseTime: "We respond to all messages within 24 hours.",
+      preferMessage: "Prefer to send a message? Use the form below.",
     },
     contactForm: {
       name: "Name",
@@ -1179,6 +1181,8 @@ export const translations = {
       bookSession: "Agenda una Sesi\u00f3n",
       scheduleText: "Agenda una sesi\u00f3n en el horario que mejor te convenga.",
       emailUs: "O escr\u00edbenos directamente a",
+      responseTime: "Respondemos a todos los mensajes en menos de 24 horas.",
+      preferMessage: "\u00bfPrefiere enviar un mensaje? Use el formulario a continuaci\u00f3n.",
     },
     contactForm: {
       name: "Nombre",

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import { useLanguage } from "@/context/LanguageContext";
+import { CALENDLY_URL } from "@/lib/constants";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -28,24 +29,7 @@ export default function ContactPage() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-2xl font-bold text-primary mb-6">
-                {t.contact.sendMessage}
-              </h2>
-              <p className="text-body mb-4">
-                {t.contact.emailUs}{" "}
-                <a
-                  href="mailto:info@puenteco.org"
-                  className="text-accent hover:underline font-medium"
-                >
-                  info@puenteco.org
-                </a>
-              </p>
-              <ContactForm />
-            </div>
-
-            {/* Calendly + image */}
+            {/* Calendly — primary action */}
             <div>
               <h2 className="text-2xl font-bold text-primary mb-6">
                 {t.contact.bookSession}
@@ -63,7 +47,7 @@ export default function ContactPage() {
                   <p className="text-body mb-4">{t.contact.scheduleText}</p>
                   <div
                     className="calendly-inline-widget"
-                    data-url="https://calendly.com/puenteco-info"
+                    data-url={CALENDLY_URL}
                     style={{ minWidth: "320px", height: "700px" }}
                   />
                   <script
@@ -73,6 +57,25 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
+            </div>
+
+            {/* Contact Form — secondary action */}
+            <div>
+              <h2 className="text-2xl font-bold text-primary mb-2">
+                {t.contact.sendMessage}
+              </h2>
+              <p className="text-sm text-gray-500 mb-4">{t.contact.preferMessage}</p>
+              <p className="text-body mb-4">
+                {t.contact.emailUs}{" "}
+                <a
+                  href="mailto:info@puenteco.org"
+                  className="text-accent hover:underline font-medium"
+                >
+                  info@puenteco.org
+                </a>
+              </p>
+              <ContactForm />
+              <p className="text-xs text-gray-400 text-center mt-4">{t.contact.responseTime}</p>
             </div>
           </div>
         </div>
