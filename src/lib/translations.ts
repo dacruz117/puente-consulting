@@ -283,78 +283,112 @@ export const translations = {
     },
     businessStartup: {
       heroTitle: "Business Start-Up",
-      heroDescription:
-        "Turn your business idea into reality with a proven 109-step system covering every stage, from legal setup and branding to sales, finances, and growth.",
-      seePricingHeading: "View our full services & packages",
-      seePricingButton: "See Pricing →",
+      heroDescription: "Turn your business idea into reality with a comprehensive, stage-by-stage system covering every step: legal setup, branding, website, sales, finances, and growth.",
+      eyebrow: "Business Start-Up Support",
+      storyHeading: "Most people never launch. Not because of the idea.",
+      storyP1: "Starting a business in the U.S. involves licenses, tax IDs, banking, branding, websites, and systems that no one explains in one place. Most aspiring owners get stuck on step two and never move forward.",
+      storyP2: "Puente walks you through every step, in person, in English or Spanish, using a proven 8-stage system built from real startup experience.",
+      storyQuote: "I want to open a business but I don't know how to make it official.",
+      storyQuoteAttr: "The question Puente was built to answer.",
+      stats: [
+        { number: "8",     label: "Stages from idea to open for business" },
+        { number: "1:1",   label: "Personalized guidance, every session" },
+        { number: "EN/ES", label: "Fully bilingual sessions available" },
+        { number: "$0",    label: "Intro call, no commitment to get started" },
+      ],
+      stagesEyebrow: "What We Cover",
+      stagesHeading: "The 8-Stage Business Roadmap",
+      stagesIntro: "Every business starts at a different point. We identify which stages apply to your situation and build from there. No wasted sessions, no generic checklists.",
       stages: [
         {
-          title: "Stage 1: Idea & Validation",
-          description:
-            "Business concept defined, market researched, feasibility confirmed.",
+          num: "01",
+          title: "Idea & Validation",
+          description: "Before investing time or money, every business needs a clear concept and a real market. We help you define exactly what your business does, who it serves, and whether there is enough demand to make it worth building. We research competitors, talk through pricing models, and confirm that your idea is viable before you spend a dollar. Most people skip this stage — and it shows.",
+          tags: ["Business concept", "Market research", "Feasibility check"],
         },
         {
-          title: "Stage 2: Legal & Structure",
-          description:
-            "Entity formed, EIN obtained, licenses secured, bank account open.",
+          num: "02",
+          title: "Legal & Structure",
+          description: "Getting legal is not optional — it protects you, your customers, and your income. We walk through entity selection (LLC, sole proprietor, or corporation), help you obtain your EIN from the IRS, guide you through opening a dedicated business bank account, and identify any licenses or permits required for your specific industry and city. This stage turns an idea into a real, legitimate business.",
+          tags: ["LLC formation", "EIN setup", "Business banking", "Licenses & permits"],
         },
         {
-          title: "Stage 3: Brand & Identity",
-          description:
-            "Name, logo, tagline, brand colors, business cards, and elevator pitch done.",
+          num: "03",
+          title: "Brand & Identity",
+          description: "Your brand is how customers recognize and remember you. We help you define your business name, develop a tagline, establish brand colors and visual style, and create a brief elevator pitch you can use anywhere. If you need a logo, we help you brief a designer or connect you with a vendor. By the end of this stage, your business has a face and a voice.",
+          tags: ["Business name", "Logo brief", "Brand style", "Elevator pitch"],
         },
         {
-          title: "Stage 4: Digital & Online Presence",
-          description:
-            "Domain, website, email, social media profiles, and Google Business set up.",
+          num: "04",
+          title: "Digital & Online Presence",
+          description: "Customers search online before they call. If you are not findable, you are invisible. We set up your domain, coordinate website development, create a professional email address, establish your Google Business Profile, and configure your social media presence. This stage ensures that when someone in Austin searches for what you offer, they can find you and trust what they see.",
+          tags: ["Domain & website", "Google Business", "Social media setup", "Professional email"],
         },
         {
-          title: "Stage 5: Operations & Systems",
-          description:
-            "Phone, CRM, invoicing, templates, insurance, and accounting software in place.",
+          num: "05",
+          title: "Operations & Systems",
+          description: "A business that runs on sticky notes and memory does not scale. We set up the core systems that keep your business running smoothly: a CRM for tracking leads and clients, an invoicing tool for getting paid, contract and proposal templates, and the accounting software you will need come tax time. We also review your insurance needs and help you get the right coverage in place.",
+          tags: ["CRM setup", "Invoicing & contracts", "Accounting software", "Insurance review"],
         },
         {
-          title: "Stage 6: Sales & Marketing",
-          description:
-            "Sales process defined, outreach started, first prospects contacted.",
+          num: "06",
+          title: "Sales & Marketing",
+          description: "Revenue does not come from having a website — it comes from a sales process. We build your sales workflow from first contact to closed deal, create an outreach sequence for your first prospects, and help you build a list of target customers. If you have never sold before, we walk through the conversation together. By the end of this stage, you are actively talking to potential clients.",
+          tags: ["Sales process", "Outreach sequence", "Prospect list", "First clients"],
         },
         {
-          title: "Stage 7: Financial Controls",
-          description:
-            "Bookkeeping active, pricing set, cash flow tracked, tax prep started.",
+          num: "07",
+          title: "Financial Controls",
+          description: "Most small businesses fail because of cash flow problems, not bad products. We help you build a financial model, set your pricing so that you are actually profitable, activate bookkeeping, and create a 90-day cash flow forecast. We also make sure you are ready for quarterly taxes so there are no surprises at year end. This stage gives you the financial visibility to make real decisions.",
+          tags: ["Pricing model", "Cash flow tracking", "Bookkeeping", "Tax prep"],
         },
         {
-          title: "Stage 8: Growth & Scale",
-          description:
-            "First revenue earned, team or contractors hired, systems being optimized.",
+          num: "08",
+          title: "Growth & Scale",
+          description: "Once you have revenue, the work shifts from launching to growing. We help you document your core processes so the business can run without you doing everything yourself, build a referral strategy to bring in consistent leads, and review your first 90 days to identify what is working and what to change. This stage turns a running business into one that is built to last.",
+          tags: ["SOPs", "Referral program", "90-day review", "Systems for growth"],
         },
       ],
+      bilingualHeading: "For entrepreneurs who think in Spanish.",
+      bilingualP1: "Many first-time business owners in the Austin area are more comfortable planning and thinking in Spanish, even when their business will operate in English. Puente works in both.",
+      bilingualP2: "We explain what an LLC is. What an EIN does. What a registered agent means. What bookkeeping actually requires. In whatever language makes you feel confident, not confused.",
+      bilingualCta: "Book a bilingual session →",
+      bilingualCardLabel: "Terms we explain, in both languages",
+      bilingualTerms: [
+        { en: "LLC (Limited Liability Company)", es: "LLC (Compañía de Responsabilidad Limitada)" },
+        { en: "EIN (Employer Identification Number)", es: "EIN (Número de Identificación del Empleador)" },
+        { en: "Registered agent", es: "Agente registrado" },
+        { en: "Sole proprietorship", es: "Negocio unipersonal" },
+        { en: "Bookkeeping", es: "Contabilidad" },
+        { en: "Cash flow", es: "Flujo de efectivo" },
+      ],
+      processEyebrow: "Our Process",
+      processHeading: "How it works",
+      processIntro: "Four steps. No guesswork. You always know where you stand and what comes next.",
       processSteps: [
+        { num: "1", heading: "We start with a conversation", description: "Free intro call. What's the goal? Where are you now? What does the business need most?" },
+        { num: "2", heading: "You get a personalized roadmap", description: "We identify which of the 8 stages apply to your situation and build a timeline around your business, not a generic checklist." },
+        { num: "3", heading: "We work through it together", description: "Sessions, deliverables, and real progress at every stage. You are never left guessing what to do next." },
+        { num: "4", heading: "You launch with confidence", description: "Not just a plan. A running business, fully set up and ready to generate revenue." },
+      ],
+      scenarios: [
         {
-          step: 1,
-          title: "Assess Your Starting Point",
-          description:
-            "We review where you are and what you need to move forward.",
+          label: "Real examples of how clients come to Puente",
+          question: "I want to open a cleaning business. I have customers lined up but I don't know how to make it legal or take payments.",
+          answer: "We start at Stage 2 (Legal & Structure): entity formation, EIN, business banking. Then Stage 5 (Operations): invoicing setup, contract templates, and payment processing. You go from informal to official in a few sessions.",
+          stages: ["Stage 2: Legal & Structure", "Stage 5: Operations & Systems"],
         },
         {
-          step: 2,
-          title: "Map the Stages You Need",
-          description:
-            "We identify which of the 8 stages apply to your situation and build your roadmap.",
-        },
-        {
-          step: 3,
-          title: "Execute Stage by Stage",
-          description:
-            "We work through each stage together with structured sessions and ongoing support.",
-        },
-        {
-          step: 4,
-          title: "Launch with Confidence",
-          description:
-            "You finish with a running business, not just a well-planned idea.",
+          label: "Another common situation",
+          question: "I have a business idea but I don't know if it's viable or how to research the market.",
+          answer: "That's Stage 1: Idea & Validation. We define the concept, research the target market, and confirm feasibility before you spend a dollar. No guessing, no wasted money.",
+          stages: ["Stage 1: Idea & Validation"],
         },
       ],
+      ctaHeading: "Ready to build your business?",
+      ctaSub: "The intro call is free. The conversation starts wherever you are.",
+      ctaButton: "Book a Free Intro Call →",
+      disclaimer: "Puente Bilingual Services provides business startup guidance and informational assistance only. We are not licensed attorneys, CPAs, or financial advisors. All guidance is informational in nature. Clients are responsible for all final decisions, submissions, and legal registrations.",
     },
     translationServices: {
       heroTitle: "Clear, Accurate, Bilingual Translation Support",
@@ -1097,78 +1131,112 @@ export const translations = {
     },
     businessStartup: {
       heroTitle: "Inicio de Negocios",
-      heroDescription:
-        "Convierte tu idea de negocio en realidad con un sistema probado de 109 pasos que cubre cada etapa, desde la estructura legal y la marca hasta las ventas, las finanzas y el crecimiento.",
-      seePricingHeading: "Ve nuestros servicios y paquetes completos",
-      seePricingButton: "Ver Precios →",
+      heroDescription: "Convierte tu idea de negocio en realidad con un sistema completo, etapa por etapa, que cubre cada paso: estructura legal, marca, sitio web, ventas, finanzas y crecimiento.",
+      eyebrow: "Apoyo para Inicio de Negocios",
+      storyHeading: "La mayoría nunca lanza su negocio. No es por la idea.",
+      storyP1: "Iniciar un negocio en los EE. UU. implica licencias, números de identificación fiscal, cuentas bancarias, marca, sitios web y sistemas que nadie explica en un solo lugar. La mayoría de los emprendedores se quedan atascados en el segundo paso y nunca avanzan.",
+      storyP2: "Puente te guía paso a paso, en persona, en inglés o en español, usando un sistema probado de 8 etapas construido a partir de experiencia real en negocios.",
+      storyQuote: "Quiero abrir un negocio pero no sé cómo hacerlo oficial.",
+      storyQuoteAttr: "La pregunta que Puente nació para responder.",
+      stats: [
+        { number: "8",     label: "Etapas desde la idea hasta abrir el negocio" },
+        { number: "1:1",   label: "Orientación personalizada en cada sesión" },
+        { number: "EN/ES", label: "Sesiones completamente bilingües disponibles" },
+        { number: "$0",    label: "Llamada inicial, sin compromiso" },
+      ],
+      stagesEyebrow: "Lo Que Cubrimos",
+      stagesHeading: "El Mapa de 8 Etapas para tu Negocio",
+      stagesIntro: "Cada negocio comienza en un punto diferente. Identificamos qué etapas aplican a tu situación y construimos desde ahí. Sin sesiones desperdiciadas, sin listas genéricas.",
       stages: [
         {
-          title: "Etapa 1: Idea y Validación",
-          description:
-            "Concepto de negocio definido, mercado investigado, factibilidad confirmada.",
+          num: "01",
+          title: "Idea y Validación",
+          description: "Antes de invertir tiempo o dinero, todo negocio necesita un concepto claro y un mercado real. Te ayudamos a definir exactamente qué hace tu negocio, a quién sirve y si hay suficiente demanda para que valga la pena construirlo. Investigamos a la competencia, analizamos modelos de precios y confirmamos que tu idea es viable antes de que gastes un peso. La mayoría se salta esta etapa — y se nota.",
+          tags: ["Concepto de negocio", "Investigación de mercado", "Verificación de viabilidad"],
         },
         {
-          title: "Etapa 2: Legal y Estructura",
-          description:
-            "Entidad formada, EIN obtenido, licencias aseguradas, cuenta bancaria abierta.",
+          num: "02",
+          title: "Legal y Estructura",
+          description: "Formalizarse no es opcional: te protege a ti, a tus clientes y a tus ingresos. Te guiamos a través de la selección de entidad (LLC, propietario único o corporación), te ayudamos a obtener tu EIN del IRS, te orientamos para abrir una cuenta bancaria dedicada al negocio e identificamos cualquier licencia o permiso requerido para tu industria y ciudad.",
+          tags: ["Formación de LLC", "Trámite de EIN", "Cuenta bancaria", "Licencias y permisos"],
         },
         {
-          title: "Etapa 3: Marca e Identidad",
-          description:
-            "Nombre, logo, eslog\u00e1n, colores de marca, tarjetas de presentaci\u00f3n y discurso de presentaci\u00f3n listos.",
+          num: "03",
+          title: "Marca e Identidad",
+          description: "Tu marca es como los clientes te reconocen y recuerdan. Te ayudamos a definir el nombre de tu negocio, desarrollar un eslogan, establecer colores y estilo visual, y crear un discurso de presentación breve. Si necesitas un logo, te ayudamos a orientar a un diseñador o te conectamos con un proveedor. Al final de esta etapa, tu negocio tiene cara y voz.",
+          tags: ["Nombre del negocio", "Brief de logo", "Estilo de marca", "Discurso de presentación"],
         },
         {
-          title: "Etapa 4: Presencia Digital y en Línea",
-          description:
-            "Dominio, sitio web, correo, perfiles de redes sociales y Google Business configurados.",
+          num: "04",
+          title: "Presencia Digital y en Línea",
+          description: "Los clientes buscan en línea antes de llamar. Si no te pueden encontrar, eres invisible. Configuramos tu dominio, coordinamos el desarrollo del sitio web, creamos un correo electrónico profesional, establecemos tu perfil de Google Business y configuramos tu presencia en redes sociales.",
+          tags: ["Dominio y sitio web", "Google Business", "Redes sociales", "Correo profesional"],
         },
         {
-          title: "Etapa 5: Operaciones y Sistemas",
-          description:
-            "Tel\u00e9fono, CRM, facturaci\u00f3n, plantillas, seguro y software contable en su lugar.",
+          num: "05",
+          title: "Operaciones y Sistemas",
+          description: "Un negocio que funciona con notas adhesivas y memoria no crece. Configuramos los sistemas básicos: un CRM para rastrear prospectos y clientes, una herramienta de facturación para cobrar, plantillas de contratos y propuestas, y el software de contabilidad que necesitarás en temporada de impuestos.",
+          tags: ["Configuración de CRM", "Facturación y contratos", "Software contable", "Revisión de seguros"],
         },
         {
-          title: "Etapa 6: Ventas y Marketing",
-          description:
-            "Proceso de ventas definido, difusi\u00f3n iniciada, primeros prospectos contactados.",
+          num: "06",
+          title: "Ventas y Marketing",
+          description: "Los ingresos no vienen por tener un sitio web — vienen de un proceso de ventas. Construimos tu flujo de ventas desde el primer contacto hasta el trato cerrado, creamos una secuencia de comunicación para tus primeros prospectos y te ayudamos a construir una lista de clientes objetivo.",
+          tags: ["Proceso de ventas", "Secuencia de alcance", "Lista de prospectos", "Primeros clientes"],
         },
         {
-          title: "Etapa 7: Control Financiero",
-          description:
-            "Contabilidad activa, precios establecidos, flujo de caja monitoreado, preparaci\u00f3n fiscal iniciada.",
+          num: "07",
+          title: "Control Financiero",
+          description: "La mayoría de los negocios pequeños fracasan por problemas de flujo de efectivo, no por malos productos. Te ayudamos a construir un modelo financiero, establecer tus precios para que realmente seas rentable, activar la contabilidad y crear un pronóstico de flujo de efectivo de 90 días.",
+          tags: ["Modelo de precios", "Seguimiento de flujo de caja", "Contabilidad", "Preparación fiscal"],
         },
         {
-          title: "Etapa 8: Crecimiento y Escalabilidad",
-          description:
-            "Primeros ingresos obtenidos, equipo o contratistas contratados, sistemas en optimizaci\u00f3n.",
+          num: "08",
+          title: "Crecimiento y Escalabilidad",
+          description: "Una vez que tienes ingresos, el trabajo cambia de lanzar a crecer. Te ayudamos a documentar tus procesos principales para que el negocio pueda funcionar sin que hagas todo tú mismo, construir una estrategia de referidos y revisar tus primeros 90 días.",
+          tags: ["SOPs", "Programa de referidos", "Revisión a 90 días", "Sistemas para crecer"],
         },
       ],
+      bilingualHeading: "Para emprendedores que piensan en español.",
+      bilingualP1: "Muchos propietarios de negocios por primera vez en el área de Austin se sienten más cómodos planeando y pensando en español, aunque su negocio opere en inglés. Puente trabaja en ambos idiomas.",
+      bilingualP2: "Explicamos qué es una LLC. Qué hace un EIN. Qué significa agente registrado. Qué requiere la contabilidad en realidad. En el idioma que te haga sentir seguro, no confundido.",
+      bilingualCta: "Agenda una sesión bilingüe →",
+      bilingualCardLabel: "Términos que explicamos, en ambos idiomas",
+      bilingualTerms: [
+        { en: "LLC (Limited Liability Company)", es: "LLC (Compañía de Responsabilidad Limitada)" },
+        { en: "EIN (Employer Identification Number)", es: "EIN (Número de Identificación del Empleador)" },
+        { en: "Registered agent", es: "Agente registrado" },
+        { en: "Sole proprietorship", es: "Negocio unipersonal" },
+        { en: "Bookkeeping", es: "Contabilidad" },
+        { en: "Cash flow", es: "Flujo de efectivo" },
+      ],
+      processEyebrow: "Nuestro Proceso",
+      processHeading: "Cómo funciona",
+      processIntro: "Cuatro pasos. Sin adivinanzas. Siempre sabes dónde estás y qué viene después.",
       processSteps: [
+        { num: "1", heading: "Comenzamos con una conversación", description: "Llamada inicial gratuita. ¿Cuál es la meta? ¿Dónde estás ahora? ¿Qué necesita más el negocio?" },
+        { num: "2", heading: "Recibes un mapa personalizado", description: "Identificamos cuáles de las 8 etapas aplican a tu situación y construimos un cronograma alrededor de tu negocio, no una lista genérica." },
+        { num: "3", heading: "Lo trabajamos juntos", description: "Sesiones, entregables y progreso real en cada etapa. Nunca te quedas sin saber qué hacer después." },
+        { num: "4", heading: "Lanzas con confianza", description: "No solo un plan. Un negocio funcionando, completamente configurado y listo para generar ingresos." },
+      ],
+      scenarios: [
         {
-          step: 1,
-          title: "Evaluamos tu punto de partida",
-          description:
-            "Revisamos en qu\u00e9 etapa te encuentras y qu\u00e9 necesitas para avanzar.",
+          label: "Ejemplos reales de cómo los clientes llegan a Puente",
+          question: "Quiero abrir un negocio de limpieza. Tengo clientes esperando, pero no sé cómo hacerlo legal ni cómo cobrar.",
+          answer: "Empezamos en la Etapa 2 (Legal y Estructura): formación de entidad, EIN, cuenta bancaria. Luego la Etapa 5 (Operaciones): configuración de facturación, plantillas de contratos y procesamiento de pagos. Pasas de informal a oficial en pocas sesiones.",
+          stages: ["Etapa 2: Legal y Estructura", "Etapa 5: Operaciones y Sistemas"],
         },
         {
-          step: 2,
-          title: "Mapeamos las etapas que necesitas",
-          description:
-            "Identificamos cu\u00e1les de las 8 etapas aplican a tu situaci\u00f3n y construimos tu hoja de ruta.",
-        },
-        {
-          step: 3,
-          title: "Lo ejecutamos etapa por etapa",
-          description:
-            "Trabajamos juntos a trav\u00e9s de cada etapa con sesiones estructuradas y apoyo continuo.",
-        },
-        {
-          step: 4,
-          title: "Lanzas con confianza",
-          description:
-            "Terminas con un negocio operativo, no solo una idea bien planificada.",
+          label: "Otra situación común",
+          question: "Tengo una idea de negocio pero no sé si es viable ni cómo investigar el mercado.",
+          answer: "Eso es la Etapa 1: Idea y Validación. Definimos el concepto, investigamos el mercado objetivo y confirmamos la viabilidad antes de que gastes un peso. Sin suposiciones, sin dinero malgastado.",
+          stages: ["Etapa 1: Idea y Validación"],
         },
       ],
+      ctaHeading: "¿Listo para construir tu negocio?",
+      ctaSub: "La llamada inicial es gratis. La conversación comienza donde estás.",
+      ctaButton: "Agenda una Llamada Gratuita →",
+      disclaimer: "Puente Bilingual Services brinda orientación para inicio de negocios y asistencia informativa únicamente. No somos abogados, CPAs ni asesores financieros con licencia. Toda orientación es de carácter informativo. Los clientes son responsables de todas las decisiones, presentaciones y registros legales finales.",
     },
     translationServices: {
       heroTitle: "Servicios de Traducci\u00f3n Biling\u00fce Claros y Confiables",
