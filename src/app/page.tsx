@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ClipboardList, GraduationCap, Briefcase, ChevronDown } from "lucide-react";
+import { ClipboardList, GraduationCap, Briefcase, ChevronDown, Monitor } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -10,6 +10,7 @@ const cardIcons = {
   "/services":         <ClipboardList className="w-6 h-6 text-accent-light" />,
   "/college-advising": <GraduationCap className="w-6 h-6 text-accent-light" />,
   "/business-startup": <Briefcase     className="w-6 h-6 text-accent-light" />,
+  "/web-design":       <Monitor       className="w-6 h-6 text-accent-light" />,
 };
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
           </p>
 
           {/* Hero service cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 border border-white/10 rounded-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-white/10 rounded-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-white/10">
             {h.heroCards.map((card) => (
               <Link
                 key={card.href}
@@ -105,7 +106,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-primary mb-8 tracking-tight">
             {h.snapshotsTitle}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {h.snapshots.map((snap) => (
               <div
                 key={snap.href}
