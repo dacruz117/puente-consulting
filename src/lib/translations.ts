@@ -46,7 +46,7 @@ export const translations = {
         },
         {
           name: "Business Start-Up",
-          description: "Idea to open for business. Eight stages, 109 steps, done with you.",
+          description: "Idea to open for business. Eight stages, done with you.",
           priceLabel: "From $97 · See packages →",
           href: "/business-startup",
         },
@@ -419,7 +419,7 @@ export const translations = {
       pricingTitle: "Simple & Transparent Pricing",
       pricingBullets: [
         "$25/hour for live assistance",
-        "Per-document pricing available upon review",
+        "Most personal letters and short documents: 1–2 hours. Longer documents are quoted before any work begins.",
         "Large projects quoted individually",
       ],
       pricingEstimate:
@@ -435,7 +435,7 @@ export const translations = {
         "Puente Bilingual Services provides general translation and language assistance only. We are not certified court interpreters and do not provide legal, immigration, financial, or medical advice. Translations provided are informal unless otherwise agreed upon in writing. Clients are responsible for verifying whether certified translations are required for official submissions.",
       ctaHeading: "Have a document you need help with?",
       ctaSubheading: "Let\u2019s make it clear and understandable.",
-      ctaButton: "Book your translation session today.",
+      ctaButton: "Book a Translation Session →",
     },
     contact: {
       heroTitle: "Get in Touch",
@@ -638,8 +638,8 @@ export const translations = {
             },
           ],
         },
-        foundingNote: "Founding client pricing, limited spots. Rate increases once filled.",
-        foundingNoteEs: "Precios de cliente fundador, lugares limitados. La tarifa sube cuando se llenen.",
+        foundingNote: "Founding client pricing — limited to 5 spots. Rate increases once spots are filled.",
+        foundingNoteEs: "Precios de cliente fundador — limitado a 5 cupos. La tarifa sube cuando se llenen.",
       },
       business: {
         packages: [
@@ -774,7 +774,7 @@ export const translations = {
             },
           ],
         },
-        foundingNote: "Founding client pricing, limited to 3 spots. Rate increases once spots are filled.",
+        foundingNote: "Founding client pricing — limited to 5 spots. Rate increases once spots are filled.",
       },
       ctaHeading: "Not sure where to start?",
       ctaSub: "The intro call is free. We\u2019ll figure out together what you need.",
@@ -927,7 +927,7 @@ export const translations = {
         },
         {
           name: "Inicio de Negocio",
-          description: "De la idea a abrir el negocio. Ocho etapas, 109 pasos, contigo.",
+          description: "De la idea a abrir el negocio. Ocho etapas, contigo.",
           priceLabel: "Desde $97 · Ver paquetes →",
           href: "/business-startup",
         },
@@ -1300,7 +1300,7 @@ export const translations = {
       pricingTitle: "Precios Claros y Transparentes",
       pricingBullets: [
         "$25 por hora para asistencia en vivo",
-        "Precio por documento disponible tras revisi\u00f3n",
+        "La mayor\u00eda de las cartas personales y documentos cortos: 1\u20132 horas. Los documentos m\u00e1s largos se cotizan antes de comenzar cualquier trabajo.",
         "Proyectos grandes se cotizan individualmente",
       ],
       pricingEstimate:
@@ -1316,7 +1316,7 @@ export const translations = {
         "Puente Bilingual Services ofrece servicios generales de traducci\u00f3n y asistencia ling\u00fc\u00edstica \u00fanicamente. No somos int\u00e9rpretes certificados de corte ni brindamos asesor\u00eda legal, migratoria, financiera o m\u00e9dica. Las traducciones proporcionadas son informales a menos que se acuerde lo contrario por escrito. El cliente es responsable de verificar si se requiere una traducci\u00f3n certificada para presentaciones oficiales.",
       ctaHeading: "\u00bfTiene un documento con el que necesita ayuda?",
       ctaSubheading: "Hag\u00e1moslo claro y comprensible.",
-      ctaButton: "Agende su sesi\u00f3n hoy mismo.",
+      ctaButton: "Agenda tu sesi\u00f3n de traducci\u00f3n \u2192",
     },
     contact: {
       heroTitle: "Cont\u00e1ctanos",
@@ -1519,8 +1519,8 @@ export const translations = {
             },
           ],
         },
-        foundingNote: "Precios de cliente fundador, lugares limitados. La tarifa sube cuando se llenen.",
-        foundingNoteEs: "Founding client pricing, limited spots. Rate increases once filled.",
+        foundingNote: "Precios de cliente fundador — limitado a 5 cupos. La tarifa sube cuando se llenen.",
+        foundingNoteEs: "Founding client pricing — limited to 5 spots. Rate increases once spots are filled.",
       },
       business: {
         packages: [
@@ -1655,7 +1655,7 @@ export const translations = {
             },
           ],
         },
-        foundingNote: "Precios de cliente fundador, limitado a 3 cupos. El precio aumenta una vez que los cupos se llenen.",
+        foundingNote: "Precios de cliente fundador — limitado a 5 cupos. El precio aumenta una vez que se llenen.",
       },
       ctaHeading: "\u00bfNo sabe por d\u00f3nde empezar?",
       ctaSub: "La llamada inicial es gratis. Juntos descubriremos qu\u00e9 necesita.",
