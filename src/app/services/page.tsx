@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Lightbulb } from "lucide-react";
 import CheckIcon from "@/components/CheckIcon";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -176,14 +175,6 @@ export default function ServicesPage() {
                 })}
               </div>
 
-              {/* Community Credit */}
-              <div className="max-w-2xl mx-auto bg-white border border-gray-100 rounded-xl p-5 flex gap-4 items-start">
-                <Lightbulb className="w-5 h-5 flex-shrink-0 text-accent-light mt-0.5" />
-                <div>
-                  <p className="text-sm font-semibold text-primary mb-1">{s.academic.communityCredit.text}</p>
-                  <p className="text-xs text-gray-500 leading-relaxed">{s.academic.communityCredit.description}</p>
-                </div>
-              </div>
             </div>
           </section>
 

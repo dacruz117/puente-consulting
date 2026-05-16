@@ -124,8 +124,8 @@ export const translations = {
       trustParagraph:
         "With a background in higher education administration and years of guiding families through complex systems, I bring both the knowledge and the patience to make these processes feel manageable.",
       trustPills: [
-        "Bachelor's Degree",
-        "Higher Ed Administration",
+        "BBA — Texas A&M Central Texas",
+        "TAMUCT Enrollment Advisor",
         "Bilingual EN / ES",
         "1:1 Sessions",
         "Confidential",
@@ -145,7 +145,7 @@ export const translations = {
       paragraphs: [
         "Puente Bilingual Services was created to bridge the gap between complex systems and the people who need help navigating them.",
         "Many families struggle with online forms, registrations, appointments, and digital processes, not because they lack intelligence, but because these systems were not designed with them in mind.",
-        "With a bachelor's degree and professional experience in higher education and administration, I provide patient, bilingual guidance through screen-share or phone support.",
+        "With a BBA from Texas A&M University – Central Texas and professional experience as an Enrollment Advisor at TAMUCT, I provide patient, bilingual guidance in person throughout the Austin metro area.",
         "My role is simple: To be the trusted advisor, the organized guide, and the steady support when things feel overwhelming.",
       ],
       ourMission: "Our Mission",
@@ -489,11 +489,6 @@ export const translations = {
             ],
           },
         ],
-        communityCredit: {
-          text: "Community Info Session credit applies",
-          description: "If you attended a community session, your $15 fee is credited toward any package booked within 7 days.",
-          descriptionEs: "Si asisti\u00f3 a una sesi\u00f3n comunitaria, su pago de $15 se aplica como cr\u00e9dito hacia cualquier paquete reservado dentro de 7 d\u00edas.",
-        },
         alaCarte: {
           toggle: "Only need help with one part? \u00c0 la carte pricing",
           toggleEs: "\u00bfSolo necesita ayuda con una parte? Precios por etapa",
@@ -730,7 +725,7 @@ export const translations = {
           monthlyPrice: "$75",
           features: [
             { en: "Single-page professional website", es: "Sitio web profesional de una p\u00e1gina" },
-            { en: "Logo, services list & photo gallery (up to 10 photos)", es: "Logo, lista de servicios y galer\u00eda de fotos (hasta 10 fotos)" },
+            { en: "Your logo placed, services list & photo gallery (up to 10 photos)", es: "Su logo colocado, lista de servicios y galer\u00eda de fotos (hasta 10 fotos)" },
             { en: "Phone number, contact form & Google Maps embed", es: "N\u00famero de tel\u00e9fono, formulario de contacto e integraci\u00f3n de Google Maps" },
             { en: "Social media links", es: "Enlaces a redes sociales" },
             { en: "Mobile-friendly design", es: "Dise\u00f1o adaptable a m\u00f3viles" },
@@ -915,8 +910,8 @@ export const translations = {
       trustParagraph:
         "Con formación en administración de educación superior y años de guiar a familias a través de sistemas complejos, traigo tanto el conocimiento como la paciencia para hacer que estos procesos se sientan manejables.",
       trustPills: [
-        "Licenciatura",
-        "Administración de Educación Superior",
+        "Licenciatura en Administración — TAMUCT",
+        "Asesor de Inscripciones en TAMUCT",
         "Bilingüe EN / ES",
         "Sesiones 1:1",
         "Confidencial",
@@ -936,7 +931,7 @@ export const translations = {
       paragraphs: [
         "Puente Bilingual Services fue creado para cerrar la brecha entre sistemas complejos y las personas que necesitan ayuda para navegarlos.",
         "Muchas familias enfrentan dificultades con formularios en l\u00ednea, registros, citas y procesos digitales, no por falta de capacidad, sino porque estos sistemas no fueron dise\u00f1ados pensando en ellas.",
-        "Con una licenciatura y experiencia profesional en educaci\u00f3n superior y administraci\u00f3n, ofrezco orientaci\u00f3n biling\u00fce paciente a trav\u00e9s de llamadas telef\u00f3nicas o sesiones compartiendo pantalla.",
+        "Con una Licenciatura en Administraci\u00f3n de Empresas de Texas A&M University \u2013 Central Texas y experiencia profesional como Asesor de Inscripciones en TAMUCT, ofrezco orientaci\u00f3n biling\u00fce paciente en persona en toda el \u00e1rea metropolitana de Austin.",
         "Mi papel es simple: Ser el asesor confiable, la gu\u00eda organizada y el apoyo constante cuando las cosas se sienten abrumadoras.",
       ],
       ourMission: "Nuestra Misi\u00f3n",
@@ -1280,11 +1275,6 @@ export const translations = {
             ],
           },
         ],
-        communityCredit: {
-          text: "Cr\u00e9dito de sesi\u00f3n comunitaria aplica",
-          description: "Si asisti\u00f3 a una sesi\u00f3n comunitaria, su pago de $15 se aplica como cr\u00e9dito hacia cualquier paquete reservado dentro de 7 d\u00edas.",
-          descriptionEs: "If you attended a community session, your $15 fee is credited toward any package booked within 7 days.",
-        },
         alaCarte: {
           toggle: "\u00bfSolo necesita ayuda con una parte? Precios por etapa",
           toggleEs: "Only need help with one part? \u00c0 la carte pricing",
@@ -1521,7 +1511,7 @@ export const translations = {
           monthlyPrice: "$75",
           features: [
             { en: "Single-page professional website", es: "Sitio web profesional de una página" },
-            { en: "Logo, services list & photo gallery (up to 10 photos)", es: "Logo, lista de servicios y galería de fotos (hasta 10 fotos)" },
+            { en: "Your logo placed, services list & photo gallery (up to 10 photos)", es: "Su logo colocado, lista de servicios y galería de fotos (hasta 10 fotos)" },
             { en: "Phone number, contact form & Google Maps embed", es: "Número de teléfono, formulario de contacto e integración de Google Maps" },
             { en: "Social media links", es: "Enlaces a redes sociales" },
             { en: "Mobile-friendly design", es: "Diseño adaptable a móviles" },
