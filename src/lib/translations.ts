@@ -3,6 +3,8 @@ export type Language = "en" | "es";
 export const translations = {
   en: {
     nav: {
+      services: "Services",
+      viewAllPricing: "View All Plans & Pricing",
       collegeAdvising: "College Advising",
       businessStartup: "Business Start-Up",
       pricing: "Services & Pricing",
@@ -888,6 +890,8 @@ export const translations = {
   },
   es: {
     nav: {
+      services: "Servicios",
+      viewAllPricing: "Ver Todos los Planes y Precios",
       collegeAdvising: "Asesor\u00eda Universitaria",
       businessStartup: "Inicio de Negocios",
       pricing: "Servicios y Precios",
