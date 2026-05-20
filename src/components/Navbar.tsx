@@ -25,8 +25,9 @@ export default function Navbar() {
 
   return (
     <nav className="bg-primary text-white">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
+      <div className="max-w-6xl mx-auto px-4 py-3 grid grid-cols-3 items-center">
+
+        {/* Logo — left */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-transparent.png"
@@ -38,8 +39,8 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Nav links — center */}
+        <div className="hidden md:flex items-center justify-center gap-8">
           {/* Services dropdown */}
           <div
             className="relative"
@@ -57,23 +58,26 @@ export default function Navbar() {
             </Link>
 
             {servicesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52 bg-white text-primary rounded-xl shadow-lg py-2 z-50">
-                {serviceLinks.map((link) => (
+              /* pt-2 bridges the gap so the mouse never leaves the hover zone */
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-56 z-50">
+                <div className="bg-white text-primary rounded-xl shadow-lg py-2">
+                  {serviceLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                  <div className="my-1 border-t border-gray-100" />
                   <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block px-4 py-2 text-sm hover:bg-gray-50 transition-colors"
+                    href="/services"
+                    className="block px-4 py-2 text-xs text-gray-400 hover:bg-gray-50 hover:text-primary transition-colors"
                   >
-                    {link.label}
+                    {t.nav.viewAllPricing}
                   </Link>
-                ))}
-                <div className="my-1 border-t border-gray-100" />
-                <Link
-                  href="/services"
-                  className="block px-4 py-2 text-xs text-gray-400 hover:bg-gray-50 hover:text-primary transition-colors"
-                >
-                  {t.nav.viewAllPricing}
-                </Link>
+                </div>
               </div>
             )}
           </div>
@@ -84,14 +88,16 @@ export default function Navbar() {
           >
             {t.nav.about}
           </Link>
+        </div>
 
+        {/* CTA + language — right */}
+        <div className="hidden md:flex items-center justify-end gap-3">
           <Link
             href="/contact"
             className="bg-accent text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-accent-light transition-colors"
           >
             {t.nav.bookSession}
           </Link>
-
           <button
             onClick={toggle}
             className="bg-white text-primary text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors flex items-center gap-2"
@@ -102,8 +108,8 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile: hamburger only */}
-        <div className="md:hidden flex items-center gap-4">
+        {/* Mobile: hamburger — right */}
+        <div className="md:hidden flex items-center justify-end">
           <button
             className="text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
