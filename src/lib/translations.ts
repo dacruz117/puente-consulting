@@ -14,6 +14,7 @@ export const translations = {
       bookSession: "Book a Session",
       langButtonToEs: "Español",
       langButtonToEn: "English",
+      didYouKnow: "Did You Know?",
     },
     footer: {
       tagline: "Bilingual guidance for everyday life.",
@@ -27,6 +28,7 @@ export const translations = {
       webDesign: "Web Design Services",
       disclaimer:
         "Puente Bilingual Services provides assistance and informational guidance only. We do not provide legal, financial, immigration, or medical advice. Clients are responsible for final decisions and submissions.",
+      didYouKnow: "Did You Know?",
     },
     home: {
       heroEyebrow: "Bilingual · Austin, TX · EN / ES",
@@ -882,6 +884,44 @@ export const translations = {
         },
       ],
     },
+    didYouKnow: {
+      heroTitle: "Did You Know?",
+      heroSubtitle: "A few facts that might change how you see the path ahead.",
+      categories: [
+        {
+          label: "College Advising",
+          facts: [
+            "Only 11% of low-income students attend a selective college — not because of talent, but because of information.",
+            "More than $2.6 billion in federal grant money goes unclaimed each year because students don't complete FAFSA.",
+            "First-generation college students are 51% less likely to graduate than their peers without guidance.",
+          ],
+        },
+        {
+          label: "Business Start-Up",
+          facts: [
+            "20% of small businesses fail in their first year. 45% don't make it to year five.",
+            "Over 4 million new businesses are started in the U.S. every year — most without a clear plan.",
+            "Businesses that separate personal and business banking are significantly more likely to be approved for a loan.",
+          ],
+        },
+        {
+          label: "Web Design",
+          facts: [
+            "Visitors form an opinion about your website in 0.05 seconds — before they read a single word.",
+            "75% of consumers judge a business's credibility based on its website design.",
+            "More than 60% of all web traffic now comes from mobile devices.",
+          ],
+        },
+        {
+          label: "Translation",
+          facts: [
+            "Over 41 million people in the United States speak Spanish at home — making it the second most spoken language in the country.",
+            "Customers are 72% more likely to buy a product when information is available in their native language.",
+            "The demand for Spanish-English translation services in the U.S. has grown over 25% in the past decade.",
+          ],
+        },
+      ],
+    },
     testimonials: {
       heading: "What clients are saying",
       comingSoon: "Reviews coming soon — currently accepting founding clients.",
@@ -901,6 +941,7 @@ export const translations = {
       bookSession: "Agenda una Sesi\u00f3n",
       langButtonToEs: "Español",
       langButtonToEn: "English",
+      didYouKnow: "\u00bfSab\u00edas que...?",
     },
     footer: {
       tagline: "Orientaci\u00f3n biling\u00fce para la vida diaria.",
@@ -914,6 +955,7 @@ export const translations = {
       webDesign: "Dise\u00f1o Web",
       disclaimer:
         "Puente Bilingual Services ofrece asistencia y orientaci\u00f3n informativa \u00fanicamente. No brindamos asesor\u00eda legal, financiera, migratoria ni m\u00e9dica. Los clientes son responsables de decisiones y env\u00edos finales.",
+      didYouKnow: "¿Sabías que...?",
     },
     home: {
       heroEyebrow: "Bilingüe · Austin, TX · EN / ES",
@@ -1766,6 +1808,44 @@ export const translations = {
           name: { en: "Bilingual English/Spanish content", es: "Contenido bilingüe inglés/español" },
           price: { en: "Included", es: "Incluido" },
           highlight: true,
+        },
+      ],
+    },
+    didYouKnow: {
+      heroTitle: "¿Sabías que...?",
+      heroSubtitle: "Algunos datos que pueden cambiar cómo ves el camino por delante.",
+      categories: [
+        {
+          label: "Asesoría Universitaria",
+          facts: [
+            "Solo el 11% de los estudiantes de bajos recursos asisten a una universidad selectiva — no por falta de talento, sino por falta de información.",
+            "Más de $2.6 mil millones en becas federales quedan sin reclamar cada año porque los estudiantes no completan el FAFSA.",
+            "Los estudiantes universitarios de primera generación tienen un 51% menos de probabilidades de graduarse sin orientación.",
+          ],
+        },
+        {
+          label: "Inicio de Negocios",
+          facts: [
+            "El 20% de los negocios pequeños fracasan en su primer año. El 45% no llega al quinto año.",
+            "Más de 4 millones de nuevos negocios se inician en los EE. UU. cada año — la mayoría sin un plan claro.",
+            "Los negocios que separan las finanzas personales y empresariales tienen significativamente más probabilidades de ser aprobados para préstamos.",
+          ],
+        },
+        {
+          label: "Diseño Web",
+          facts: [
+            "Los visitantes forman una opinión sobre tu sitio web en 0.05 segundos — antes de leer una sola palabra.",
+            "El 75% de los consumidores juzgan la credibilidad de un negocio por el diseño de su sitio web.",
+            "Más del 60% del tráfico web ahora proviene de dispositivos móviles.",
+          ],
+        },
+        {
+          label: "Traducción",
+          facts: [
+            "Más de 41 millones de personas en los Estados Unidos hablan español en casa — convirtiéndolo en el segundo idioma más hablado del país.",
+            "Los clientes tienen un 72% más de probabilidades de comprar un producto cuando la información está en su idioma nativo.",
+            "La demanda de servicios de traducción español-inglés en los EE. UU. ha crecido más de un 25% en la última década.",
+          ],
         },
       ],
     },
