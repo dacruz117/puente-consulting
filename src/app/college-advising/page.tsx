@@ -71,6 +71,23 @@ export default function CollegeAdvisingPage() {
         </div>
       </section>
 
+      {/* Cost Comparison */}
+      <section className="bg-cream py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-primary text-center mb-6">
+            {ca.costComparison.heading}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {ca.costComparison.points.map((point) => (
+              <div key={point} className="bg-white border border-gray-100 rounded-xl p-5">
+                <p className="text-sm text-body leading-relaxed">{point}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center font-bold text-primary">{ca.costComparison.closingLine}</p>
+        </div>
+      </section>
+
       <hr className="border-gray-100" />
 
       {/* 7-Stage Roadmap */}
