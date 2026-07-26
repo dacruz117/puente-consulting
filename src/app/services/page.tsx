@@ -6,11 +6,6 @@ import Link from "next/link";
 import CheckIcon from "@/components/CheckIcon";
 import { useLanguage } from "@/context/LanguageContext";
 
-const STAGE_COLORS = [
-  "#3B82F6", "#10B981", "#8B5CF6", "#06B6D4",
-  "#F59E0B", "#EF4444", "#6366F1",
-];
-
 const BIZ_STAGE_COLORS = [
   "#3B82F6", "#10B981", "#8B5CF6", "#06B6D4",
   "#F59E0B", "#EF4444", "#6366F1", "#D97706",
@@ -22,7 +17,6 @@ export default function ServicesPage() {
   const { t, lang } = useLanguage();
   const s = t.services;
   const [activeTab, setActiveTab] = useState<Tab>("academic");
-  const [alaCarteOpen, setAlaCarteOpen] = useState(false);
 
   const tabs: { key: Tab; label: string }[] = [
     { key: "general", label: s.tabs.general },
@@ -111,138 +105,136 @@ export default function ServicesPage() {
       {/* ── ACADEMIC SUPPORT TAB ── */}
       {activeTab === "academic" && (
         <>
-          {/* Packages */}
+          {/* Cost Comparison */}
+          <section className="py-20 bg-primary text-white">
+            <div className="max-w-5xl mx-auto px-4">
+              <p className="text-xs font-semibold tracking-widest uppercase text-accent-light mb-3 text-center">
+                {s.academic.costComparison.eyebrow}
+              </p>
+              <h2 className="text-3xl font-bold text-center mb-4">
+                {s.academic.costComparison.heading}
+              </h2>
+              <p className="text-gray-300 text-center max-w-2xl mx-auto mb-10">
+                {s.academic.costComparison.intro}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                {s.academic.costComparison.points.map((point) => (
+                  <div key={point} className="bg-white/5 border border-white/10 rounded-xl p-5">
+                    <p className="text-sm text-gray-300 leading-relaxed">{point}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-accent rounded-xl px-6 py-5 text-center">
+                <p className="font-bold">{s.academic.costComparison.closingLine}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Ladder: Presentation, Private Session, Done-With-You */}
           <section className="py-20 bg-cream">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-3xl font-bold text-primary text-center mb-12">
                 {s.packagesTitle}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-6">
-                {s.academic.packages.map((pkg, i) => {
-                  const isPopular = i === 1;
-                  return (
-                  <div
-                    key={pkg.name}
-                    className={`rounded-2xl overflow-hidden flex flex-col relative shadow-sm ${
-                      isPopular
-                        ? "bg-accent text-white ring-2 ring-accent"
-                        : "bg-white border border-gray-100"
-                    }`}
-                  >
-                    {isPopular && (
-                      <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
-                        {s.mostPopular}
-                      </span>
-                    )}
-                    <div className="p-8 flex flex-col flex-1">
-                      <div className="mb-5">
-                        <h3 className={`text-xl font-bold ${isPopular ? "text-white" : "text-primary"}`}>
-                          {pkg.name}
-                        </h3>
-                      </div>
-                      <p className={`text-4xl font-bold mb-1 ${isPopular ? "text-white" : "text-accent"}`}>
-                        {pkg.price}
-                      </p>
-                      <p className={`text-sm mb-6 ${isPopular ? "text-white/60" : "text-gray-400"}`}>
-                        {pkg.duration}
-                      </p>
-                      <ul className="space-y-3 flex-1 mb-8">
-                        {pkg.features.map((f) => (
-                          <li key={f.en} className="flex gap-2 items-start">
-                            <svg
-                              className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
-                              fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            >
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
-                              {lang === "en" ? f.en : f.es}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Link
-                        href="/contact"
-                        className={`block text-center font-semibold px-6 py-3 rounded-lg transition-colors ${
+                {[s.academic.presentation, s.academic.privateSession, s.academic.doneWithYou].map(
+                  (pkg, i) => {
+                    const isPopular = i === 1;
+                    return (
+                      <div
+                        key={pkg.name}
+                        className={`rounded-2xl overflow-hidden flex flex-col relative shadow-sm ${
                           isPopular
-                            ? "bg-white text-accent hover:bg-cream"
-                            : "bg-accent text-white hover:bg-accent-light"
+                            ? "bg-accent text-white ring-2 ring-accent"
+                            : "bg-white border border-gray-100"
                         }`}
                       >
-                        {s.packageCta}
-                      </Link>
-                    </div>
-                  </div>
-                  );
-                })}
-              </div>
-
-            </div>
-          </section>
-
-          {/* À la carte, collapsible */}
-          <section className="py-12 bg-white">
-            <div className="max-w-6xl mx-auto px-4">
-              <button
-                onClick={() => setAlaCarteOpen(!alaCarteOpen)}
-                className="w-full flex items-center justify-between text-left group"
-              >
-                <p className="text-base font-semibold text-primary group-hover:text-accent transition-colors">
-                  {s.academic.alaCarte.toggle}
-                </p>
-                <svg
-                  className={`w-5 h-5 text-accent transition-transform flex-shrink-0 ${alaCarteOpen ? "rotate-180" : ""}`}
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              {alaCarteOpen && (
-                <div className="mt-8">
-                  <p className="text-center text-sm font-medium text-accent mb-8">
-                    {s.academic.alaCarte.bundleNote}
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {s.academic.alaCarte.stages.map((stage, i) => (
-                      <div
-                        key={stage.num}
-                        className="bg-cream rounded-xl overflow-hidden shadow-sm"
-                        style={{ borderLeft: `4px solid ${STAGE_COLORS[i] ?? "#6B8BAE"}` }}
-                      >
-                        <div className="p-5">
-                          <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5">
-                            Stage {stage.num}
+                        {isPopular && (
+                          <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
+                            {s.mostPopular}
+                          </span>
+                        )}
+                        <div className="p-8 flex flex-col flex-1">
+                          <h3 className={`text-xl font-bold ${isPopular ? "text-white" : "text-primary"}`}>
+                            {pkg.name}
+                          </h3>
+                          <p className={`text-4xl font-bold mt-3 mb-1 ${isPopular ? "text-white" : "text-accent"}`}>
+                            {pkg.price}
                           </p>
-                          <h3 className="text-sm font-bold text-primary mb-4">{stage.name}</h3>
-                          <ul className="space-y-3">
-                            {stage.items.map((item) => (
-                              <li key={item.label} className="flex justify-between gap-2 text-sm text-body">
-                                <span className="leading-snug">{item.label}</span>
-                                <span className="font-semibold text-accent whitespace-nowrap">{item.price}</span>
+                          <p className={`text-sm mb-6 ${isPopular ? "text-white/60" : "text-gray-400"}`}>
+                            {pkg.duration}
+                          </p>
+                          <ul className="space-y-3 flex-1 mb-6">
+                            {pkg.features.map((f) => (
+                              <li key={f} className="flex gap-2 items-start">
+                                <svg
+                                  className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
+                                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                >
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
+                                  {f}
+                                </span>
                               </li>
                             ))}
                           </ul>
-                          <div className="mt-4 pt-4 border-t border-gray-200">
-                            <div className="flex justify-between text-sm font-bold mb-1">
-                              <span className="text-primary">{stage.fullLabel}</span>
-                              <span className="text-accent">{stage.fullPrice}</span>
-                            </div>
-                            <p className="text-xs text-green-600 font-medium">{stage.savings}</p>
-                          </div>
+                          {i === 2 && (
+                            <p className={`text-xs mb-6 leading-relaxed ${isPopular ? "text-white/80" : "text-green-600"}`}>
+                              {s.academic.doneWithYou.valueNote}
+                            </p>
+                          )}
+                          <Link
+                            href="/contact"
+                            className={`block text-center font-semibold px-6 py-3 rounded-lg transition-colors ${
+                              isPopular
+                                ? "bg-white text-accent hover:bg-cream"
+                                : "bg-accent text-white hover:bg-accent-light"
+                            }`}
+                          >
+                            {pkg.cta}
+                          </Link>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                    );
+                  }
+                )}
+              </div>
+              <p className="text-center text-sm text-gray-500 italic">{s.academic.foundingNote}</p>
             </div>
           </section>
 
-          {/* Founding note */}
-          <div className="bg-cream border-t border-gray-100 py-4 text-center">
-            <p className="text-sm text-gray-500 italic">{s.academic.foundingNote}</p>
-          </div>
+          {/* Ask-Anything Hour — standalone, not part of the ladder comparison */}
+          <section className="py-16 bg-white border-t border-gray-100">
+            <div className="max-w-lg mx-auto px-4">
+              <p className="text-center text-sm text-gray-400 mb-6">{s.academic.askAnything.note}</p>
+              <div className="bg-cream rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <div className="bg-accent px-8 py-6 text-center">
+                  <p className="text-5xl font-bold text-white">{s.academic.askAnything.price}</p>
+                  <p className="text-white/70 text-sm mt-1">{s.academic.askAnything.duration}</p>
+                </div>
+                <div className="p-8">
+                  <h3 className="text-lg font-bold text-primary mb-4 text-center">
+                    {s.academic.askAnything.name}
+                  </h3>
+                  <ul className="space-y-3 mb-8">
+                    {s.academic.askAnything.features.map((f) => (
+                      <li key={f} className="flex gap-2 text-body text-sm">
+                        <CheckIcon />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/contact"
+                    className="block text-center bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-light transition-colors"
+                  >
+                    {s.academic.askAnything.cta}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
         </>
       )}
 
