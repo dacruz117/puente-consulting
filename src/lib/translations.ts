@@ -398,8 +398,8 @@ export const translations = {
         },
       ],
       ctaHeading: "Ready to build your business?",
-      ctaSub: "Every family starts somewhere different — from a $20 community presentation to full hands-on support.",
-      ctaButton: "See How to Get Started →",
+      ctaSub: "The intro call is free. The conversation starts wherever you are.",
+      ctaButton: "Book a Free Intro Call →",
       disclaimer: "Puente Bilingual Services provides business startup guidance and informational assistance only. We are not licensed attorneys, CPAs, or financial advisors. All guidance is informational in nature. Clients are responsible for all final decisions, submissions, and legal registrations.",
     },
     translationServices: {
