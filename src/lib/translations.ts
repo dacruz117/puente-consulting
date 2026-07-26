@@ -565,7 +565,7 @@ export const translations = {
           duration: "1:1, 60 minutes",
           features: [
             "No agenda, no prep required — bring whatever question you have",
-            "A specific school, a confusing financial-aid letter, "is this offer legit" — anything",
+            "A specific school, a confusing financial-aid letter, “is this offer legit” — anything",
             "Book any time, whether or not you've done anything else with us",
           ],
           cta: "Book Your Ask-Anything Hour",
