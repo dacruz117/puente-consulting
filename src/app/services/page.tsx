@@ -130,14 +130,14 @@ export default function ServicesPage() {
             </div>
           </section>
 
-          {/* Ladder: Presentation, Private Session, Done-With-You */}
+          {/* Ladder: Ask-Anything, Private Session, Done-With-You */}
           <section className="py-20 bg-cream">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-3xl font-bold text-primary text-center mb-12">
                 {s.packagesTitle}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-6">
-                {[s.academic.presentation, s.academic.privateSession, s.academic.doneWithYou].map(
+                {[s.academic.askAnything, s.academic.privateSession, s.academic.doneWithYou].map(
                   (pkg, i) => {
                     const isPopular = i === 1;
                     return (
@@ -204,21 +204,21 @@ export default function ServicesPage() {
             </div>
           </section>
 
-          {/* Ask-Anything Hour — standalone, not part of the ladder comparison */}
+          {/* Community Presentation — standalone, live group session */}
           <section className="py-16 bg-white border-t border-gray-100">
             <div className="max-w-lg mx-auto px-4">
-              <p className="text-center text-sm text-gray-400 mb-6">{s.academic.askAnything.note}</p>
+              <p className="text-center text-sm text-gray-400 mb-6">{s.academic.presentation.note}</p>
               <div className="bg-cream rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                 <div className="bg-accent px-8 py-6 text-center">
-                  <p className="text-5xl font-bold text-white">{s.academic.askAnything.price}</p>
-                  <p className="text-white/70 text-sm mt-1">{s.academic.askAnything.duration}</p>
+                  <p className="text-5xl font-bold text-white">{s.academic.presentation.price}</p>
+                  <p className="text-white/70 text-sm mt-1">{s.academic.presentation.duration}</p>
                 </div>
                 <div className="p-8">
                   <h3 className="text-lg font-bold text-primary mb-4 text-center">
-                    {s.academic.askAnything.name}
+                    {s.academic.presentation.name}
                   </h3>
                   <ul className="space-y-3 mb-8">
-                    {s.academic.askAnything.features.map((f) => (
+                    {s.academic.presentation.features.map((f) => (
                       <li key={f} className="flex gap-2 text-body text-sm">
                         <CheckIcon />
                         <span>{f}</span>
@@ -229,7 +229,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="block text-center bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-light transition-colors"
                   >
-                    {s.academic.askAnything.cta}
+                    {s.academic.presentation.cta}
                   </Link>
                 </div>
               </div>
