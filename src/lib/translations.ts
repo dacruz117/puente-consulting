@@ -856,6 +856,49 @@ export const translations = {
         },
       ],
     },
+    faq: {
+      eyebrow: "Frequently Asked Questions",
+      heroTitle: "Questions? We've Got Answers.",
+      heroSubtitle: "Everything you need to know about how Puente works, in plain language.",
+      items: [
+        {
+          question: "What is Puente?",
+          answer: "Puente is a bilingual consulting practice based in Central Texas. We help first-generation families navigate college admissions, help aspiring entrepreneurs start their businesses, and offer translation and web design support — all in English and Spanish.",
+        },
+        {
+          question: "Who is college advising for?",
+          answer: "Families of students from middle school through college, especially first-generation, Spanish-speaking families who want a personalized guide through admissions, financial aid, and enrollment — not a generic checklist.",
+        },
+        {
+          question: "What's the difference between the Community Presentation, Ask-Anything Hour, Private Family Session, and Done-With-You?",
+          answer: "The Community Presentation ($20) is a live group session covering the full college-process overview. The Ask-Anything Hour ($49) is a flexible 1:1 hour for any specific question, no prep needed. The Private Family Session ($97) is a deep, personalized 1:1 session that ends with a written roadmap for your student. Done-With-You ($375) is 8 weekly sessions where we handle applications, FAFSA, and enrollment together.",
+        },
+        {
+          question: "Do I have to attend the Community Presentation before booking anything else?",
+          answer: "No — you can start wherever makes sense for you. The presentation is a good low-cost starting point, but you're welcome to book a Private Family Session or Ask-Anything Hour directly.",
+        },
+        {
+          question: "Are your services offered in Spanish?",
+          answer: "Yes. Every session, document, and page on this site is available in both English and Spanish — pick whichever language works best for your family, or mix both.",
+        },
+        {
+          question: "How do I book a session?",
+          answer: "Send a message through the Contact page with your preferred date and time, and we'll follow up by email to confirm. There's no online booking system — every request gets a personal reply.",
+        },
+        {
+          question: "What if I only need help with business start-up or a website, not both?",
+          answer: "Business Start-Up and Web Design are shown together because many clients need both, but you can work with us on just one — mention what you need in your message.",
+        },
+        {
+          question: "What grade or age should my student be to start?",
+          answer: "We work with students from middle school through college, but the earlier you start — ideally 9th grade — the more we can help you plan proactively. The 7-stage roadmap on the College Advising page explains what to expect at each grade level.",
+        },
+        {
+          question: "Do you offer translation services on their own?",
+          answer: "Yes — Translation Services is its own line, independent of college advising or business consulting. See the Services & Pricing page for details.",
+        },
+      ],
+    },
     testimonials: {
       heading: "What clients are saying",
       comingSoon: "Reviews coming soon — currently accepting founding clients.",
@@ -1714,6 +1757,49 @@ export const translations = {
             "Los clientes tienen un 72% más de probabilidades de comprar un producto cuando la información está en su idioma nativo.",
             "La demanda de servicios de traducción español-inglés en los EE. UU. ha crecido más de un 25% en la última década.",
           ],
+        },
+      ],
+    },
+    faq: {
+      eyebrow: "Preguntas Frecuentes",
+      heroTitle: "¿Preguntas? Tenemos Respuestas.",
+      heroSubtitle: "Todo lo que necesitas saber sobre cómo funciona Puente, en lenguaje sencillo.",
+      items: [
+        {
+          question: "¿Qué es Puente?",
+          answer: "Puente es una consultoría bilingüe con sede en el centro de Texas. Ayudamos a familias de primera generación a navegar las admisiones universitarias, ayudamos a futuros emprendedores a iniciar sus negocios, y ofrecemos apoyo de traducción y diseño web — todo en inglés y español.",
+        },
+        {
+          question: "¿Para quién es la asesoría universitaria?",
+          answer: "Para familias de estudiantes desde la escuela secundaria hasta la universidad, especialmente familias de primera generación que hablan español y quieren una guía personalizada en admisiones, ayuda financiera e inscripción — no una lista genérica.",
+        },
+        {
+          question: "¿Cuál es la diferencia entre la Presentación Comunitaria, la Consulta Abierta, la Sesión Privada para tu Familia y Lo Hacemos Juntos?",
+          answer: "La Presentación Comunitaria ($20) es una sesión grupal en vivo que cubre todo el proceso universitario. La Consulta Abierta ($49) es una hora flexible 1:1 para cualquier pregunta específica, sin preparación necesaria. La Sesión Privada para tu Familia ($97) es una sesión profunda y personalizada 1:1 que termina con una hoja de ruta por escrito para tu estudiante. Lo Hacemos Juntos ($375) son 8 sesiones semanales donde manejamos juntos las solicitudes, el FAFSA y la inscripción.",
+        },
+        {
+          question: "¿Tengo que asistir a la Presentación Comunitaria antes de reservar algo más?",
+          answer: "No — puedes comenzar donde tenga sentido para ti. La presentación es un buen punto de partida de bajo costo, pero también puedes reservar una Sesión Privada para tu Familia o una Consulta Abierta directamente.",
+        },
+        {
+          question: "¿Sus servicios están disponibles en español?",
+          answer: "Sí. Cada sesión, documento y página de este sitio está disponible en inglés y español — elige el idioma que mejor funcione para tu familia, o combina ambos.",
+        },
+        {
+          question: "¿Cómo reservo una sesión?",
+          answer: "Envía un mensaje a través de la página de Contacto con tu fecha y hora preferidas, y te responderemos por correo electrónico para confirmar. No hay un sistema de reservas automático — cada solicitud recibe una respuesta personal.",
+        },
+        {
+          question: "¿Qué pasa si solo necesito ayuda con el inicio de negocio o con un sitio web, no ambos?",
+          answer: "Inicio de Negocios y Diseño Web se presentan juntos porque muchos clientes necesitan ambos, pero puedes trabajar con nosotros en solo uno — menciónalo en tu mensaje.",
+        },
+        {
+          question: "¿En qué grado o edad debería estar mi estudiante para comenzar?",
+          answer: "Trabajamos con estudiantes desde la escuela secundaria hasta la universidad, pero mientras antes empieces — idealmente en 9° grado — más podemos ayudarte a planificar de forma proactiva. El mapa de 7 etapas en la página de Asesoría Universitaria explica qué esperar en cada grado.",
+        },
+        {
+          question: "¿Ofrecen servicios de traducción por separado?",
+          answer: "Sí — Servicios de Traducción es su propia línea, independiente de la asesoría universitaria o la consultoría de negocios. Consulta la página de Servicios y Precios para más detalles.",
         },
       ],
     },
