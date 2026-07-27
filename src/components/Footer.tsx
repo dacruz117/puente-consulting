@@ -32,7 +32,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href="/web-design" className="hover:text-white transition-colors">
+                <Link href="/business-startup" className="hover:text-white transition-colors">
                   {t.footer.webDesign}
                 </Link>
               </li>
