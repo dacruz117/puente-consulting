@@ -11,7 +11,7 @@ const BIZ_STAGE_COLORS = [
   "#F59E0B", "#EF4444", "#6366F1", "#D97706",
 ];
 
-type Tab = "general" | "academic" | "business" | "translation" | "webDesign";
+type Tab = "general" | "academic" | "business" | "translation";
 
 export default function ServicesPage() {
   const { t, lang } = useLanguage();
@@ -23,7 +23,6 @@ export default function ServicesPage() {
     { key: "academic", label: s.tabs.academic },
     { key: "business", label: s.tabs.business },
     { key: "translation", label: s.tabs.translation },
-    { key: "webDesign", label: s.tabs.webDesign },
   ];
 
   return (
@@ -130,14 +129,14 @@ export default function ServicesPage() {
             </div>
           </section>
 
-          {/* Ladder: Presentation, Private Session, Done-With-You */}
+          {/* Ladder: Ask-Anything, Private Session, Done-With-You */}
           <section className="py-20 bg-cream">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-3xl font-bold text-primary text-center mb-12">
                 {s.packagesTitle}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-6">
-                {[s.academic.presentation, s.academic.privateSession, s.academic.doneWithYou].map(
+                {[s.academic.askAnything, s.academic.privateSession, s.academic.doneWithYou].map(
                   (pkg, i) => {
                     const isPopular = i === 1;
                     return (
@@ -204,21 +203,21 @@ export default function ServicesPage() {
             </div>
           </section>
 
-          {/* Ask-Anything Hour — standalone, not part of the ladder comparison */}
+          {/* Community Presentation — standalone, live group session */}
           <section className="py-16 bg-white border-t border-gray-100">
             <div className="max-w-lg mx-auto px-4">
-              <p className="text-center text-sm text-gray-400 mb-6">{s.academic.askAnything.note}</p>
+              <p className="text-center text-sm text-gray-400 mb-6">{s.academic.presentation.note}</p>
               <div className="bg-cream rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
                 <div className="bg-accent px-8 py-6 text-center">
-                  <p className="text-5xl font-bold text-white">{s.academic.askAnything.price}</p>
-                  <p className="text-white/70 text-sm mt-1">{s.academic.askAnything.duration}</p>
+                  <p className="text-5xl font-bold text-white">{s.academic.presentation.price}</p>
+                  <p className="text-white/70 text-sm mt-1">{s.academic.presentation.duration}</p>
                 </div>
                 <div className="p-8">
                   <h3 className="text-lg font-bold text-primary mb-4 text-center">
-                    {s.academic.askAnything.name}
+                    {s.academic.presentation.name}
                   </h3>
                   <ul className="space-y-3 mb-8">
-                    {s.academic.askAnything.features.map((f) => (
+                    {s.academic.presentation.features.map((f) => (
                       <li key={f} className="flex gap-2 text-body text-sm">
                         <CheckIcon />
                         <span>{f}</span>
@@ -229,7 +228,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="block text-center bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent-light transition-colors"
                   >
-                    {s.academic.askAnything.cta}
+                    {s.academic.presentation.cta}
                   </Link>
                 </div>
               </div>
@@ -345,6 +344,78 @@ export default function ServicesPage() {
               </div>
             </div>
           </section>
+
+          {/* Web Design (merged into Business tab) */}
+          <section className="py-20 bg-cream border-t border-gray-100">
+            <div className="max-w-6xl mx-auto px-4">
+              <div className="text-center max-w-2xl mx-auto mb-12">
+                <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-3">
+                  {lang === "en" ? "Also Available" : "También Disponible"}
+                </p>
+                <h2 className="text-3xl font-bold text-primary">{t.webDesign.heroTitle}</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                {t.webDesign.packages.map((pkg, i) => {
+                  const isPopular = i === 1;
+                  return (
+                    <div
+                      key={pkg.name}
+                      className={`rounded-2xl overflow-hidden flex flex-col relative shadow-sm ${
+                        isPopular
+                          ? "bg-accent text-white ring-2 ring-accent"
+                          : "bg-white border border-gray-100"
+                      }`}
+                    >
+                      {isPopular && (
+                        <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
+                          {t.webDesign.mostPopular}
+                        </span>
+                      )}
+                      <div className="p-8 flex flex-col flex-1">
+                        <h3 className={`text-xl font-bold mb-4 ${isPopular ? "text-white" : "text-primary"}`}>
+                          {pkg.name}
+                        </h3>
+                        <p className={`text-4xl font-bold mb-1 ${isPopular ? "text-white" : "text-accent"}`}>
+                          {pkg.setupPrice}
+                        </p>
+                        <p className={`text-sm mb-1 ${isPopular ? "text-white/60" : "text-gray-400"}`}>
+                          {t.webDesign.setupLabel}
+                        </p>
+                        <p className={`text-lg font-semibold mb-6 ${isPopular ? "text-white/80" : "text-accent"}`}>
+                          {pkg.monthlyPrice}{t.webDesign.monthlyLabel}
+                        </p>
+                        <ul className="space-y-3 flex-1 mb-8">
+                          {pkg.features.map((f) => (
+                            <li key={f.en} className="flex gap-2 items-start">
+                              <svg
+                                className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                              </svg>
+                              <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
+                                {lang === "en" ? f.en : f.es}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          href="/business-startup"
+                          className={`block text-center font-semibold px-6 py-3 rounded-lg transition-colors ${
+                            isPopular
+                              ? "bg-white text-accent hover:bg-cream"
+                              : "bg-accent text-white hover:bg-accent-light"
+                          }`}
+                        >
+                          {lang === "en" ? "See Full Details →" : "Ver Detalles Completos →"}
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
         </>
       )}
 
@@ -373,74 +444,6 @@ export default function ServicesPage() {
                 <p className="text-sm text-accent font-medium mb-2">{t.translationServices.pricingBullets[0]}</p>
                 <p className="text-xs text-gray-400 leading-relaxed">{t.translationServices.pricingEstimate}</p>
               </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ── WEB DESIGN TAB ── */}
-      {activeTab === "webDesign" && (
-        <section className="py-20 bg-cream">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-              {t.webDesign.packages.map((pkg, i) => {
-                const isPopular = i === 1;
-                return (
-                  <div
-                    key={pkg.name}
-                    className={`rounded-2xl overflow-hidden flex flex-col relative shadow-sm ${
-                      isPopular
-                        ? "bg-accent text-white ring-2 ring-accent"
-                        : "bg-white border border-gray-100"
-                    }`}
-                  >
-                    {isPopular && (
-                      <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
-                        {t.webDesign.mostPopular}
-                      </span>
-                    )}
-                    <div className="p-8 flex flex-col flex-1">
-                      <h3 className={`text-xl font-bold mb-4 ${isPopular ? "text-white" : "text-primary"}`}>
-                        {pkg.name}
-                      </h3>
-                      <p className={`text-4xl font-bold mb-1 ${isPopular ? "text-white" : "text-accent"}`}>
-                        {pkg.setupPrice}
-                      </p>
-                      <p className={`text-sm mb-1 ${isPopular ? "text-white/60" : "text-gray-400"}`}>
-                        {t.webDesign.setupLabel}
-                      </p>
-                      <p className={`text-lg font-semibold mb-6 ${isPopular ? "text-white/80" : "text-accent"}`}>
-                        {pkg.monthlyPrice}{t.webDesign.monthlyLabel}
-                      </p>
-                      <ul className="space-y-3 flex-1 mb-8">
-                        {pkg.features.map((f) => (
-                          <li key={f.en} className="flex gap-2 items-start">
-                            <svg
-                              className={`w-4 h-4 flex-shrink-0 mt-0.5 ${isPopular ? "text-yellow-400" : "text-accent"}`}
-                              fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            >
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span className={`text-sm leading-snug ${isPopular ? "text-white" : "text-body"}`}>
-                              {lang === "en" ? f.en : f.es}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Link
-                        href="/web-design"
-                        className={`block text-center font-semibold px-6 py-3 rounded-lg transition-colors ${
-                          isPopular
-                            ? "bg-white text-accent hover:bg-cream"
-                            : "bg-accent text-white hover:bg-accent-light"
-                        }`}
-                      >
-                        {lang === "en" ? "See Full Details →" : "Ver Detalles Completos →"}
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>

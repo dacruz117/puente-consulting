@@ -16,7 +16,6 @@ export default function Navbar() {
   const serviceLinks = [
     { href: "/college-advising", label: t.nav.collegeAdvising },
     { href: "/business-startup", label: t.nav.businessStartup },
-    { href: "/web-design", label: t.nav.webDesign },
     { href: "/translation-services", label: t.nav.translationServices },
   ];
 
@@ -24,6 +23,8 @@ export default function Navbar() {
   const servicesActive = serviceHrefs.some((h) => pathname === h);
   const aboutActive = pathname === "/about";
   const didYouKnowActive = pathname === "/did-you-know";
+  const pricingActive = pathname === "/services";
+  const faqActive = pathname === "/faq";
 
   function navLinkClass(active: boolean) {
     return `text-sm transition-colors ${
@@ -117,8 +118,16 @@ export default function Navbar() {
             {t.nav.about}
           </Link>
 
+          <Link href="/services" className={navLinkClass(pricingActive)}>
+            {t.nav.pricing}
+          </Link>
+
           <Link href="/did-you-know" className={navLinkClass(didYouKnowActive)}>
             {t.nav.didYouKnow}
+          </Link>
+
+          <Link href="/faq" className={navLinkClass(faqActive)}>
+            {t.nav.faq}
           </Link>
         </div>
 
@@ -220,6 +229,16 @@ export default function Navbar() {
           </Link>
 
           <Link
+            href="/services"
+            className={`block text-sm transition-colors ${
+              pricingActive ? "text-accent-light font-medium" : "hover:text-accent-light"
+            }`}
+            onClick={closeMobile}
+          >
+            {t.nav.pricing}
+          </Link>
+
+          <Link
             href="/did-you-know"
             className={`block text-sm transition-colors ${
               didYouKnowActive ? "text-accent-light font-medium" : "hover:text-accent-light"
@@ -227,6 +246,16 @@ export default function Navbar() {
             onClick={closeMobile}
           >
             {t.nav.didYouKnow}
+          </Link>
+
+          <Link
+            href="/faq"
+            className={`block text-sm transition-colors ${
+              faqActive ? "text-accent-light font-medium" : "hover:text-accent-light"
+            }`}
+            onClick={closeMobile}
+          >
+            {t.nav.faq}
           </Link>
 
           <Link

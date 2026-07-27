@@ -91,6 +91,31 @@ export default function ContactForm() {
         </select>
       </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="preferred_date" className="block text-sm font-medium text-primary mb-1">
+            {t.contactForm.preferredDate}
+          </label>
+          <input
+            type="date"
+            id="preferred_date"
+            name="preferred_date"
+            className="w-full border border-gray-300 rounded-lg px-4 py-2 text-body focus:outline-none focus:ring-2 focus:ring-accent"
+          />
+        </div>
+        <div>
+          <label htmlFor="preferred_time" className="block text-sm font-medium text-primary mb-1">
+            {t.contactForm.preferredTime}
+          </label>
+          <input
+            type="time"
+            id="preferred_time"
+            name="preferred_time"
+            className="w-full border border-gray-300 rounded-lg px-4 py-2 text-body focus:outline-none focus:ring-2 focus:ring-accent"
+          />
+        </div>
+      </div>
+
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-primary mb-1">
           {t.contactForm.message}
