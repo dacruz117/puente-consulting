@@ -452,13 +452,11 @@ export const translations = {
     contact: {
       heroTitle: "Get in Touch",
       heroSubtitle:
-        "Ready to take the next step? Send us a message or book a session.",
+        "Ready to take the next step? Send us a message with your preferred date and time.",
       sendMessage: "Send a Message",
-      bookSession: "Book a Session",
-      scheduleText: "Schedule a session at a time that works for you.",
       emailUs: "Or email us directly at",
       responseTime: "We respond to all messages within 24 hours.",
-      preferMessage: "Prefer to send a message? Use the form below.",
+      preferMessage: "Use the form below — we reply personally to every message.",
     },
     contactForm: {
       name: "Name",
@@ -471,6 +469,8 @@ export const translations = {
       translationServices: "Translation Services",
       webDesign: "Web Design",
       multipleServices: "Multiple Services",
+      preferredDate: "Preferred date (optional)",
+      preferredTime: "Preferred time (optional)",
       message: "Message",
       sendMessage: "Send Message",
       thankYou: "Thank you!",
@@ -1316,13 +1316,11 @@ export const translations = {
     contact: {
       heroTitle: "Cont\u00e1ctanos",
       heroSubtitle:
-        "\u00bfListo para dar el siguiente paso? Env\u00edanos un mensaje o agenda una sesi\u00f3n.",
+        "\u00bfListo para dar el siguiente paso? Env\u00edanos un mensaje con tu fecha y hora preferidas.",
       sendMessage: "Enviar un Mensaje",
-      bookSession: "Agenda una Sesi\u00f3n",
-      scheduleText: "Agenda una sesi\u00f3n en el horario que mejor te convenga.",
       emailUs: "O escr\u00edbenos directamente a",
       responseTime: "Respondemos a todos los mensajes en menos de 24 horas.",
-      preferMessage: "\u00bfPrefiere enviar un mensaje? Use el formulario a continuaci\u00f3n.",
+      preferMessage: "Usa el formulario a continuaci\u00f3n \u2014 respondemos personalmente a cada mensaje.",
     },
     contactForm: {
       name: "Nombre",
@@ -1335,6 +1333,8 @@ export const translations = {
       translationServices: "Servicios de Traducci\u00f3n",
       webDesign: "Dise\u00f1o Web",
       multipleServices: "M\u00faltiples Servicios",
+      preferredDate: "Fecha preferida (opcional)",
+      preferredTime: "Hora preferida (opcional)",
       message: "Mensaje",
       sendMessage: "Enviar Mensaje",
       thankYou: "\u00a1Gracias!",
