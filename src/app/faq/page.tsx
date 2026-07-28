@@ -29,6 +29,20 @@ export default function FaqPage() {
         </div>
       </section>
 
+      {/* Q&A List */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="space-y-6">
+            {faq.items.map((item) => (
+              <div key={item.question} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-primary mb-2">{item.question}</h3>
+                <p className="text-body leading-relaxed">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Did You Know facts */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4">
@@ -46,29 +60,12 @@ export default function FaqPage() {
                   {category.facts.map((fact, i) => (
                     <div
                       key={i}
-                      className="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col gap-4"
+                      className="bg-gray-50 rounded-xl p-6 border border-gray-100"
                     >
                       <p className="text-base text-primary leading-relaxed">{fact}</p>
                     </div>
                   ))}
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Q&A List */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-12">
-            {faq.eyebrow}
-          </h2>
-          <div className="space-y-6">
-            {faq.items.map((item) => (
-              <div key={item.question} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-primary mb-2">{item.question}</h3>
-                <p className="text-body leading-relaxed">{item.answer}</p>
               </div>
             ))}
           </div>
