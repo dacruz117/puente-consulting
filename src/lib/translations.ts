@@ -1475,7 +1475,7 @@ export const translations = {
             "Una escuela específica, una carta de ayuda financiera confusa, «¿esta oferta es legítima?» — lo que sea",
             "Agenda en cualquier momento, hayas usado o no otro de nuestros servicios",
           ],
-          cta: "Agenda Tu Hora de Preguntas",
+          cta: "Agenda Tu Consulta Abierta",
         },
         foundingNote: "Precios de cliente fundador — limitado a 5 cupos. La tarifa sube cuando se llenen.",
       },
