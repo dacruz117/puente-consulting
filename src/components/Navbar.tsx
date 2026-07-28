@@ -22,8 +22,6 @@ export default function Navbar() {
   const serviceHrefs = serviceLinks.map((l) => l.href).concat("/services");
   const servicesActive = serviceHrefs.some((h) => pathname === h);
   const aboutActive = pathname === "/about";
-  const didYouKnowActive = pathname === "/did-you-know";
-  const pricingActive = pathname === "/services";
   const faqActive = pathname === "/faq";
 
   function navLinkClass(active: boolean) {
@@ -116,14 +114,6 @@ export default function Navbar() {
 
           <Link href="/about" className={navLinkClass(aboutActive)}>
             {t.nav.about}
-          </Link>
-
-          <Link href="/services" className={navLinkClass(pricingActive)}>
-            {t.nav.pricing}
-          </Link>
-
-          <Link href="/did-you-know" className={navLinkClass(didYouKnowActive)}>
-            {t.nav.didYouKnow}
           </Link>
 
           <Link href="/faq" className={navLinkClass(faqActive)}>
@@ -226,26 +216,6 @@ export default function Navbar() {
             onClick={closeMobile}
           >
             {t.nav.about}
-          </Link>
-
-          <Link
-            href="/services"
-            className={`block text-sm transition-colors ${
-              pricingActive ? "text-accent-light font-medium" : "hover:text-accent-light"
-            }`}
-            onClick={closeMobile}
-          >
-            {t.nav.pricing}
-          </Link>
-
-          <Link
-            href="/did-you-know"
-            className={`block text-sm transition-colors ${
-              didYouKnowActive ? "text-accent-light font-medium" : "hover:text-accent-light"
-            }`}
-            onClick={closeMobile}
-          >
-            {t.nav.didYouKnow}
           </Link>
 
           <Link
