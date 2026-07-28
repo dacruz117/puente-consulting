@@ -7,13 +7,11 @@ export const translations = {
       viewAllPricing: "View All Plans & Pricing",
       collegeAdvising: "College Advising",
       businessStartup: "Business Start-Up",
-      pricing: "Services & Pricing",
       translationServices: "Translations",
       about: "About",
       bookSession: "Book a Session",
       langButtonToEs: "Español",
       langButtonToEn: "English",
-      didYouKnow: "Did You Know?",
       faq: "FAQ",
     },
     footer: {
@@ -28,7 +26,7 @@ export const translations = {
       webDesign: "Web Design Services",
       disclaimer:
         "Puente Bilingual Services provides assistance and informational guidance only. We do not provide legal, financial, immigration, or medical advice. Clients are responsible for final decisions and submissions.",
-      didYouKnow: "Did You Know?",
+      faq: "FAQ",
     },
     home: {
       heroEyebrow: "Bilingual · Austin, TX · EN / ES",
@@ -910,13 +908,11 @@ export const translations = {
       viewAllPricing: "Ver Todos los Planes y Precios",
       collegeAdvising: "Asesor\u00eda Universitaria",
       businessStartup: "Inicio de Negocios",
-      pricing: "Servicios y Precios",
       translationServices: "Traducciones",
       about: "Nosotros",
       bookSession: "Agenda una Sesi\u00f3n",
       langButtonToEs: "Español",
       langButtonToEn: "English",
-      didYouKnow: "\u00bfSab\u00edas que...?",
       faq: "FAQ",
     },
     footer: {
@@ -931,7 +927,7 @@ export const translations = {
       webDesign: "Dise\u00f1o Web",
       disclaimer:
         "Puente Bilingual Services ofrece asistencia y orientaci\u00f3n informativa \u00fanicamente. No brindamos asesor\u00eda legal, financiera, migratoria ni m\u00e9dica. Los clientes son responsables de decisiones y env\u00edos finales.",
-      didYouKnow: "¿Sabías que...?",
+      faq: "FAQ",
     },
     home: {
       heroEyebrow: "Bilingüe · Austin, TX · EN / ES",

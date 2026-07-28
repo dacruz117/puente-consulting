@@ -47,8 +47,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/did-you-know" className="hover:text-white transition-colors">
-                  {t.footer.didYouKnow}
+                <Link href="/faq" className="hover:text-white transition-colors">
+                  {t.footer.faq}
                 </Link>
               </li>
               <li>
