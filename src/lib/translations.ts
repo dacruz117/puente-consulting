@@ -143,12 +143,11 @@ export const translations = {
         },
       ],
       trustEyebrow: "Why Puente",
-      trustTitle: "Experienced. Bilingual. On your side.",
+      trustTitle: "With personal experience. Bilingual. On your side.",
       trustParagraph:
-        "With a background in higher education administration and years of guiding families through complex systems, I bring both the knowledge and the patience to make these processes feel manageable.",
+        "I was a first-generation student myself, and I lived firsthand the confusion, paperwork, and uncertainty so many families face. That path, not a degree, is what brought me here. I bring real understanding of what this feels like, along with the patience to make these processes feel manageable.",
       trustPills: [
-        "BBA — Texas A&M Central Texas",
-        "TAMUCT Enrollment Advisor",
+        "First-Gen College Grad",
         "Bilingual EN / ES",
         "1:1 Sessions",
         "Confidential",
@@ -196,12 +195,16 @@ export const translations = {
         { number: "$20", label: "Where every family starts — a live community presentation" },
       ],
       costComparison: {
-        heading: "One Wrong Turn Can Cost More Than College Itself",
+        eyebrow: "Why These Prices Make Sense",
+        heading: "The Real Cost of Getting This Wrong",
+        intro: "A bad college decision costs a lot more than a Puente session ever will.",
         points: [
-          "The average bachelor's degree costs about $146,795 total. A for-profit school, non-transferring credits, or a bad loan can waste years and tens of thousands of dollars of that.",
-          "31% of Latino students at 4-year Texas universities never finish — often because of missing information, not missing money.",
+          "The average bachelor's degree costs about $146,795 total — one wrong turn (the wrong major, the wrong school, a program that doesn't transfer) can waste years and tens of thousands of dollars of that.",
+          "Credits that don't transfer mean paying twice for a class you already passed.",
+          "Private loans carry variable, high interest with no federal borrower protections — a last resort, not a plan.",
+          "31% of Latino students at 4-year Texas universities, and 45% at community colleges, never finish — often because of missing information, not missing money.",
         ],
-        closingLine: "A misstep can cost thousands. Getting it right starts at $20.",
+        closingLine: "A single misstep can cost thousands. Getting it right, with Puente, costs $20 to $375.",
       },
       stagesEyebrow: "What We Cover",
       stagesHeading: "The 7-Stage Academic Roadmap",
@@ -517,18 +520,6 @@ export const translations = {
         disclaimer: "All services are informational and assistance-based. We do not provide legal or medical advice.",
       },
       academic: {
-        costComparison: {
-          eyebrow: "Why These Prices Make Sense",
-          heading: "The Real Cost of Getting This Wrong",
-          intro: "A bad college decision costs a lot more than a Puente session ever will.",
-          points: [
-            "The average bachelor's degree costs about $146,795 total — one wrong turn (the wrong major, the wrong school, a program that doesn't transfer) can waste years and tens of thousands of dollars of that.",
-            "Credits that don't transfer mean paying twice for a class you already passed.",
-            "Private loans carry variable, high interest with no federal borrower protections — a last resort, not a plan.",
-            "31% of Latino students at 4-year Texas universities, and 45% at community colleges, never finish — often because of missing information, not missing money.",
-          ],
-          closingLine: "A single misstep can cost thousands. Getting it right, with Puente, costs $20 to $375.",
-        },
         presentation: {
           name: "Understanding the College Path",
           price: "$20",
@@ -1044,12 +1035,11 @@ export const translations = {
         },
       ],
       trustEyebrow: "Por qué Puente",
-      trustTitle: "Con experiencia. Bilingüe. De tu lado.",
+      trustTitle: "Con experiencia personal. Bilingüe. De tu lado.",
       trustParagraph:
-        "Con formación en administración de educación superior y años de guiar a familias a través de sistemas complejos, traigo tanto el conocimiento como la paciencia para hacer que estos procesos se sientan manejables.",
+        "Fui estudiante de primera generación, y viví de primera mano la confusión, el papeleo y la incertidumbre que muchas familias enfrentan. Ese camino, no un título, es lo que me trae aquí. Traigo la comprensión real de lo que se siente, además de la paciencia para hacer que estos procesos se sientan manejables.",
       trustPills: [
-        "Licenciatura en Administración — TAMUCT",
-        "Asesor de Inscripciones en TAMUCT",
+        "Primera Generación Universitaria",
         "Bilingüe EN / ES",
         "Sesiones 1:1",
         "Confidencial",
@@ -1097,12 +1087,16 @@ export const translations = {
         { number: "$20", label: "Donde comienza cada familia — una presentación comunitaria en vivo" },
       ],
       costComparison: {
-        heading: "Un Solo Error Puede Costar Más Que la Universidad Misma",
+        eyebrow: "Por Qué Estos Precios Tienen Sentido",
+        heading: "El Verdadero Costo de Equivocarse",
+        intro: "Una mala decisión universitaria cuesta mucho más que cualquier sesión con Puente.",
         points: [
-          "El costo total promedio de un título de licenciatura es de aproximadamente $146,795. Una escuela con fines de lucro, créditos que no se transfieren, o un mal préstamo pueden desperdiciar años y decenas de miles de dólares de eso.",
-          "El 31% de los estudiantes latinos en universidades públicas de 4 años en Texas nunca se gradúan — muchas veces por falta de información, no de dinero.",
+          "El costo total promedio de un título de licenciatura es de aproximadamente $146,795 — un solo paso en falso (la carrera equivocada, la escuela equivocada, un programa cuyos créditos no se transfieren) puede desperdiciar años y decenas de miles de dólares de eso.",
+          "Los créditos que no se transfieren significan pagar dos veces por una clase que ya aprobaste.",
+          "Los préstamos privados tienen tasas de interés variables y altas, sin protecciones federales — un último recurso, no un plan.",
+          "El 31% de los estudiantes latinos en universidades públicas de 4 años en Texas, y el 45% en colegios comunitarios, nunca se gradúan — muchas veces por falta de información, no de dinero.",
         ],
-        closingLine: "Un error puede costar miles. Hacerlo bien comienza en $20.",
+        closingLine: "Un solo error puede costar miles. Hacerlo bien, con Puente, cuesta entre $20 y $375.",
       },
       stagesEyebrow: "Lo Que Cubrimos",
       stagesHeading: "El Mapa Acad\u00e9mico de 7 Etapas",
@@ -1418,18 +1412,6 @@ export const translations = {
         disclaimer: "Todos los servicios son informativos y de asistencia. No brindamos asesor\u00eda legal ni m\u00e9dica.",
       },
       academic: {
-        costComparison: {
-          eyebrow: "Por Qué Estos Precios Tienen Sentido",
-          heading: "El Verdadero Costo de Equivocarse",
-          intro: "Una mala decisión universitaria cuesta mucho más que cualquier sesión con Puente.",
-          points: [
-            "El costo total promedio de un título de licenciatura es de aproximadamente $146,795 — un solo paso en falso (la carrera equivocada, la escuela equivocada, un programa cuyos créditos no se transfieren) puede desperdiciar años y decenas de miles de dólares de eso.",
-            "Los créditos que no se transfieren significan pagar dos veces por una clase que ya aprobaste.",
-            "Los préstamos privados tienen tasas de interés variables y altas, sin protecciones federales — un último recurso, no un plan.",
-            "El 31% de los estudiantes latinos en universidades públicas de 4 años en Texas, y el 45% en colegios comunitarios, nunca se gradúan — muchas veces por falta de información, no de dinero.",
-          ],
-          closingLine: "Un solo error puede costar miles. Hacerlo bien, con Puente, cuesta entre $20 y $375.",
-        },
         presentation: {
           name: "Entendiendo el Camino Universitario",
           price: "$20",
