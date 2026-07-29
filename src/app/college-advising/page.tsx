@@ -49,9 +49,15 @@ export default function CollegeAdvisingPage() {
       {/* Cost Comparison — leads right after the hero */}
       <section className="bg-cream py-16">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-primary text-center mb-6">
+          <p className="text-xs font-semibold tracking-widest uppercase text-accent mb-3 text-center">
+            {ca.costComparison.eyebrow}
+          </p>
+          <h2 className="text-2xl font-bold text-primary text-center mb-4">
             {ca.costComparison.heading}
           </h2>
+          <p className="text-body text-center max-w-2xl mx-auto mb-6">
+            {ca.costComparison.intro}
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {ca.costComparison.points.map((point) => (
               <div key={point} className="bg-white border border-gray-100 rounded-xl p-5">
@@ -83,6 +89,45 @@ export default function CollegeAdvisingPage() {
                   <p className="text-xs text-gray-400 leading-snug mt-2">{stat.label}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Bio */}
+      <section className="bg-cream py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <Image
+                src="/profile.png"
+                alt="Puente founder"
+                width={480}
+                height={360}
+                className="rounded-2xl shadow-lg object-cover w-full"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+                {t.home.trustEyebrow}
+              </p>
+              <h2 className="text-3xl font-bold text-primary tracking-tight mb-4">
+                {t.home.trustTitle}
+              </h2>
+              <p className="text-sm text-body leading-relaxed mb-6">{t.home.trustParagraph}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {t.home.trustPills.map((pill) => (
+                  <span
+                    key={pill}
+                    className="text-xs font-medium text-accent bg-accent/10 border border-accent/20 px-3 py-1 rounded-full"
+                  >
+                    {pill}
+                  </span>
+                ))}
+              </div>
+              <p className="text-sm italic text-primary border-l-4 border-accent pl-4 leading-relaxed">
+                {t.home.trustGoal}
+              </p>
             </div>
           </div>
         </div>
