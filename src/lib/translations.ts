@@ -143,9 +143,9 @@ export const translations = {
         },
       ],
       trustEyebrow: "Why Puente",
-      trustTitle: "With personal experience. Bilingual. On your side.",
+      trustTitle: "Personal experience. Bilingual. On your side.",
       trustParagraph:
-        "I was a first-generation student myself, and I lived firsthand the confusion, paperwork, and uncertainty so many families face. That path, not a degree, is what brought me here. I bring real understanding of what this feels like, along with the patience to make these processes feel manageable.",
+        "I was a first-generation student myself, and I experienced firsthand the confusion, paperwork, and uncertainty so many families face. That path, not a degree, is what brought me here. I bring a real understanding of what this feels like, along with the patience to make these processes feel manageable.",
       trustPills: [
         "First-Gen College Grad",
         "Bilingual EN / ES",
@@ -167,7 +167,7 @@ export const translations = {
       paragraphs: [
         "Puente Bilingual Services was created to bridge the gap between complex systems and the people who need help navigating them.",
         "Many families struggle with online forms, registrations, appointments, and digital processes, not because they lack intelligence, but because these systems were not designed with them in mind.",
-        "With a BBA from Texas A&M University – Central Texas and professional experience as an Enrollment Advisor at TAMUCT, I provide patient, bilingual guidance in person throughout the Austin metro area.",
+        "I was a first-generation student myself, and I know firsthand what it feels like to face these systems without a guide. That experience, not a degree, is what I bring to every family — along with patient, bilingual support, delivered in person throughout the Austin metro area.",
         "My role is simple: To be the trusted advisor, the organized guide, and the steady support when things feel overwhelming.",
       ],
       ourMission: "Our Mission",
@@ -195,7 +195,7 @@ export const translations = {
         { number: "$20", label: "Where every family starts — a live community presentation" },
       ],
       costComparison: {
-        eyebrow: "Why These Prices Make Sense",
+        eyebrow: "Why This Is Worth It",
         heading: "The Real Cost of Getting This Wrong",
         intro: "A bad college decision costs a lot more than a Puente session ever will.",
         points: [
@@ -1059,7 +1059,7 @@ export const translations = {
       paragraphs: [
         "Puente Bilingual Services fue creado para cerrar la brecha entre sistemas complejos y las personas que necesitan ayuda para navegarlos.",
         "Muchas familias enfrentan dificultades con formularios en l\u00ednea, registros, citas y procesos digitales, no por falta de capacidad, sino porque estos sistemas no fueron dise\u00f1ados pensando en ellas.",
-        "Con una Licenciatura en Administraci\u00f3n de Empresas de Texas A&M University \u2013 Central Texas y experiencia profesional como Asesor de Inscripciones en TAMUCT, ofrezco orientaci\u00f3n biling\u00fce paciente en persona en toda el \u00e1rea metropolitana de Austin.",
+        "Fui estudiante de primera generaci\u00f3n, y s\u00e9 de primera mano lo que se siente enfrentar estos sistemas sin una gu\u00eda. Esa experiencia, no un t\u00edtulo, es lo que traigo a cada familia \u2014 junto con orientaci\u00f3n biling\u00fce paciente, en persona, en toda el \u00e1rea metropolitana de Austin.",
         "Mi papel es simple: Ser el asesor confiable, la gu\u00eda organizada y el apoyo constante cuando las cosas se sienten abrumadoras.",
       ],
       ourMission: "Nuestra Misi\u00f3n",
@@ -1087,7 +1087,7 @@ export const translations = {
         { number: "$20", label: "Donde comienza cada familia — una presentación comunitaria en vivo" },
       ],
       costComparison: {
-        eyebrow: "Por Qué Estos Precios Tienen Sentido",
+        eyebrow: "Por Qué Vale la Pena",
         heading: "El Verdadero Costo de Equivocarse",
         intro: "Una mala decisión universitaria cuesta mucho más que cualquier sesión con Puente.",
         points: [
