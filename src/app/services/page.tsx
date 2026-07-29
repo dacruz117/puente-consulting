@@ -104,31 +104,6 @@ export default function ServicesPage() {
       {/* ── ACADEMIC SUPPORT TAB ── */}
       {activeTab === "academic" && (
         <>
-          {/* Cost Comparison */}
-          <section className="py-20 bg-primary text-white">
-            <div className="max-w-5xl mx-auto px-4">
-              <p className="text-xs font-semibold tracking-widest uppercase text-accent-light mb-3 text-center">
-                {s.academic.costComparison.eyebrow}
-              </p>
-              <h2 className="text-3xl font-bold text-center mb-4">
-                {s.academic.costComparison.heading}
-              </h2>
-              <p className="text-gray-300 text-center max-w-2xl mx-auto mb-10">
-                {s.academic.costComparison.intro}
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                {s.academic.costComparison.points.map((point) => (
-                  <div key={point} className="bg-white/5 border border-white/10 rounded-xl p-5">
-                    <p className="text-sm text-gray-300 leading-relaxed">{point}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-accent rounded-xl px-6 py-5 text-center">
-                <p className="font-bold">{s.academic.costComparison.closingLine}</p>
-              </div>
-            </div>
-          </section>
-
           {/* Ladder: Ask-Anything, Private Session, Done-With-You */}
           <section className="py-20 bg-cream">
             <div className="max-w-6xl mx-auto px-4">
